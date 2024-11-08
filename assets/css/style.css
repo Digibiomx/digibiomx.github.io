@@ -47,7 +47,7 @@ body {
 }
 
 .logo {
-    height: 40px; /* Ajusta la altura del logo según sea necesario */
+    height: 40px!important; /* Ajusta la altura del logo según sea necesario */
     vertical-align: middle;
     margin-right: 15px; /* Espacio entre el logo y los enlaces del menú */
 }
