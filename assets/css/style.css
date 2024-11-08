@@ -1,53 +1,115 @@
-/* Estilos generales */
+/* Estilo global */
 body {
     font-family: sans-serif;
+    background-color: #f3f6fa;
+    margin: 0;
+    padding: 0;
+    color: #282828;
 }
 
-/* Estilos de la cabecera */
-.navbar {
-    background-color: #ffffff; /* Fondo blanco */
-    padding: 15px;
+/* Estilo de la cabecera */
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px; /* Ajusta el padding según prefieras */
+    background-color: #f3f6fa;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s;
 }
 
-.navbar a {
-    color: #888888; /* Color gris para los enlaces del menú */
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 16px;
-    transition: color 0.3s ease;
+header.scrolled {
+    background-color: white; /* Cambia a blanco al hacer scroll */
 }
 
-.navbar a:hover {
-    color: #1A73E8; /* Color azul en hover */
+header nav {
+    display: flex;
+    gap: 20px; /* Espaciado entre los elementos del menú */
 }
 
-.logo {
-    height: 40px; /* Ajusta el tamaño del logo */
-    vertical-align: middle;
-    margin-right: 15px;
+/* Estilo del logo */
+header h1 {
+    margin: 0;
+    padding-right: 20px; /* Espaciado entre el logo y el menú */
 }
 
-/* Estilos del botón de contacto */
-.contact-button {
-    background-color: #1A73E8; /* Color azul */
-    color: #ffffff;
+/* Estilo del botón de contacto */
+header .contact-button {
+    margin-left: 20px; /* Espacio entre el menú y el botón */
     padding: 10px 20px;
-    border: none;
-    border-radius: 25px; /* Esquinas circulares */
-    font-size: 16px;
-    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    background-color: #007bff;
     text-decoration: none;
-    transition: box-shadow 0.3s ease;
+    font-weight: bold;
+    transition: box-shadow 0.3s, background-color 0.3s;
 }
 
-.contact-button:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+header .contact-button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
-.contact-button:active {
-    box-shadow: none; /* Sin sombra al hacer click */
+/* Estilo del menú */
+header nav a {
+    color: #757575;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #007bff;
+}
+
+/* Estilo de la página de inicio */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+    color: #282828;
+    margin: 0 0 10px 0;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #757575;
+    margin: 0 0 20px 0;
+}
+
+/* Estilo del botón de la página de inicio */
+.button-primary {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f6fa;
+    color: #757575;
+    font-size: 0.9em;
 }
