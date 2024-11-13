@@ -16,8 +16,9 @@
         </div>
         <div class="menu">
             <a href="{{ '/' | relative_url }}">Inicio</a>
-            <a href="#soluciones">Soluciones</a>
-            <a href="#contacto">Contacto</a>
+            <a href="soluciones">Soluciones</a>
+            <a href="testimonios">Clientes</a>
+            <a href="contacto">Contacto</a>
         </div>
         <div class="button-container">
             <a href="{{ '/contacto' | relative_url }}" class="contact-button">Contáctanos</a>
@@ -30,7 +31,27 @@
 </main>
 
 <footer>
-    <p>&copy; 2024 Digibio Solutions</p>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/assets/images/Logo_Digibio.png' | relative_url }}" alt="Digibio Logo" class="logo-footer">
+            </a>
+        </div>
+        <div class="footer-links">
+            <h4>Secciones</h4>
+            <a href="{{ '/' | relative_url }}">Inicio</a>
+            <a href="{{ '/#soluciones' | relative_url }}">Soluciones</a>
+            <a href="{{ '/#testimonios' | relative_url }}">Clientes</a>
+            <a href="{{ '/contacto' | relative_url }}">Contacto</a>
+        </div>
+        <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="https://www.linkedin.com/company/digibiosolutions/" target="_blank" class="social-icon">
+                <img src="{{ '/assets/images/linkedin-icon.png' | relative_url }}" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </div>
+    <p>&copy; 2024 Digibio Solutions - Protegiendo tu autenticidad digital</p>
 </footer>
 <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
 </body>
