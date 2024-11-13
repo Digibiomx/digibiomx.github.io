@@ -7,6 +7,25 @@ body {
     padding: 0;
 }
 
+/* Estilo del header inicial (gris) */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido */
+    padding: 10px 30px;
+    background-color: #f3f6fa; /* Color inicial gris */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que esté en la parte superior */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilo del header cuando se hace scroll (blanco) */
+header.scrolled {
+    background-color: white; /* Cambia a blanco al hacer scroll */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
 /* Cambiar el color al hacer hover en el menú del header */
 header nav .menu a:hover {
     color: #007bff; /* Azul */
@@ -16,16 +35,25 @@ header nav .menu a:hover {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background-color: #f3f6fa;
-    position: sticky;
-    top: 0;
-    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo del header */
+    margin: 0 auto;
+    justify-content: space-between; /* Para distribuir los elementos */
 }
 
 .logo {
     height: 50px;
+}
+
+.logo-container {
+    margin-right: auto; /* Alinea el logo a la izquierda */
+}
+
+.menu {
+    display: flex;
+    gap: 15px; /* Espacio entre los elementos del menú */
+    justify-content: center; /* Centra el menú en el contenedor */
+    margin: 0 auto;
 }
 
 .menu a, .contact-button {
@@ -33,6 +61,10 @@ header nav .menu a:hover {
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
+}
+
+.button-container {
+    margin-left: auto; /* Alinea el botón a la derecha */
 }
 
 .contact-button {
@@ -115,13 +147,43 @@ header nav .menu a:hover {
     padding: 20px;
     background-color: #f3f6fa;
     border-radius: 8px;
-    width: 250px; /* Fijar el ancho */
-    min-height: 250px; /* Fijar la altura mínima */
+    width: 250px;
+    height: 400px; /* Altura fija para todas las tarjetas */
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    margin: 10px; /* Espaciado entre tarjetas */
+}
+
+.solution-item h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.solution-item p {
+    font-size: 1em;
+    color: #757575;
+    margin: 10px 0;
+    flex-grow: 1; /* Hace que el texto ocupe el espacio disponible entre el título y el botón */
 }
 
 .solution-item .button-primary {
-    margin-top: auto; /* Botón alineado al final */
+    margin-top: auto; /* Coloca el botón al final de la tarjeta */
+    margin-bottom: 10px; /* Espacio inferior */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.solution-item .button-primary:hover {
+    background-color: #0056b3;
 }
 
 .card {
@@ -233,19 +295,21 @@ footer {
 /* Contact Page Styles */
 .contact {
     max-width: 600px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    margin: 40px auto;
+    padding: 30px;
     text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
 .contact h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #282828;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #757575;
     margin-bottom: 30px;
 }
@@ -253,13 +317,15 @@ footer {
 .contact form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .contact label {
     text-align: left;
-    color: #757575;
-    font-weight: 500;
+    color: #282828;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 5px;
 }
 
 .contact input[type="text"],
@@ -271,23 +337,44 @@ footer {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.contact input[type="text"]:focus,
+.contact input[type="email"]:focus,
+.contact input[type="tel"]:focus,
+.contact textarea:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 .contact button {
-    padding: 12px 20px;
+    padding: 10px 20px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
-    transition: box-shadow 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: fit-content; /* Ajusta el ancho del botón al contenido */
+    align-self: center; /* Centra el botón en el formulario */
 }
 
 .contact button:hover {
+    background-color: #0056b3;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Espaciado adicional para dispositivos grandes */
+@media (min-width: 768px) {
+    .contact {
+        padding: 60px 40px;
+    }
+}
+
 
 /* FAQ Styles */
 .faq {
@@ -307,36 +394,79 @@ footer {
 
 .faq-item {
     margin-bottom: 15px;
+    border-radius: 8px;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
 
 .faq-question {
-    width: 100%;
+    width: 425px;
+    max-width: 600px; /* Ancho máximo ajustado */
     background-color: #007bff;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Botones redondeados */
     font-size: 1em;
     cursor: pointer;
     text-align: left;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; /* Centrado del botón */
+}
+
+.faq-question:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .faq-answer {
     display: none;
-    padding: 10px;
+    padding: 15px 20px;
     background-color: #f3f6fa;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 0.95em;
+    max-width: 600px; /* Ancho máximo de la respuesta */
+    margin: 0 auto;
 }
 
 .faq-item.active .faq-answer {
     display: block;
 }
 
-/* Experience Section */
+/* Icono de apertura/cierre */
+.faq-question::after {
+    content: '+';
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px; /* Espaciado mínimo entre texto y símbolo */
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+/* Experience Section Styles */
 .experience {
-    background-color: white;
-    padding: 40px 20px;
+    background-color: #ffffff;
+    padding: 60px 20px;
     text-align: center;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+    color: #282828;
+    margin-bottom: 10px;
+}
+
+.experience p {
+    font-size: 1.1em;
+    color: #757575;
+    margin-bottom: 30px;
 }
 
 .experience-container {
@@ -344,28 +474,76 @@ footer {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
-.experience-item {
+.experience-card {
+    background-color: #f3f6fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
-.experience-item img {
-    height: 60px;
-    margin-bottom: 10px;
+.experience-icon img.icon {
+    width: 50px; /* Ajuste del tamaño para los iconos generales */
+    height: 50px;
 }
 
-.experience-stats {
+.certification-logo {
+    width: 100px; /* Ajuste del tamaño para las certificaciones */
+    height: auto;
+    margin: 10px;
+}
+
+/* Carrusel de Clientes y Partners */
+.clients-carousel {
+    background-color: #f3f6fa;
+    padding: 40px 0;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-track {
     display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 20px;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
 }
 
-.stat h3 {
+.client-logo {
+    width: 100px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.client-logo:hover {
+    opacity: 1;
+}
+
+/* Animación de scroll para el carrusel */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*.stat h3 {
     font-size: 2.5em;
     color: #007bff;
     margin: 0;
@@ -374,4 +552,4 @@ footer {
 .stat p {
     color: #757575;
     font-size: 1em;
-}
+}*/

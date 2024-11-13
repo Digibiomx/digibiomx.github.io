@@ -38,29 +38,61 @@ title: Inicio
 </section>
 
 <section class="experience">
-    <h2>Nuestra Experiencia</h2>
+    <h2>Nos avala la experiencia</h2>
+    <p>Nuestros logros junto con los de nuestros partners son la mejor prueba de éxito</p>
+
     <div class="experience-container">
-        <div class="experience-item">
-            <img src="{{ '/assets/images/certification_level1.png' | relative_url }}" alt="Certificación Nivel 1">
-            <p>Certificación iBeta Level 1 IDO 30107-3</p>
+        <!-- Tarjeta de Certificaciones -->
+        <div class="experience-card">
+            <div class="experience-icon">
+                <img src="{{ '/assets/images/certification_level1.png' | relative_url }}" alt="Certificación Level 1" class="certification-logo">
+                <img src="{{ '/assets/images/certification_level2.png' | relative_url }}" alt="Certificación Level 2" class="certification-logo">
+            </div>
         </div>
-        <div class="experience-item">
-            <img src="{{ '/assets/images/certification_level2.png' | relative_url }}" alt="Certificación Nivel 2">
-            <p>Certificación iBeta Level 2 IDO 30107-3</p>
-        </div>
-        <div class="experience-stats">
-            <div class="stat">
+
+        <!-- Tarjeta de Transacciones -->
+        <div class="experience-card">
+            <div class="experience-icon">
+                <img src="{{ '/assets/images/transactions-icon.png' | relative_url }}" alt="Transacciones Icono" class="icon">
+            </div>
+            <div class="experience-content">
                 <h3>50M+</h3>
                 <p>Transacciones anuales</p>
             </div>
-            <div class="stat">
+        </div>
+
+        <!-- Tarjeta de Presencia -->
+        <div class="experience-card">
+            <div class="experience-icon">
+                <img src="{{ '/assets/images/global-icon.png' | relative_url }}" alt="Presencia Icono" class="icon">
+            </div>
+            <div class="experience-content">
                 <h3>3 países</h3>
                 <p>2 continentes</p>
             </div>
         </div>
     </div>
-</section>
 
+    <!-- Carrusel de Clientes y Partners -->
+    <div class="clients-carousel">
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <img src="{{ '/assets/images/bbva-icon.png' | relative_url }}" alt="Client 1" class="client-logo">
+                <img src="{{ '/assets/images/truper-icon.png' | relative_url }}" alt="Client 2" class="client-logo">
+                <img src="{{ '/assets/images/intercam-icon.png' | relative_url }}" alt="Client 3" class="client-logo">
+                <img src="{{ '/assets/images/ine-icon.png' | relative_url }}" alt="Client 4" class="client-logo">
+                <img src="{{ '/assets/images/banjercito-icon.png' | relative_url }}" alt="Client 5" class="client-logo">
+                <img src="{{ '/assets/images/betterware-icon.png' | relative_url }}" alt="Client 6" class="client-logo">
+                <img src="{{ '/assets/images/totalplay-icon.png' | relative_url }}" alt="Client 7" class="client-logo">
+                <img src="{{ '/assets/images/farmacias-icon.png' | relative_url }}" alt="Client 8" class="client-logo">
+                <img src="{{ '/assets/images/azteca-icon.png' | relative_url }}" alt="Client 9" class="client-logo">
+                <img src="{{ '/assets/images/hsbc-icon.png' | relative_url }}" alt="Client 10" class="client-logo">
+                <img src="{{ '/assets/images/sura-icon.png' | relative_url }}" alt="Client 11" class="client-logo">
+                <img src="{{ '/assets/images/movistar-icon.png' | relative_url }}" alt="Client 12" class="client-logo">
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="faq">
     <h2>Preguntas Frecuentes</h2>

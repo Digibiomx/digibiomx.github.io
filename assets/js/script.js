@@ -1,6 +1,11 @@
+// Cambia el fondo de la cabecera al hacer scroll
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
-    header.classList.toggle('scrolled', window.scrollY > 50);
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 });
 
 // Toggle FAQ answers
