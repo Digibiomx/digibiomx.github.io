@@ -9,13 +9,19 @@
 <body>
 <header>
     <nav class="navbar">
-        <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/assets/images/logo_header.png' | relative_url }}" alt="Digibio Logo" class="logo" style="height: 40px!important;">
-        </a>
-        <a href="{{ '/' | relative_url }}">Inicio</a>
-        <a href="#soluciones">Soluciones</a>
-        <a href="#contacto">Contacto</a>
-        <a href="{{ '/contacto' | relative_url }}" class="cta-button" style="color: #fff!important;">Contáctanos</a>
+        <div class="logo-container">
+            <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/assets/images/Logo_Digibio.png' | relative_url }}" alt="Digibio Logo" class="logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="{{ '/' | relative_url }}">Inicio</a>
+            <a href="#soluciones">Soluciones</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <div class="button-container">
+            <a href="{{ '/contacto' | relative_url }}" class="contact-button">Contáctanos</a>
+        </div>
     </nav>
 </header>
 
