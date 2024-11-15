@@ -450,7 +450,7 @@ footer {
     transform: rotate(180deg);
 }
 
-/* Experience Section Styles */
+/* Sección Nos avala la experiencia */
 .experience {
     background-color: #ffffff;
     padding: 60px 20px;
@@ -478,29 +478,124 @@ footer {
 }
 
 .experience-card {
-    background-color: #f3f6fa;
+    background: linear-gradient(135deg, #f3f6fa, #ffffff);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     width: 280px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-icon img.icon {
-    width: 50px; /* Ajuste del tamaño para los iconos generales */
-    height: 50px;
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.certification-logo {
-    width: 100px; /* Ajuste del tamaño para las certificaciones */
+/* Estilo específico para la tarjeta de Certificaciones */
+.certification-card .experience-content h3 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin: 10px 0 20px; /* Espacio entre título e iconos */
+}
+
+.certification-card .certification-logos {
+    display: flex;
+    gap: 10px; /* Espacio entre los íconos */
+    justify-content: center;
+    width: 100%;
+}
+
+.certification-card .certification-logos img {
+    width: calc(50% - 5px); /* Ocupa la mitad del ancho menos el espacio entre íconos */
     height: auto;
-    margin: 10px;
+    object-fit: contain;
 }
 
-/* Carrusel de Clientes y Partners */
+.experience-icon {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.experience-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Ajuste de tamaño para las imágenes de certificaciones */
+.certification-logo {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.experience-content h3 {
+    font-size: 2em;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.experience-content p {
+    color: #757575;
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Estilo específico para la tarjeta de Transacciones */
+.transaction-card .experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.transaction-card .transaction-number {
+    font-size: 3em; /* Tamaño grande para resaltar */
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.transaction-card .transaction-text {
+    font-size: 1.2em;
+    color: #282828;
+    margin-top: 5px;
+}
+
+/* Estilo específico para la tarjeta de Presencia */
+.presence-card .experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.presence-card .presence-stats {
+    font-size: 2.5em; /* Tamaño grande para destacar */
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.presence-card .presence-description {
+    font-size: 1.1em;
+    color: #282828;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
 .clients-carousel {
     background-color: #f3f6fa;
     padding: 40px 0;
@@ -522,9 +617,21 @@ footer {
     animation: scroll 20s linear infinite;
 }
 
+.client-logo-container {
+    width: 200px;
+    /*height: 100px;  Cuadrado para contener el logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Oculta cualquier exceso de imagen */
+    /*background-color: #ffffff;  Fondo opcional */
+    border-radius: 8px; /* Redondeo opcional para un look moderno */
+}
+
 .client-logo {
-    width: 100px;
-    height: auto;
+    max-width: 100%;
+    /*max-height: 100%;*/
+    object-fit: contain; /* Ajusta sin distorsionar */
     opacity: 0.8;
     transition: opacity 0.3s;
 }
@@ -543,13 +650,153 @@ footer {
     }
 }
 
-/*.stat h3 {
-    font-size: 2.5em;
-    color: #007bff;
-    margin: 0;
+/* Estilos de la página de Soluciones */
+.solutions-intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f3f6fa;
 }
 
-.stat p {
-    color: #757575;
+.liveness-check-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.liveness-check-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    color: #282828;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
     font-size: 1em;
-}*/
+    color: #757575;
+}
+
+.iphone-image-container {
+    position: sticky;
+    top: 100px; /* Posición fija a partir de cierto punto en el scroll */
+}
+
+.iphone-image {
+    width: 300px;
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+}
+
+
+/* Sección Onboarding Digital */
+.solutions-intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f3f6fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.onboarding-digital-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.onboarding-intro-card {
+    background-color: #fff9c4;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    color: #282828;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.onboarding-intro-card h3 {
+    font-size: 1.8em;
+    color: #007bff;
+}
+
+.workflow-cards .card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    color: #282828;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.workflow-cards .card ul {
+    list-style-type: none;
+    padding: 0;
+    color: #757575;
+}
+
+.workflow-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.workflow-cards .card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.workflow-cards .card p {
+    font-size: 1em;
+    color: #757575;
+}
+
+/* Efecto Parallax para iPhone */
+.parallax-iphone {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
+
+.iphone-image {
+    width: 300px;
+    opacity: 0.9;
+}
+
+/* Añadir efecto de desplazamiento en scroll */
+@media (min-width: 768px) {
+    .parallax-iphone {
+        position: sticky;
+        top: 40px;
+    }
+}
+
