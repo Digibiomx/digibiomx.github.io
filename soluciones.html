@@ -55,21 +55,21 @@ title: Soluciones
         <h3>Beneficios principales</h3>
         <div class="benefits-grid">
             <div class="benefit-card">
-                <img src="/assets/images/liveness-check.svg" alt="Prueba de Vida">
+                <img src="{{ '/assets/images/liveness-check.svg' | relative_url }}" alt="Prueba de Vida">
                 <h4>Prueba de Vida</h4>
                 <p>
                     Detecta pruebas de vida activa y pasiva, online y offline, con tecnología avanzada certificada iBeta Nivel 2.
                 </p>
             </div>
             <div class="benefit-card">
-                <img src="/assets/images/face-comparison.svg" alt="Comparación Facial">
+                <img src="{{ '/assets/images/face-comparison.svg' | relative_url }}" alt="Comparación Facial">
                 <h4>Comparación Facial</h4>
                 <p>
                     Realiza una comparación biométrica precisa 1:1 con las mejores métricas del mercado (NIST FRVT).
                 </p>
             </div>
             <div class="benefit-card">
-                <img src="/assets/images/ocr-icon.svg" alt="OCR Avanzado">
+                <img src="{{ '/assets/images/ocr-icon.svg' | relative_url }}" alt="OCR Avanzado">
                 <h4>OCR Avanzado</h4>
                 <p>
                     Extrae datos con OCR especializado en documentos como el INE y pasaportes mexicanos, asegurando máxima precisión.
@@ -83,7 +83,7 @@ title: Soluciones
     <h3>¿Cómo funciona?</h3>
     <div class="workflow-container">
         <div class="workflow-step">
-            <img src="/assets/images/document-verification.svg" alt="Verificación de Documentos">
+            <img src="{{ '/assets/images/document-verification.svg' | relative_url }}" alt="Verificación de Documentos">
             <h4>1. Verificación de Documentos</h4>
             <p>Captura automática, OCR avanzado y validación de autenticidad.</p>
         </div>
@@ -91,7 +91,7 @@ title: Soluciones
             <span>&#8594;</span>
         </div>
         <div class="workflow-step">
-            <img src="/assets/images/face-verification.svg" alt="Verificación Facial">
+            <img src="{{ '/assets/images/face-verification.svg' | relative_url }}" alt="Verificación Facial">
             <h4>2. Verificación Facial y Prueba de Vida</h4>
             <p>Detección de vida pasiva y activa con biometría facial.</p>
         </div>
@@ -99,21 +99,22 @@ title: Soluciones
             <span>&#8594;</span>
         </div>
         <div class="workflow-step">
-            <img src="/assets/images/quick-validation.svg" alt="Validación Rápida">
+            <img src="{{ '/assets/images/quick-validation.svg' | relative_url }}" alt="Validación Rápida">
             <h4>3. Validación en menos de un minuto</h4>
             <p>Resultados inmediatos y fiables para tus usuarios.</p>
         </div>
     </div>
 </section>
 
-<section class="dot-cta" style="background-image: url('/assets/images/dot-pattern-bg.jpg');">
+<section class="dot-cta" style="background-image: url('{{ '/assets/images/dot-pattern-bg.jpg' | relative_url }}');">
     <div class="dot-cta-content">
-        <img src="/assets/images/dot-icon.svg" alt="Digital Onboarding Toolkit" class="dot-icon">
+        <img src="{{ '/assets/images/dot-icon.svg' | relative_url }}" alt="Digital Onboarding Toolkit" class="dot-icon">
         <h3>Conoce más sobre DOT</h3>
         <p>
             Implementa el Digital Onboarding Toolkit en menos de 2 semanas. Nuestra tecnología robusta y líder en el mercado
             hará que los procesos de tu plataforma sean más sofisticados y confiables.
         </p>
-        <a href="/contacto" class="button-primary">Solicita una Demo</a>
+        <a href="{{ '/contacto' | relative_url }}" class="button-primary">Solicita una Demo</a>
     </div>
 </section>
+
