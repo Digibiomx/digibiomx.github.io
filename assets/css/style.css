@@ -711,92 +711,250 @@ footer {
 }
 
 
-/* Sección Onboarding Digital */
-.solutions-intro {
-    text-align: center;
+/* Estilo Digital Onboarding Toolkit */
+.dot-section {
     padding: 60px 20px;
-    background-color: #f3f6fa;
-    position: relative;
-    overflow: hidden;
+    background: linear-gradient(to bottom, #f3f6fa, #ffffff);
 }
 
-.onboarding-digital-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 20px;
-    background-color: #ffffff;
-}
-
-.onboarding-intro-card {
-    background-color: #fff9c4;
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
-    border-radius: 15px;
-    color: #282828;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+.dot-intro {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.onboarding-intro-card h3 {
-    font-size: 1.8em;
+.dot-intro h2 {
+    font-size: 2.5em;
+    color: #282828;
+}
+
+.dot-intro p {
+    font-size: 1.2em;
+    color: #757575;
+    margin: 10px 0;
+}
+
+.dot-benefits {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.dot-benefits h3 {
+    font-size: 2em;
+    color: #282828;
+    margin-bottom: 20px;
+}
+
+.benefits-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.benefit-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.workflow-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.workflow-step {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.workflow-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.workflow-step img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.workflow-step h4 {
+    font-size: 1.5em;
     color: #007bff;
 }
 
-.workflow-cards .card {
-    width: 250px;
-    padding: 20px;
-    border-radius: 15px;
-    color: #282828;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+.workflow-step ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #757575;
+}
+
+/* Estilo para "Conoce más sobre DOT" */
+.dot-cta {
+    padding: 80px 20px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 
-.workflow-cards .card ul {
-    list-style-type: none;
-    padding: 0;
-    color: #757575;
+.dot-cta-content h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-.workflow-cards .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+.dot-cta-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.workflow-cards .card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.dot-cta-video {
+    margin-bottom: 30px;
 }
 
-.workflow-cards .card p {
+.button-primary {
+    padding: 15px 30px;
+    background: #007bff;
+    color: #ffffff;
+    border-radius: 25px;
     font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-primary:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilo para el diagrama de flujo */
+.dot-workflow {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.dot-workflow h3 {
+    font-size: 2.5em;
+    color: #282828;
+    margin-bottom: 30px;
+}
+
+.workflow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.workflow-step {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workflow-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.workflow-step img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.workflow-step h4 {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.workflow-arrow {
+    font-size: 2.5em;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+}
+
+/* Sección "Conoce más sobre DOT" */
+.dot-cta {
+    padding: 80px 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff; /* Fallback color */
+    color: #282828;
+}
+
+.dot-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo translúcido */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dot-icon {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.dot-cta-content h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.dot-cta-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
     color: #757575;
 }
 
-/* Efecto Parallax para iPhone */
-.parallax-iphone {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    transform: translateY(0);
-    transition: transform 0.5s ease;
+.button-primary {
+    padding: 15px 30px;
+    background: #007bff;
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.iphone-image {
-    width: 300px;
-    opacity: 0.9;
+.button-primary:hover {
+    background: #0056b3;
+    transform: scale(1.05);
 }
 
-/* Añadir efecto de desplazamiento en scroll */
-@media (min-width: 768px) {
-    .parallax-iphone {
-        position: sticky;
-        top: 40px;
-    }
-}
 
