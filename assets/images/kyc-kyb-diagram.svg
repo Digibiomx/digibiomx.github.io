@@ -1,0 +1,31 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300" fill="none">
+  <rect width="800" height="300" fill="#F7F9FC"/>
+
+  <!-- Step 1 -->
+  <rect x="50" y="50" width="200" height="100" rx="10" fill="#007BFF" />
+  <text x="150" y="90" text-anchor="middle" font-size="14" fill="#FFF" font-weight="bold">Conexiones</text>
+  <text x="150" y="110" text-anchor="middle" font-size="12" fill="#FFF">Bases de datos oficiales</text>
+  <text x="150" y="130" text-anchor="middle" font-size="12" fill="#FFF">(INE, RENAPO, CFE, etc.)</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="270,90 310,75 310,105" fill="#007BFF"/>
+
+  <!-- Step 2 -->
+  <rect x="330" y="50" width="200" height="100" rx="10" fill="#28A745" />
+  <text x="430" y="90" text-anchor="middle" font-size="14" fill="#FFF" font-weight="bold">Personalización</text>
+  <text x="430" y="110" text-anchor="middle" font-size="12" fill="#FFF">Workflow adaptable</text>
+  <text x="430" y="130" text-anchor="middle" font-size="12" fill="#FFF">(KYC/KYB ajustado)</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="550,90 590,75 590,105" fill="#28A745"/>
+
+  <!-- Step 3 -->
+  <rect x="610" y="50" width="200" height="100" rx="10" fill="#FFC107" />
+  <text x="710" y="90" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">Automatización</text>
+  <text x="710" y="110" text-anchor="middle" font-size="12" fill="#333">Procesos rápidos</text>
+  <text x="710" y="130" text-anchor="middle" font-size="12" fill="#333">(Ahorra tiempo y dinero)</text>
+
+  <!-- Title -->
+  <text x="50%" y="30" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Proceso KYC/KYB Automatizado</text>
+</svg>

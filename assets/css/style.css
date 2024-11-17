@@ -744,14 +744,14 @@ footer {
     margin-bottom: 20px;
 }
 
-.benefits-grid {
+.dot-benefits-grid {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.benefit-card {
+.dot-benefit-card {
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
@@ -761,12 +761,12 @@ footer {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.benefit-card:hover {
+.dot-benefit-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.benefit-card img {
+.dot-benefit-card img {
     width: 80px;
     margin-bottom: 15px;
 }
@@ -957,4 +957,223 @@ footer {
     transform: scale(1.05);
 }
 
+/* Estilo para la sección de Firma Digital y NOM-151 */
+.nom-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.nom-intro h2 {
+    font-size: 2.5em;
+    color: #282828;
+    margin-bottom: 20px;
+}
+
+.nom-intro p {
+    font-size: 1.2em;
+    color: #757575;
+    margin-bottom: 40px;
+}
+
+.nom-benefits h3 {
+    font-size: 2em;
+    color: #282828;
+    margin-bottom: 20px;
+}
+
+/* Beneficios Clave */
+.benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.benefit-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h4 {
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+/* Modales */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.modal-content h3 {
+    font-size: 1.5em;
+    color: #282828;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 1em;
+    color: #757575;
+}
+
+/* Animación del modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilo para el botón de acción */
+.nom-action {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button-contact {
+    padding: 15px 30px;
+    background: #007bff;
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-contact:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección KYC + KYB */
+.kyc-kyb-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.kyc-kyb-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.extra-margin {
+    margin-top: 40px; /* Añade un margen superior adicional */
+}
 

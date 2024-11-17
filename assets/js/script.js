@@ -36,3 +36,18 @@ document.addEventListener('scroll', () => {
     const parallaxImage = document.querySelector('.parallax-iphone');
     parallaxImage.style.transform = `translateY(${scrollPosition * 0.2}px)`;
 });
+
+// Función para abrir el modal
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+}
+
+// Función para cerrar el modal al hacer clic fuera de él
+window.addEventListener('click', function (event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});

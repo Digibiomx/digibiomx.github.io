@@ -1,0 +1,21 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+    <rect x="20" y="50" width="200" height="80" fill="#007bff" rx="10"/>
+    <text x="120" y="95" font-family="Arial" font-size="16" fill="#fff" text-anchor="middle">Documento Original</text>
+
+    <line x1="220" y1="90" x2="320" y2="90" stroke="#282828" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <rect x="320" y="50" width="200" height="80" fill="#007bff" rx="10"/>
+    <text x="420" y="95" font-family="Arial" font-size="16" fill="#fff" text-anchor="middle">Huella Digital Generada</text>
+
+    <line x1="520" y1="90" x2="620" y2="90" stroke="#282828" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="620" y="50" width="200" height="80" fill="#007bff" rx="10"/>
+    <text x="720" y="95" font-family="Arial" font-size="16" fill="#fff" text-anchor="middle">Sello de Tiempo NOM-151</text>
+
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="#282828"/>
+        </marker>
+    </defs>
+</svg>

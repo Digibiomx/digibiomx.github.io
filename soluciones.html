@@ -3,12 +3,13 @@ layout: default
 title: Soluciones
 ---
 
-<section class="solutions-intro" id="liveness-check">
+<section class="solutions-intro" >
     <h2>Descubre Liveness Check</h2>
     <p>Nuestras soluciones avanzadas de verificación biométrica garantizan autenticidad y seguridad en cada transacción.</p>
 </section>
 
-<section class="liveness-check-section">
+
+<section class="liveness-check-section" id="liveness-check">
     <div class="liveness-check-cards">
         <div class="card" style="background-color: #e0f7fa;">
             <h3>Compatibilidad de dispositivos</h3>
@@ -41,7 +42,7 @@ title: Soluciones
 </section>
 
 
-<section class="dot-section">
+<section class="dot-section" id="onboarding-digital">
     <div class="dot-intro">
         <h2>Digital Onboarding Toolkit (DOT)</h2>
         <p>
@@ -54,21 +55,21 @@ title: Soluciones
     <div class="dot-benefits">
         <h3>Beneficios principales</h3>
         <div class="benefits-grid">
-            <div class="benefit-card">
+            <div class="dot-benefit-card">
                 <img src="{{ '/assets/images/liveness-check.svg' | relative_url }}" alt="Prueba de Vida">
                 <h4>Prueba de Vida</h4>
                 <p>
                     Detecta pruebas de vida activa y pasiva, online y offline, con tecnología avanzada certificada iBeta Nivel 2.
                 </p>
             </div>
-            <div class="benefit-card">
+            <div class="dot-benefit-card">
                 <img src="{{ '/assets/images/face-comparison.svg' | relative_url }}" alt="Comparación Facial">
                 <h4>Comparación Facial</h4>
                 <p>
                     Realiza una comparación biométrica precisa 1:1 con las mejores métricas del mercado (NIST FRVT).
                 </p>
             </div>
-            <div class="benefit-card">
+            <div class="dot-benefit-card">
                 <img src="{{ '/assets/images/ocr-icon.svg' | relative_url }}" alt="OCR Avanzado">
                 <h4>OCR Avanzado</h4>
                 <p>
@@ -118,3 +119,159 @@ title: Soluciones
     </div>
 </section>
 
+<section class="nom-section" id="firma-digital">
+    <div class="nom-intro">
+        <h2>Firma Digital y NOM-151</h2>
+        <p>
+            La <strong>NOM-151</strong> garantiza la autenticidad y seguridad de los documentos electrónicos, asegurando validez jurídica y eficiencia en tus procesos empresariales.
+        </p>
+    </div>
+
+    <div class="nom-benefits">
+        <h3>Beneficios Clave</h3>
+        <div class="benefits-grid">
+            <!-- Tarjeta 1 -->
+            <div class="benefit-card" onclick="openModal('security-modal')">
+                <img src="{{ '/assets/images/security-icon.svg' | relative_url }}" alt="Seguridad Certificada">
+                <h4>Seguridad Certificada</h4>
+            </div>
+            <!-- Modal 1 -->
+            <div id="security-modal" class="modal">
+                <div class="modal-content">
+                    <img src="{{ '/assets/images/security-icon.svg' | relative_url }}" alt="Seguridad">
+                    <h3>Seguridad Certificada</h3>
+                    <p>
+                        Tus documentos están protegidos contra alteraciones no autorizadas, brindando confianza y validez en cada transacción.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="benefit-card" onclick="openModal('legal-modal')">
+                <img src="{{ '/assets/images/legal-icon.svg' | relative_url }}" alt="Validez Jurídica">
+                <h4>Validez Jurídica</h4>
+            </div>
+            <!-- Modal 2 -->
+            <div id="legal-modal" class="modal">
+                <div class="modal-content">
+                    <img src="{{ '/assets/images/legal-icon.svg' | relative_url }}" alt="Legalidad">
+                    <h3>Validez Jurídica</h3>
+                    <p>
+                        Cumple con los estándares legales de México para garantizar que tus documentos electrónicos sean plenamente válidos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="benefit-card" onclick="openModal('process-modal')">
+                <img src="{{ '/assets/images/integration-icon.svg' | relative_url }}" alt="Procesos Rápidos">
+                <h4>Procesos Rápidos</h4>
+            </div>
+            <!-- Modal 3 -->
+            <div id="process-modal" class="modal">
+                <div class="modal-content">
+                    <img src="{{ '/assets/images/integration-icon.svg' | relative_url }}" alt="Agilidad">
+                    <h3>Procesos Rápidos</h3>
+                    <p>
+                        Acelera tus flujos de trabajo con soluciones digitales que reducen los tiempos de gestión de semanas a minutos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="benefit-card" onclick="openModal('cost-modal')">
+                <img src="{{ '/assets/images/ecofriendly-icon.svg' | relative_url }}" alt="Reducción de Costos">
+                <h4>Reducción de Costos</h4>
+            </div>
+            <!-- Modal 4 -->
+            <div id="cost-modal" class="modal">
+                <div class="modal-content">
+                    <img src="{{ '/assets/images/ecofriendly-icon.svg' | relative_url }}" alt="Ahorro">
+                    <h3>Reducción de Costos</h3>
+                    <p>
+                        Digitaliza tus procesos para ahorrar en logística y manejo de documentos físicos, reduciendo costos operativos significativamente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nom-action">
+        <a href="/contacto" class="button-contact">Solicita más información</a>
+    </div>
+</section>
+
+<section class="kyc-kyb-section" id="kyc-kyb">
+    <div class="container py-5">
+        <h2 class="section-title text-center mb-4">Casos de uso para transformar tu empresa</h2>
+        <p class="section-description text-center mb-5">
+            Descubre cómo nuestras soluciones KYC y KYB pueden ayudarte a garantizar la seguridad y la automatización de tus procesos.
+        </p>
+
+        <div class="kyc-kyb-grid">
+            <!-- Tarjeta 1 -->
+            <div class="info-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="{{ '/assets/images/id-verification-icon.svg' | relative_url }}" alt="Verificación de Identidad">
+                    </div>
+                    <h5 class="card-title">Verificación de identidad</h5>
+                    <p class="card-description">Confirma la autenticidad del documento mediante procesos automatizados y seguros.</p>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="info-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="{{ '/assets/images/database-icon.svg' | relative_url }}" alt="Verificación por Base de Datos">
+                    </div>
+                    <h5 class="card-title">Verificación por base de datos</h5>
+                    <p class="card-description">Otorga acceso únicamente a usuarios verificados conectando con fuentes oficiales.</p>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="info-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="{{ '/assets/images/kyc-icon.svg' | relative_url }}" alt="Conoce a tu cliente">
+                    </div>
+                    <h5 class="card-title">Conoce a tu cliente</h5>
+                    <p class="card-description">Cumple con las normativas locales para la identificación y evaluación de clientes.</p>
+                </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="info-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="{{ '/assets/images/age-verification-icon.svg' | relative_url }}" alt="Verifica la edad">
+                    </div>
+                    <h5 class="card-title">Verifica la edad</h5>
+                    <p class="card-description">Confirma la mayoría de edad de tus clientes al instante y sin complicaciones.</p>
+                </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="info-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="{{ '/assets/images/money-laundering-icon.svg' | relative_url }}" alt="Lucha contra el lavado de dinero">
+                    </div>
+                    <h5 class="card-title">Lucha contra el lavado de dinero</h5>
+                    <p class="card-description">Aborda el cumplimiento de normativas contra el lavado de dinero de forma automatizada.</p>
+                </div>
+            </div>
+            <!-- Tarjeta 6 -->
+            <div class="info-card">
+                <div class="card-content">
+                    <div class="icon">
+                        <img src="{{ '/assets/images/kyb-icon.svg' | relative_url }}" alt="Conoce tu empresa">
+                    </div>
+                    <h5 class="card-title">Conoce tu empresa</h5>
+                    <p class="card-description">Cumple con los requisitos legales para la validación de empresas y beneficiarios finales.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 extra-margin">
+            <a href="/contacto" class="button-contact">Solicita más información</a>
+        </div>
+    </div>
+</section>
