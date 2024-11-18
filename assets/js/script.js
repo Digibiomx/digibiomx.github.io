@@ -51,3 +51,13 @@ window.addEventListener('click', function (event) {
         }
     });
 });
+
+// Scroll animation for benefits
+document.addEventListener("scroll", () => {
+    const benefitItems = document.querySelectorAll(".benefit-item");
+    benefitItems.forEach((item) => {
+        const rect = item.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+        item.dataset.visible = isVisible;
+    });
+});

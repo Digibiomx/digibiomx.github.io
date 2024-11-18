@@ -186,7 +186,7 @@ header nav .menu a:hover {
     background-color: #0056b3;
 }
 
-.card {
+.solutions-card {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
@@ -195,12 +195,12 @@ header nav .menu a:hover {
     text-align: left;
 }
 
-.card h3 {
+.solutions-card h3 {
     font-size: 1.5em;
     color: #007bff;
 }
 
-.card p {
+.solutions-card p {
     font-size: 1em;
     color: #757575;
 }
@@ -1198,3 +1198,168 @@ footer {
     margin-top: 40px; /* Añade un margen superior adicional */
 }
 
+
+/* ABIS Section */
+.abis-section {
+    background-color: #f3f6fa;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.abis-header {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.abis-header h2 {
+    font-size: 2.5rem;
+    color: #282828;
+    margin-bottom: 10px;
+}
+
+.abis-header p {
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+/* Logo and description */
+.abis-logo-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.abis-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.abis-logo-container p {
+    font-size: 1.1rem;
+    color: #757575;
+    line-height: 1.5;
+}
+
+/* Benefits section */
+.abis-benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.abis-benefit {
+    text-align: center;
+}
+
+.abis-benefit img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.abis-benefit h3 {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.abis-benefit p {
+    font-size: 1rem;
+    color: #757575;
+    line-height: 1.5;
+}
+
+/* Estilos generales para "Cómo funciona" */
+.abis-how-it-works {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #f3f6fa, #e6f0ff); /* Degradado minimalista */
+}
+
+.abis-how-it-works h3 {
+    font-size: 2.5rem;
+    color: #282828;
+    margin-bottom: 40px;
+}
+
+.abis-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.abis-step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.abis-step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.abis-step-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .abis-steps {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .abis-step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .abis-step-content p {
+        max-width: 250px;
+    }
+}
+
+
+/* Action button */
+.abis-action {
+    margin-top: 40px;
+}
+
+.abis-button {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.abis-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
