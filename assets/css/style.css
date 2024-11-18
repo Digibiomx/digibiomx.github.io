@@ -657,6 +657,17 @@ footer {
     background-color: #f3f6fa;
 }
 
+.solutions-intro h2 {
+    font-size: 2.5em;
+    color: #282828;
+}
+
+.solutions-intro p {
+    font-size: 1.2em;
+    color: #757575;
+    margin: 10px 0;
+}
+
 .liveness-check-section {
     display: flex;
     justify-content: center;
@@ -674,27 +685,29 @@ footer {
     max-width: 600px;
 }
 
-.card {
+.liveness-check-card {
     width: 250px;
     padding: 20px;
     border-radius: 15px;
-    color: #282828;
+    /*color: #282828;*/
+    color: #007bff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
 }
 
-.card:hover {
+.liveness-check-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.card h3 {
+.liveness-check-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.card p {
+.liveness-check-card p {
     font-size: 1em;
     color: #757575;
 }
@@ -759,6 +772,10 @@ footer {
     text-align: center;
     width: 300px;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dot-benefit-card h4{
+    color: #007bff;
 }
 
 .dot-benefit-card:hover {
@@ -1138,6 +1155,10 @@ footer {
 .card-content {
     padding: 20px;
     text-align: center;
+}
+
+.card-content h5{
+    color: #007bff;
 }
 
 .icon img {
