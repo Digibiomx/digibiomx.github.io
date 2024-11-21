@@ -886,7 +886,7 @@ footer {
 }
 
 
-/* Estilos de la página de Soluciones */
+/* Soluciones: Introducción */
 .solutions-intro {
     text-align: center;
     padding: 60px 20px;
@@ -904,6 +904,38 @@ footer {
     margin: 10px 0;
 }
 
+/* Adaptación para Tablet */
+@media (max-width: 1024px) {
+    .solutions-intro {
+        padding: 40px 15px;
+    }
+
+    .solutions-intro h2 {
+        font-size: 2em;
+    }
+
+    .solutions-intro p {
+        font-size: 1.1em;
+    }
+}
+
+/* Adaptación para Móvil */
+@media (max-width: 768px) {
+    .solutions-intro {
+        padding: 30px 10px;
+    }
+
+    .solutions-intro h2 {
+        font-size: 1.8em;
+    }
+
+    .solutions-intro p {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+}
+
+/* Sección Liveness Check */
 .liveness-check-section {
     display: flex;
     justify-content: center;
@@ -925,7 +957,6 @@ footer {
     width: 250px;
     padding: 20px;
     border-radius: 15px;
-    /*color: #282828;*/
     color: #007bff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -948,15 +979,69 @@ footer {
     color: #757575;
 }
 
+/* Imagen del iPhone */
 .iphone-image-container {
     position: sticky;
-    top: 100px; /* Posición fija a partir de cierto punto en el scroll */
+    top: 100px;
 }
 
 .iphone-image {
     width: 300px;
     opacity: 0.9;
     transition: transform 0.3s ease;
+}
+
+/* Adaptación para Tablet */
+@media (max-width: 1024px) {
+    .liveness-check-section {
+        flex-direction: column; /* Cambia a una disposición en columna */
+        align-items: center;
+        gap: 20px;
+        padding: 40px 10px; /* Ajusta el padding */
+    }
+
+    .liveness-check-cards {
+        gap: 15px;
+        max-width: 80%;
+        margin: 0 auto; /* Centra horizontalmente el contenedor */
+    }
+
+    .liveness-check-card {
+        width: 100%;
+        max-width: 400px; /* Ajusta el ancho máximo de las tarjetas */
+        margin: 0 auto; /* Centra las tarjetas */
+    }
+
+    .iphone-image-container {
+        display: none; /* Oculta la imagen del iPhone */
+    }
+}
+
+/* Adaptación para Móvil */
+@media (max-width: 768px) {
+    .liveness-check-section {
+        padding: 40px 10px;
+        gap: 10px;
+    }
+
+    .liveness-check-cards {
+        display: grid;
+        grid-template-columns: 1fr; /* Una columna en móvil */
+        gap: 15px;
+    }
+
+    .liveness-check-card {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .liveness-check-card h3 {
+        font-size: 1.2em;
+    }
+
+    .liveness-check-card p {
+        font-size: 0.9em;
+    }
 }
 
 
@@ -1014,6 +1099,43 @@ footer {
     color: #007bff;
 }
 
+@media (max-width: 1024px) {
+    .dot-intro h2 {
+        font-size: 2em;
+    }
+
+    .dot-intro p {
+        font-size: 1.1em;
+    }
+
+    .dot-benefit-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dot-section {
+        padding: 40px 10px;
+    }
+
+    .dot-intro h2 {
+        font-size: 1.8em;
+    }
+
+    .dot-intro p {
+        font-size: 1em;
+    }
+
+    .dot-benefit-card {
+        padding: 15px;
+    }
+
+    .dot-benefit-card h4 {
+        font-size: 1em;
+    }
+}
+
 .dot-benefit-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
@@ -1065,10 +1187,12 @@ footer {
 
 /* Estilo para "Conoce más sobre DOT" */
 .dot-cta {
-    padding: 80px 20px;
+    background-image: url('/assets/images/dot-pattern-bg.jpg'); /* Ruta del fondo */
+    background-size: cover; /* Escala la imagen para cubrir el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    padding: 80px 20px; /* Mantén los márgenes internos */
     text-align: center;
-    background-size: cover;
-    background-position: center;
     color: #ffffff;
 }
 
@@ -1151,11 +1275,34 @@ footer {
     color: #007bff;
 }
 
+@media (max-width: 1024px) {
+    .workflow-step {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .workflow-step {
+        padding: 15px;
+    }
+
+    .workflow-container {
+        gap: 10px;
+    }
+}
+
 .workflow-arrow {
     font-size: 2.5em;
     color: #007bff;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 1159px) {
+    .workflow-arrow {
+        display: none;
+    }
 }
 
 /* Sección "Conoce más sobre DOT" */
@@ -1233,6 +1380,22 @@ footer {
     font-size: 2em;
     color: #282828;
     margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .nom-section h2, .abis-section h2, .kyc-kyb-section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .nom-section h2, .abis-section h2, .kyc-kyb-section h2 {
+        font-size: 1.8em;
+    }
+
+    .nom-section, .kyc-kyb-section, .abis-section {
+        padding: 40px 10px;
+    }
 }
 
 /* Beneficios Clave */
@@ -1434,6 +1597,77 @@ footer {
     margin-top: 40px; /* Añade un margen superior adicional */
 }
 
+/* === Adaptación para Tablet (Pantallas entre 768px y 1024px) === */
+@media (max-width: 1024px) {
+    .kyc-kyb-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablet */
+        gap: 15px; /* Reducir el espacio entre tarjetas */
+        padding: 0 15px; /* Ajustar padding general */
+    }
+
+    .info-card {
+        padding: 15px; /* Reducir espacio interno */
+    }
+
+    .icon img {
+        width: 40px; /* Reducir tamaño de íconos */
+        height: 40px;
+    }
+
+    .card-title {
+        font-size: 1.1rem; /* Reducir tamaño del título */
+    }
+
+    .card-description {
+        font-size: 0.95rem; /* Reducir tamaño del texto */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Reducir tamaño del título de la sección */
+    }
+
+    .section-description {
+        font-size: 1.1rem; /* Reducir texto descriptivo */
+    }
+}
+
+/* === Adaptación para Móvil (Pantallas menores a 768px) === */
+@media (max-width: 768px) {
+    .kyc-kyb-grid {
+        grid-template-columns: 1fr; /* Una columna en móvil */
+        gap: 10px; /* Reducir espacio entre tarjetas */
+        padding: 0 10px; /* Ajustar padding general */
+    }
+
+    .info-card {
+        padding: 10px; /* Reducir espacio interno aún más */
+    }
+
+    .icon img {
+        width: 35px; /* Reducir más el tamaño de íconos */
+        height: 35px;
+    }
+
+    .card-title {
+        font-size: 1rem; /* Reducir tamaño del título */
+    }
+
+    .card-description {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Reducir tamaño del título de la sección */
+    }
+
+    .section-description {
+        font-size: 1rem; /* Reducir texto descriptivo */
+    }
+}
+
+
+
+
 
 /* ABIS Section */
 .abis-section {
@@ -1509,6 +1743,60 @@ footer {
     color: #757575;
     line-height: 1.5;
 }
+
+/* === Adaptación para Tablet (Pantallas entre 768px y 1024px) === */
+@media (max-width: 1024px) {
+    .abis-benefits {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+        gap: 15px;
+        max-width: 100%;
+        padding: 0 15px; /* Ajusta el padding general */
+    }
+
+    .abis-benefit {
+        padding: 15px;
+    }
+
+    .abis-benefit img {
+        width: 50px;
+    }
+
+    .abis-benefit h3 {
+        font-size: 1.2rem;
+    }
+
+    .abis-benefit p {
+        font-size: 0.95rem;
+    }
+}
+
+/* === Adaptación para Móvil (Pantallas menores a 768px) === */
+@media (max-width: 768px) {
+    .abis-benefits {
+        grid-template-columns: 1fr; /* Una columna en móvil */
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .abis-benefit {
+        padding: 10px;
+    }
+
+    .abis-benefit img {
+        width: 40px;
+    }
+
+    .abis-benefit h3 {
+        font-size: 1rem;
+    }
+
+    .abis-benefit p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 
 /* Estilos generales para "Cómo funciona" */
 .abis-how-it-works {
