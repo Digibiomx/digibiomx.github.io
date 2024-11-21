@@ -521,6 +521,39 @@ footer {
     transform: rotate(180deg);
 }
 
+/* === Adaptación para pantallas pequeñas === */
+@media (max-width: 768px) {
+    .faq {
+        padding: 20px 10px; /* Reducir padding para móviles */
+    }
+
+    .faq h2 {
+        font-size: 1.5em; /* Texto más pequeño para encabezado */
+    }
+
+    .faq-question {
+        padding: 10px 15px; /* Botón más pequeño */
+        font-size: 0.9em; /* Texto más pequeño */
+        width: 80%;
+        max-width: 80%; /* Asegura que no haya límites */
+        border-radius: 15px; /* Redondeado más pequeño */
+    }
+
+    .faq-answer {
+        max-width: 80%;
+        padding: 10px 15px; /* Ajuste en padding */
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* Sección Nos avala la experiencia */
 .experience {
     background-color: #ffffff;
