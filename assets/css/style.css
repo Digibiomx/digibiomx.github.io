@@ -363,6 +363,78 @@ footer {
     height: 24px;
 }
 
+/* === Footer Adaptado para Móvil y Tablet === */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center; /* Centra los elementos */
+        gap: 20px; /* Espaciado entre secciones */
+    }
+
+    .footer-logo img {
+        height: 50px; /* Tamaño ligeramente más grande para mejor visibilidad */
+    }
+
+    .footer-links,
+    .footer-social {
+        align-items: center; /* Centra el contenido en cada bloque */
+        text-align: center; /* Centra el texto */
+    }
+
+    .footer-links h4,
+    .footer-social h4 {
+        font-size: 1em; /* Asegura un tamaño consistente */
+        margin-bottom: 5px; /* Reduce espacio entre título y enlaces */
+    }
+
+    .footer-links a,
+    .footer-social a {
+        font-size: 0.9em; /* Tamaño de texto ligeramente más pequeño */
+    }
+
+    .social-icon img {
+        width: 32px; /* Íconos sociales más grandes */
+        height: 32px;
+    }
+
+    footer {
+        padding: 20px; /* Reduce el padding general */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 10px; /* Menos padding en móvil */
+        gap: 15px; /* Menos espacio entre secciones */
+    }
+
+    .footer-links a,
+    .footer-social a {
+        font-size: 0.85em; /* Texto más pequeño en pantallas pequeñas */
+    }
+
+    .footer-logo img {
+        height: 40px; /* Ajuste del logo para móvil */
+    }
+
+    .social-icon img {
+        width: 28px; /* Íconos ligeramente más pequeños */
+        height: 28px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Contact Page Styles */
 .contact {
     max-width: 600px;
