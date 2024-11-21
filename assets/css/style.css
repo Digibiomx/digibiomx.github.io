@@ -772,42 +772,40 @@ footer {
 }
 
 
-.clients-carousel {
-    background-color: #f3f6fa;
-    padding: 40px 0;
-    margin-top: 40px;
-    overflow: hidden;
+.clients-slider {
+    background-color: #f3f6fa; /* Fondo gris claro */
+    padding: 40px 0; /* Espaciado superior e inferior */
+    text-align: center;
 }
 
-.carousel-container {
-    overflow: hidden;
-    width: 100%;
-    max-width: 1000px;
+.slider-container {
+    overflow: hidden; /* Oculta los logos fuera del contenedor */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 1200px; /* Opcional: ancho máximo */
     margin: 0 auto;
     position: relative;
 }
 
-.carousel-track {
+.slider-track {
     display: flex;
-    gap: 20px;
-    animation: scroll 20s linear infinite;
+    gap: 20px; /* Espaciado entre logos */
+    animation: scroll 20s linear infinite; /* Animación continua */
+    will-change: transform;
 }
 
 .client-logo-container {
-    width: 200px;
-    /*height: 100px;  Cuadrado para contener el logo */
+    width: 150px; /* Tamaño del contenedor de cada logo */
+    height: 100px; /* Altura fija para los contenedores */
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Oculta cualquier exceso de imagen */
-    /*background-color: #ffffff;  Fondo opcional */
-    border-radius: 8px; /* Redondeo opcional para un look moderno */
+    overflow: hidden; /* Evita desbordes */
 }
 
 .client-logo {
     max-width: 100%;
-    /*max-height: 100%;*/
-    object-fit: contain; /* Ajusta sin distorsionar */
+    max-height: 100%;
+    object-fit: contain; /* Asegura que los logos mantengan proporciones */
     opacity: 0.8;
     transition: opacity 0.3s;
 }
@@ -816,7 +814,7 @@ footer {
     opacity: 1;
 }
 
-/* Animación de scroll para el carrusel */
+/* Animación para el scroll continuo */
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -825,6 +823,97 @@ footer {
         transform: translateX(-100%);
     }
 }
+
+
+.clients-slider {
+    background-color: #f3f6fa; /* Fondo gris claro */
+    padding: 40px 0; /* Espaciado superior e inferior */
+    text-align: center;
+}
+
+.slider-container {
+    overflow: hidden; /* Oculta los logos fuera del contenedor */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 1200px; /* Opcional: ancho máximo */
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px; /* Espaciado entre logos */
+    animation: scroll 20s linear infinite; /* Animación continua */
+    will-change: transform;
+}
+
+.client-logo-container {
+    width: 150px; /* Tamaño del contenedor de cada logo */
+    height: 100px; /* Altura fija para los contenedores */
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evita desbordes */
+}
+
+.client-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Asegura que los logos mantengan proporciones */
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.client-logo:hover {
+    opacity: 1;
+}
+
+/* === Adaptación para Tablet (Pantallas entre 768px y 1024px) === */
+@media (max-width: 1024px) {
+    .slider-track {
+        gap: 15px; /* Reduce el espacio entre logos */
+    }
+
+    .client-logo-container {
+        width: 180px; /* Tamaño más grande para tablet */
+        height: 130px; /* Proporción cuadrada */
+        min-width: 150px; /* Tamaño mínimo para tablet */
+        min-height: 100px;
+    }
+
+    .client-logo {
+        width: 90%; /* Los logos siguen ocupando el 90% del contenedor */
+        height: 90%;
+    }
+}
+
+/* === Adaptación para Móvil (Pantallas menores a 768px) === */
+@media (max-width: 768px) {
+    .slider-track {
+        gap: 10px; /* Reduce el espacio entre logos */
+        animation: scroll 7s linear infinite;
+    }
+
+    .client-logo-container {
+        width: 150px; /* Contenedores más grandes */
+        height: 120px; /* Altura ajustada */
+        min-width: 100px; /* Tamaño mínimo para móvil */
+        min-height: 100px;
+    }
+
+    .client-logo {
+        width: 90%; /* Logos siguen ocupando el 90% del contenedor */
+        height: 90%;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* Estilos de la página de Soluciones */
 .solutions-intro {
