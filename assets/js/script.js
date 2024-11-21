@@ -61,3 +61,20 @@ document.addEventListener("scroll", () => {
         item.dataset.visible = isVisible;
     });
 });
+
+// Toggle del menú hamburguesa
+const menuIcon = document.getElementById('menu-icon');
+const menu = document.getElementById('menu');
+
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuIcon.classList.toggle('active');
+});
+
+// Cerrar el menú al hacer clic en un enlace
+menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('active');
+        menuIcon.classList.remove('active');
+    });
+});

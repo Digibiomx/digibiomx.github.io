@@ -78,6 +78,77 @@ header nav .menu a:hover {
     background-color: #0056b3;
 }
 
+/* Ícono del menú hamburguesa para movil y tablet*/
+.menu-icon {
+    display: none; /* Ocultar en escritorio */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1100; /* Asegura que esté encima del contenido */
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #282828;
+    transition: all 0.3s ease;
+}
+
+/* Menú de navegación (escritorio) */
+.menu {
+    display: flex; /* Visible en escritorio */
+    gap: 15px;
+}
+
+@media (max-width: 1024px) {
+    /* Mostrar menú hamburguesa en tablet y móvil */
+    .menu-icon {
+        display: flex; /* Visible en dispositivos pequeños */
+    }
+
+    .menu {
+        display: none; /* Ocultar menú estándar */
+        position: absolute;
+        top: 70px;
+        right: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 70%;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .menu.active {
+        display: flex; /* Mostrar menú cuando esté activo */
+    }
+
+    .menu a {
+        color: #282828;
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+    /* Ajuste para el botón en tablet y móvil */
+    .button-container {
+        display: none;
+    }
+
+    /* Animación del ícono hamburguesa */
+    .menu-icon.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
 /* Hero Section */
 .hero {
     text-align: center;

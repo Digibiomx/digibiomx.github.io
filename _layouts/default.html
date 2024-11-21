@@ -14,12 +14,19 @@
                 <img src="{{ '/assets/images/Logo_Digibio.png' | relative_url }}" alt="Digibio Logo" class="logo">
             </a>
         </div>
-        <div class="menu">
+        <!-- Ícono del menú hamburguesa -->
+        <div class="menu-icon" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Menú de navegación -->
+        <div class="menu" id="menu">
             <a href="{{ '/' | relative_url }}">Inicio</a>
             <a href="#soluciones">Soluciones</a>
-<!--            <a href="#testimonios">Clientes</a>-->
-            <a href="contacto">Contacto</a>
+            <a href="{{ '/contacto' | relative_url }}">Contacto</a>
         </div>
+        <!-- Botón "Contáctanos" siempre visible -->
         <div class="button-container">
             <a href="{{ '/contacto' | relative_url }}" class="contact-button">Contáctanos</a>
         </div>
