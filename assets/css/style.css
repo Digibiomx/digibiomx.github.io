@@ -326,7 +326,9 @@ footer {
     margin: 0 auto;
     padding: 20px;
 }
-
+.footer-logo {
+    width: 33%;
+}
 .footer-logo img {
     height: 40px;
 }
@@ -336,6 +338,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 33%;
 }
 
 .footer-links h4,
@@ -370,7 +373,9 @@ footer {
         align-items: center; /* Centra los elementos */
         gap: 20px; /* Espaciado entre secciones */
     }
-
+    .footer-logo {
+        width: 33%;
+    }
     .footer-logo img {
         height: 50px; /* Tamaño ligeramente más grande para mejor visibilidad */
     }
