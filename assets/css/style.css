@@ -181,6 +181,180 @@ header nav .menu a:hover {
     /*margin-top: 20px !important;*/
 }
 
+
+/* Sección "Misión" */
+.about-digibio {
+    position: relative;
+    background-color: #f3f6fa;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; /* Oculta elementos que salgan del área */
+}
+
+/* Contenido alineado */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+/* Título alineado a la izquierda con línea */
+.about-title {
+    font-size: 2.5em;
+    color: #282828;
+    position: relative;
+    padding-left: 50px;
+}
+
+.about-title::before {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #ff4b4b;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Contenido alineado a la derecha */
+.about-text h3 {
+    font-size: 1.8em;
+    color: #282828;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo con efecto de fondo rojo */
+.highlight {
+    background-color: #ff4b4b;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    color: #757575;
+    max-width: 840px;
+    line-height: 1.6;
+}
+
+/* Estilos de los elementos decorativos */
+.decorative-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Formas geométricas animadas */
+.shape {
+    position: absolute;
+    opacity: 0.2;
+    border-radius: 50%;
+    animation: float 6s infinite alternate ease-in-out;
+}
+
+.shape-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #ff4b4b;
+    top: 10%;
+    left: 10%;
+}
+
+.shape-2 {
+    width: 80px;
+    height: 80px;
+    border: 4px solid #6c5ce7;
+    top: 50%;
+    left: 40%;
+}
+
+.shape-3 {
+    width: 120px;
+    height: 120px;
+    background-color: #ff4b4b;
+    top: 80%;
+    left: 70%;
+}
+
+/* Animación de movimiento */
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+/* Sección "Misión" adaptado a tablet*/
+@media (max-width: 1024px) {
+    .about-digibio {
+        flex-direction: column;
+        padding: 60px 5%;
+        text-align: center;
+    }
+    .about-title {
+        padding-left: 0px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-title::before {
+        display: none;
+    }
+
+    .about-text p {
+        max-width: 100%;
+    }
+}
+
+/* Sección "Misión" adaptado a movil*/
+@media (max-width: 768px) {
+    .about-digibio {
+        padding: 40px 5%;
+    }
+
+    .about-title {
+        font-size: 2em;
+        margin-bottom: 2px;
+    }
+
+    .about-text h3 {
+        font-size: 1.5em;
+        margin-top: 0px;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+
+    .shape {
+        display: none; /* Oculta formas decorativas en móvil */
+    }
+}
+
+
+
+
+
+
+
+
+
 /* Solutions Section */
 .solutions {
     padding: 60px 20px;
