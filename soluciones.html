@@ -1,348 +1,621 @@
 ---
 layout: default
 title: Soluciones
+description: "SDK biométrico, APIs KYC/KYB, motor antifraude y firma electrónica NOM-151 para empresas en México. Integración en menos de 2 semanas."
 ---
 
-<section class="solutions-intro" id="liveness-check">
-    <h2>Motor Facial 3D</h2>
-    <p>Nuestras soluciones avanzadas de verificación biométrica garantizan autenticidad y seguridad en cada transacción.</p>
+<!-- ═══════════════════════════════════════════
+     HERO DE PÁGINA
+     ═══════════════════════════════════════════ -->
+<section class="sp-hero">
+    <div class="sp-hero__inner">
+        <div class="sp-hero__text">
+            <span class="lp-badge">Plataforma de verificación de identidad</span>
+            <h1>Cuatro productos.<br><span class="sp-hero__accent">Una sola integración.</span></h1>
+            <p>
+                Cada herramienta de Digibio está diseñada para resolver un problema específico
+                de cumplimiento, seguridad o experiencia de usuario. Úsalas por separado
+                o combínalas en un flujo end-to-end.
+            </p>
+        </div>
+
+        <!-- Nav de anclajes -->
+        <nav class="sp-anchor-nav" aria-label="Navegación de productos">
+            <a href="#sdk-biometrico"   class="sp-anchor-nav__item">
+                <span class="sp-anchor-nav__num">01</span>
+                <span class="sp-anchor-nav__label">SDK Biométrico</span>
+            </a>
+            <a href="#kyc-kyb"          class="sp-anchor-nav__item">
+                <span class="sp-anchor-nav__num">02</span>
+                <span class="sp-anchor-nav__label">APIs KYC / KYB</span>
+            </a>
+            <a href="#motor-antifraude" class="sp-anchor-nav__item">
+                <span class="sp-anchor-nav__num">03</span>
+                <span class="sp-anchor-nav__label">Motor Antifraude</span>
+            </a>
+            <a href="#firma-electronica" class="sp-anchor-nav__item">
+                <span class="sp-anchor-nav__num">04</span>
+                <span class="sp-anchor-nav__label">Firma Electrónica</span>
+            </a>
+        </nav>
+    </div>
 </section>
 
 
-<section class="liveness-check-section">
-    <div class="liveness-check-cards">
-        <div class="liveness-check-card">
-            <h3>Compatibilidad de dispositivos</h3>
-            <p>Soporta iOS, Android y Web.</p>
-        </div>
-        <div class="liveness-check-card">
-            <h3>Multi-idioma</h3>
-            <p>Disponible en más de 30 idiomas, fácil de escalar.</p>
-        </div>
-        <div class="liveness-check-card">
-            <h3>Seguridad 3D avanzada</h3>
-            <p>Nuestra tecnología 3D ofrece seguridad sin igual, con certificaciones PAD Niveles 1 y 2.</p>
-        </div>
-        <div class="liveness-check-card">
-            <h3>Almacenamiento seguro</h3>
-            <p>Todos los datos se procesan y almacenan en servidores seguros.</p>
-        </div>
-        <div class="liveness-check-card">
-            <h3>Reconocimiento OCR</h3>
-            <p>Incluye OCR para documentos y escaneo de código de barras/NFC.</p>
-        </div>
-        <div class="liveness-check-card">
-            <h3>Fácil integración</h3>
-            <p>SDK ligero (<4MB) y una API sencilla para una implementación rápida.</p>
-        </div>
-    </div>
-    <div class="iphone-image-container">
-        <img src="/assets/images/iphone-liveness-check.png" alt="iPhone Liveness Check" class="iphone-image">
-    </div>
-</section>
+<!-- ═══════════════════════════════════════════
+     01 · SDK BIOMÉTRICO
+     ═══════════════════════════════════════════ -->
+<section class="sp-product" id="sdk-biometrico">
+    <div class="sp-product__inner lp-container">
 
-
-<section class="dot-section" id="onboarding-digital">
-    <div class="dot-intro">
-        <h2>Motor Facial 2D</h2>
-        <p>
-            Nuestro <strong>motor facial 2D</strong> es un paquete tecnológico completo para desarrollar aplicaciones de verificación remota de identidad.
-            Con tecnología biométrica de clase mundial, validación de documentos oficiales y detección de vida certificada,
-            garantizamos procesos rápidos, seguros y fáciles de integrar, tanto online como offline.
-        </p>
-    </div>
-
-    <div class="dot-benefits">
-        <h3>Beneficios principales</h3>
-        <div class="benefits-grid">
-            <div class="dot-benefit-card">
-                <img src="{{ '/assets/images/liveness-check.svg' | relative_url }}" alt="Prueba de Vida">
-                <h4>Prueba de Vida</h4>
-                <p>
-                    Detecta pruebas de vida activa y pasiva, online y offline, con tecnología avanzada certificada iBeta Nivel 2.
+        <!-- Encabezado del producto -->
+        <header class="sp-product__header">
+            <span class="sp-product__num">01</span>
+            <div>
+                <span class="lp-section-tag">SDK Biométrico</span>
+                <h2>Detecta personas reales.<br>Bloquea ataques de suplantación.</h2>
+                <p class="sp-product__lead">
+                    Nuestro SDK integra dos motores de verificación facial que cubren desde dispositivos de gama baja
+                    hasta entornos de máxima seguridad: el <strong>Motor 3D</strong> (certificado iBeta Level 1 &amp; 2)
+                    y el <strong>Motor 2D</strong> con modo offline, listos para iOS, Android y Web.
                 </p>
             </div>
-            <div class="dot-benefit-card">
-                <img src="{{ '/assets/images/face-comparison.svg' | relative_url }}" alt="Comparación Facial">
-                <h4>Comparación Facial</h4>
+        </header>
+
+        <!-- Dos motores -->
+        <div class="sp-two-col">
+
+            <!-- Motor 3D -->
+            <div class="sp-engine-card sp-engine-card--featured">
+                <div class="sp-engine-card__badge">Máxima seguridad</div>
+                <div class="sp-engine-card__icon">
+                    <img src="{{ '/assets/images/face-verification.svg' | relative_url }}" alt="Motor Facial 3D">
+                </div>
+                <h3>Motor Facial 3D</h3>
                 <p>
-                    Realiza una comparación biométrica precisa 1:1 con las mejores métricas del mercado (NIST FRVT).
+                    Utiliza sensores de profundidad y luz estructurada para confirmar que hay una
+                    persona viva frente a la cámara. Imposible de engañar con fotos, videos pregrabados,
+                    máscaras 3D o ataques deepfake.
+                </p>
+                <ul class="sp-check-list">
+                    <li>Certificación iBeta Level 1 &amp; 2 (ISO 30107-3)</li>
+                    <li>Detección pasiva: sin fricción para el usuario</li>
+                    <li>Compatible con Face ID y cámaras estándar</li>
+                    <li>SDK &lt; 4 MB · Integración en &lt; 5 días</li>
+                    <li>+30 idiomas disponibles</li>
+                </ul>
+                <div class="sp-engine-card__spec-grid">
+                    <div class="sp-spec">
+                        <span class="sp-spec__val">99.7%</span>
+                        <span class="sp-spec__key">Precisión biométrica</span>
+                    </div>
+                    <div class="sp-spec">
+                        <span class="sp-spec__val">&lt; 3s</span>
+                        <span class="sp-spec__key">Tiempo de verificación</span>
+                    </div>
+                    <div class="sp-spec">
+                        <span class="sp-spec__val">0%</span>
+                        <span class="sp-spec__key">Falsos positivos en pruebas iBeta</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Motor 2D -->
+            <div class="sp-engine-card">
+                <div class="sp-engine-card__badge sp-engine-card__badge--alt">Ideal para alto volumen</div>
+                <div class="sp-engine-card__icon">
+                    <img src="{{ '/assets/images/liveness-check.svg' | relative_url }}" alt="Motor Facial 2D">
+                </div>
+                <h3>Motor Facial 2D</h3>
+                <p>
+                    Solución completa para onboarding digital que funciona con la cámara frontal
+                    estándar de cualquier smartphone. Incluye prueba de vida, OCR de documentos
+                    y comparación biométrica 1:1, online y <strong>offline</strong>.
+                </p>
+                <ul class="sp-check-list">
+                    <li>Certificación iBeta Level 2 (prueba de vida activa y pasiva)</li>
+                    <li>OCR especializado en INE, pasaportes y licencias MX</li>
+                    <li>Comparación facial 1:1 (NIST FRVT top performer)</li>
+                    <li>Modo offline con sincronización posterior</li>
+                    <li>Lectura de código de barras y NFC</li>
+                </ul>
+                <div class="sp-engine-card__spec-grid">
+                    <div class="sp-spec">
+                        <span class="sp-spec__val">98.5%</span>
+                        <span class="sp-spec__key">Precisión OCR en INE</span>
+                    </div>
+                    <div class="sp-spec">
+                        <span class="sp-spec__val">Offline</span>
+                        <span class="sp-spec__key">Funciona sin internet</span>
+                    </div>
+                    <div class="sp-spec">
+                        <span class="sp-spec__val">&lt; 60s</span>
+                        <span class="sp-spec__key">Flujo completo de verificación</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Plataformas y compatibilidad -->
+        <div class="sp-compat">
+            <p class="sp-compat__label">Compatible con</p>
+            <div class="sp-compat__pills">
+                <span class="sp-pill">iOS 13+</span>
+                <span class="sp-pill">Android 8+</span>
+                <span class="sp-pill">Web (JS SDK)</span>
+                <span class="sp-pill">React Native</span>
+                <span class="sp-pill">Flutter</span>
+                <span class="sp-pill">API REST</span>
+            </div>
+        </div>
+
+        <!-- Visual + CTA -->
+        <div class="sp-product__cta-row">
+            <div class="sp-product__phone">
+                <img
+                    src="{{ '/assets/images/iphone-liveness-check.png' | relative_url }}"
+                    alt="SDK biométrico en dispositivo móvil"
+                    loading="lazy"
+                >
+            </div>
+            <div class="sp-product__cta-content">
+                <h3>Integra el SDK en menos de 2 semanas</h3>
+                <p>
+                    Documentación completa, sandbox de pruebas y un equipo de ingenieros
+                    de soluciones dedicado para que tu primera verificación ocurra el día 1.
+                </p>
+                <div class="sp-cta-actions">
+                    <a href="{{ '/contacto' | relative_url }}" class="lp-btn lp-btn--primary">Solicitar acceso al SDK</a>
+                    <a href="{{ '/contacto' | relative_url }}" class="lp-btn lp-btn--outline">Ver documentación</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     02 · APIS KYC / KYB
+     ═══════════════════════════════════════════ -->
+<section class="sp-product sp-product--alt" id="kyc-kyb">
+    <div class="sp-product__inner lp-container">
+
+        <header class="sp-product__header">
+            <span class="sp-product__num">02</span>
+            <div>
+                <span class="lp-section-tag">APIs KYC / KYB</span>
+                <h2>Verifica personas y empresas.<br>Cumple la regulación sin esfuerzo.</h2>
+                <p class="sp-product__lead">
+                    Un solo endpoint que cruza la identidad de tus clientes con las principales fuentes
+                    oficiales de México en tiempo real. Sin intermediarios, sin datos desactualizados,
+                    con respuesta estructurada lista para tu sistema de decisiones.
                 </p>
             </div>
-            <div class="dot-benefit-card">
-                <img src="{{ '/assets/images/ocr-icon.svg' | relative_url }}" alt="OCR Avanzado">
-                <h4>OCR Avanzado</h4>
+        </header>
+
+        <!-- KYC vs KYB en dos columnas -->
+        <div class="sp-kyc-grid">
+
+            <!-- KYC -->
+            <div class="sp-kyc-panel">
+                <div class="sp-kyc-panel__header">
+                    <img src="{{ '/assets/images/kyc-icon.svg' | relative_url }}" alt="KYC" class="sp-kyc-panel__icon">
+                    <div>
+                        <h3>KYC — Know Your Customer</h3>
+                        <p>Verificación de personas físicas</p>
+                    </div>
+                </div>
+                <p>Confirma que tu cliente es quien dice ser. Valida su documento de identidad contra bases oficiales y obtén un score de confianza accionable en segundos.</p>
+                <ul class="sp-check-list">
+                    <li>Validación de INE/IFE contra padrón del INE</li>
+                    <li>Verificación en RENAPO (CURP y datos personales)</li>
+                    <li>Consulta al SAT (estatus fiscal, RFC)</li>
+                    <li>Verificación en IMSS (historial laboral)</li>
+                    <li>Detección de documentos alterados o vencidos</li>
+                    <li>Verificación de mayoría de edad</li>
+                    <li>Listas de sancionados (OFAC, ONU, PLD)</li>
+                </ul>
+                <div class="sp-data-sources">
+                    <p class="sp-data-sources__label">Fuentes de datos</p>
+                    <div class="sp-data-sources__logos">
+                        <img src="{{ '/assets/images/ine-logo.svg' | relative_url }}"    alt="INE"    class="sp-source-logo">
+                        <img src="{{ '/assets/images/renapo-logo.png' | relative_url }}" alt="RENAPO" class="sp-source-logo">
+                        <img src="{{ '/assets/images/sat-logo.png' | relative_url }}"    alt="SAT"    class="sp-source-logo">
+                        <img src="{{ '/assets/images/imss-logo.png' | relative_url }}"   alt="IMSS"   class="sp-source-logo">
+                    </div>
+                </div>
+            </div>
+
+            <!-- KYB -->
+            <div class="sp-kyc-panel">
+                <div class="sp-kyc-panel__header">
+                    <img src="{{ '/assets/images/kyb-icon.svg' | relative_url }}" alt="KYB" class="sp-kyc-panel__icon">
+                    <div>
+                        <h3>KYB — Know Your Business</h3>
+                        <p>Verificación de personas morales</p>
+                    </div>
+                </div>
+                <p>Valida la existencia legal de una empresa, identifica a sus beneficiarios finales y detecta señales de riesgo AML antes de establecer cualquier relación comercial.</p>
+                <ul class="sp-check-list">
+                    <li>Verificación de RFC y constancia fiscal (SAT)</li>
+                    <li>Acta constitutiva y poderes notariales</li>
+                    <li>Identificación de Beneficiarios Finales (UBO)</li>
+                    <li>Verificación de representantes legales (KYC individual)</li>
+                    <li>Detección de PEPs (Personas Expuestas Políticamente)</li>
+                    <li>Cumplimiento LFPIORPI y 69-B SAT</li>
+                    <li>Monitoreo continuo post-onboarding</li>
+                </ul>
+                <div class="sp-data-sources">
+                    <p class="sp-data-sources__label">Fuentes de datos</p>
+                    <div class="sp-data-sources__logos">
+                        <img src="{{ '/assets/images/sat-logo.png' | relative_url }}"           alt="SAT"          class="sp-source-logo">
+                        <img src="{{ '/assets/images/buro-de-credito-icon.png' | relative_url }}" alt="Buró"        class="sp-source-logo">
+                        <img src="{{ '/assets/images/cfe-logo.png' | relative_url }}"           alt="CFE"          class="sp-source-logo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Respuesta de API -->
+        <div class="sp-api-response">
+            <div class="sp-api-response__info">
+                <h3>Respuesta estructurada,<br>lista para tu sistema de decisiones</h3>
                 <p>
-                    Extrae datos con OCR especializado en documentos como el INE y pasaportes mexicanos, asegurando máxima precisión.
+                    Cada llamada a la API devuelve un objeto JSON con todos los campos
+                    validados, un <strong>score de riesgo normalizado</strong> (0–100)
+                    y las razones específicas de cada resultado. Sin ambigüedades.
+                </p>
+                <ul class="sp-check-list">
+                    <li>Tiempo de respuesta &lt; 2 segundos</li>
+                    <li>Disponibilidad 99.9% SLA garantizado</li>
+                    <li>Webhooks para notificaciones en tiempo real</li>
+                    <li>Sandbox completo para pruebas sin costo</li>
+                </ul>
+                <a href="{{ '/contacto' | relative_url }}" class="lp-btn lp-btn--primary">Solicitar acceso a las APIs</a>
+            </div>
+            <div class="sp-api-response__code">
+                <div class="sp-code-block">
+                    <div class="sp-code-block__header">
+                        <span class="sp-code-block__dot sp-code-block__dot--red"></span>
+                        <span class="sp-code-block__dot sp-code-block__dot--yellow"></span>
+                        <span class="sp-code-block__dot sp-code-block__dot--green"></span>
+                        <span class="sp-code-block__filename">response.json</span>
+                    </div>
+                    <pre class="sp-code-block__body"><code>{
+  "status": "APPROVED",
+  "risk_score": 12,
+  "identity": {
+    "name": "JUAN PÉREZ GARCÍA",
+    "curp": "PEGA...",
+    "ine_valid": true,
+    "renapo_match": true,
+    "age_verified": true
+  },
+  "flags": [],
+  "processed_at": "2024-11-08T14:32:01Z"
+}</code></pre>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     03 · MOTOR ANTIFRAUDE
+     ═══════════════════════════════════════════ -->
+<section class="sp-product" id="motor-antifraude">
+    <div class="sp-product__inner lp-container">
+
+        <header class="sp-product__header">
+            <span class="sp-product__num">03</span>
+            <div>
+                <span class="lp-section-tag">Motor Antifraude</span>
+                <h2>Identifica fraudes que las reglas
+                    <br>tradicionales no ven.</h2>
+                <p class="sp-product__lead">
+                    Nuestro sistema ABIS (Automated Biometric Identification System) cruza vectores
+                    faciales, metadatos de dispositivo y señales de comportamiento para detectar
+                    identidades duplicadas, cuentas mula y ataques coordinados en tiempo real.
                 </p>
             </div>
+        </header>
+
+        <!-- Capacidades del motor -->
+        <div class="sp-fraud-grid">
+
+            <div class="sp-fraud-cap">
+                <div class="sp-fraud-cap__icon">
+                    <img src="{{ '/assets/images/icon-biometrics.png' | relative_url }}" alt="Deduplicación biométrica">
+                </div>
+                <h3>Deduplicación biométrica</h3>
+                <p>
+                    Compara el vector facial de cada nuevo usuario contra millones de registros
+                    existentes en milisegundos. Detecta si alguien ya tiene una cuenta con
+                    diferente identidad antes de que complete el onboarding.
+                </p>
+            </div>
+
+            <div class="sp-fraud-cap">
+                <div class="sp-fraud-cap__icon">
+                    <img src="{{ '/assets/images/icon-security.png' | relative_url }}" alt="Detección de ataques">
+                </div>
+                <h3>Detección de ataques conocidos</h3>
+                <p>
+                    Consulta el Buró de Fraude Digital integrado con <strong>Buró de Crédito</strong>
+                    para identificar en segundos si un vector facial ya está marcado como fraudulento
+                    en el ecosistema financiero mexicano.
+                </p>
+            </div>
+
+            <div class="sp-fraud-cap">
+                <div class="sp-fraud-cap__icon">
+                    <img src="{{ '/assets/images/icon-scalability.png' | relative_url }}" alt="Escalabilidad">
+                </div>
+                <h3>Análisis de señales de riesgo</h3>
+                <p>
+                    Combina biometría con más de 40 señales de riesgo adicionales: geolocalización,
+                    fingerprint de dispositivo, velocidad de escritura, inconsistencias de metadatos
+                    y patrones de comportamiento sospechoso.
+                </p>
+            </div>
+
+            <div class="sp-fraud-cap">
+                <div class="sp-fraud-cap__icon">
+                    <img src="{{ '/assets/images/icon-integration.png' | relative_url }}" alt="Monitoreo continuo">
+                </div>
+                <h3>Monitoreo continuo post-onboarding</h3>
+                <p>
+                    El análisis no termina con la verificación inicial. El motor monitorea
+                    patrones de transacciones y comportamiento de cuenta para detectar
+                    compromisos de identidad después del alta.
+                </p>
+            </div>
+
         </div>
+
+        <!-- Cómo funciona el motor -->
+        <div class="sp-fraud-flow">
+            <h3>¿Cómo funciona el análisis?</h3>
+            <div class="sp-fraud-flow__steps">
+
+                <div class="sp-fraud-flow__step">
+                    <div class="sp-fraud-flow__step-num">1</div>
+                    <div class="sp-fraud-flow__step-body">
+                        <h4>Captura de vectores</h4>
+                        <p>Se genera un vector matemático cifrado del rostro. Nunca se almacena la imagen en sí.</p>
+                    </div>
+                </div>
+
+                <div class="sp-fraud-flow__connector"></div>
+
+                <div class="sp-fraud-flow__step">
+                    <div class="sp-fraud-flow__step-num">2</div>
+                    <div class="sp-fraud-flow__step-body">
+                        <h4>Búsqueda 1:N en tiempo real</h4>
+                        <p>El vector se compara contra toda la base biométrica en &lt; 500 ms usando algoritmos ABIS optimizados.</p>
+                    </div>
+                </div>
+
+                <div class="sp-fraud-flow__connector"></div>
+
+                <div class="sp-fraud-flow__step">
+                    <div class="sp-fraud-flow__step-num">3</div>
+                    <div class="sp-fraud-flow__step-body">
+                        <h4>Análisis de señales de contexto</h4>
+                        <p>Se cruzan más de 40 señales de riesgo: dispositivo, ubicación, velocidad, historial de intentos.</p>
+                    </div>
+                </div>
+
+                <div class="sp-fraud-flow__connector"></div>
+
+                <div class="sp-fraud-flow__step">
+                    <div class="sp-fraud-flow__step-num">4</div>
+                    <div class="sp-fraud-flow__step-body">
+                        <h4>Score + veredicto accionable</h4>
+                        <p>Recibes un score de riesgo (0–100) con categoría (BAJO / MEDIO / ALTO) y las razones específicas del resultado.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Integración con Buró -->
+        <div class="sp-fraud-bureau">
+            <div class="sp-fraud-bureau__logo">
+                <img src="{{ '/assets/images/buro-de-credito-icon.png' | relative_url }}" alt="Buró de Crédito" loading="lazy">
+            </div>
+            <div class="sp-fraud-bureau__content">
+                <h3>Integrado con el Buró de Fraude Digital de Buró de Crédito</h3>
+                <p>
+                    La única plataforma biométrica en México integrada directamente con el registro
+                    de fraudes biométricos de Buró de Crédito. Cuando un vector facial es marcado
+                    como fraudulento por cualquier institución participante, tú lo sabes antes de
+                    aprobarlo.
+                </p>
+                <a href="{{ '/contacto' | relative_url }}" class="lp-btn lp-btn--primary">Solicitar demo del motor antifraude</a>
+            </div>
+        </div>
+
     </div>
 </section>
 
-<section class="dot-workflow">
-    <h3>¿Cómo funciona?</h3>
-    <div class="workflow-container">
-        <div class="workflow-step">
-            <img src="{{ '/assets/images/document-verification.svg' | relative_url }}" alt="Verificación de Documentos">
-            <h4>1. Verificación de Documentos</h4>
-            <p>Captura automática, OCR avanzado y validación de autenticidad.</p>
+
+<!-- ═══════════════════════════════════════════
+     04 · FIRMA ELECTRÓNICA
+     ═══════════════════════════════════════════ -->
+<section class="sp-product sp-product--alt" id="firma-electronica">
+    <div class="sp-product__inner lp-container">
+
+        <header class="sp-product__header">
+            <span class="sp-product__num">04</span>
+            <div>
+                <span class="lp-section-tag">Firma Electrónica</span>
+                <h2>Contratos con validez legal plena.<br>Sin papel. Sin sucursales.</h2>
+                <p class="sp-product__lead">
+                    Emitida por un Prestador de Servicios de Certificación (PSC) autorizado por la
+                    Secretaría de Economía. Nuestra Firma Electrónica Avanzada (FEA) con sellado
+                    de tiempo NOM-151 es admisible ante cualquier tribunal en México.
+                </p>
+            </div>
+        </header>
+
+        <!-- Tipos de firma -->
+        <div class="sp-firma-types">
+
+            <div class="sp-firma-type sp-firma-type--featured">
+                <div class="sp-firma-type__badge">Recomendado</div>
+                <h3>Firma Electrónica Avanzada (FEA)</h3>
+                <p>
+                    El nivel más alto de firma electrónica en México. Vincula criptográficamente
+                    la identidad del firmante —verificada biométricamente— con el documento,
+                    cumpliendo con el artículo 89 del Código de Comercio.
+                </p>
+                <ul class="sp-check-list">
+                    <li>Vinculada a identidad biométrica verificada</li>
+                    <li>Sellado de tiempo NOM-151 incluido</li>
+                    <li>No repudio garantizado ante tribunales</li>
+                    <li>Emitida por PSC certificado por la SE</li>
+                    <li>Válida para contratos, pagarés y poderes notariales</li>
+                </ul>
+            </div>
+
+            <div class="sp-firma-type">
+                <h3>Firma Electrónica Simple (FES)</h3>
+                <p>
+                    Para procesos de menor riesgo donde se requiere consentimiento digital
+                    ágil y trazable, sin la complejidad criptográfica de la FEA.
+                </p>
+                <ul class="sp-check-list">
+                    <li>OTP por SMS o correo electrónico</li>
+                    <li>Trazabilidad completa de aceptación</li>
+                    <li>Ideal para términos y condiciones</li>
+                    <li>Combinable con verificación KYC previa</li>
+                </ul>
+            </div>
+
         </div>
-        <div class="workflow-arrow">
-            <span>&#8594;</span>
+
+        <!-- Qué dice la ley -->
+        <div class="sp-firma-legal">
+            <div class="sp-firma-legal__icon">
+                <img src="{{ '/assets/images/legal-icon.svg' | relative_url }}" alt="Marco legal">
+            </div>
+            <div class="sp-firma-legal__content">
+                <h3>¿Qué dice la ley mexicana?</h3>
+                <div class="sp-firma-legal__grid">
+                    <div class="sp-firma-legal__item">
+                        <h4>Código de Comercio</h4>
+                        <p>Art. 89–114: reconoce la firma electrónica avanzada como equivalente a la firma autógrafa en actos de comercio.</p>
+                    </div>
+                    <div class="sp-firma-legal__item">
+                        <h4>NOM-151</h4>
+                        <p>El sellado de tiempo garantiza que el documento existía en una fecha y hora determinadas, protegiendo su integridad.</p>
+                    </div>
+                    <div class="sp-firma-legal__item">
+                        <h4>Ley de Firma Electrónica Avanzada</h4>
+                        <p>Regula el uso de la FIEL/e.firma en trámites con el gobierno federal, reconocida en todo el territorio nacional.</p>
+                    </div>
+                    <div class="sp-firma-legal__item">
+                        <h4>PSC certificado</h4>
+                        <p>Operamos como Prestador de Servicios de Certificación autorizado por la Secretaría de Economía, lo que da plena validez a los certificados que emitimos.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="workflow-step">
-            <img src="{{ '/assets/images/face-verification.svg' | relative_url }}" alt="Verificación Facial">
-            <h4>2. Verificación Facial y Prueba de Vida</h4>
-            <p>Detección de vida pasiva y activa con biometría facial.</p>
+
+        <!-- Flujo de firma -->
+        <div class="sp-firma-flow">
+            <h3>Cómo funciona la firma en tu plataforma</h3>
+            <div class="sp-firma-flow__steps">
+
+                <div class="sp-firma-flow__step">
+                    <div class="sp-firma-flow__icon">
+                        <img src="{{ '/assets/images/id-verification-icon.svg' | relative_url }}" alt="Identidad verificada">
+                    </div>
+                    <h4>1. Identidad verificada</h4>
+                    <p>El firmante pasa por KYC biométrico. Su identidad queda vinculada criptográficamente al certificado de firma.</p>
+                </div>
+
+                <div class="sp-firma-flow__connector"></div>
+
+                <div class="sp-firma-flow__step">
+                    <div class="sp-firma-flow__icon">
+                        <img src="{{ '/assets/images/document-verification.svg' | relative_url }}" alt="Documento preparado">
+                    </div>
+                    <h4>2. Documento preparado</h4>
+                    <p>Tu sistema envía el PDF vía API. Digibio genera la vista de firma y los campos de consentimiento.</p>
+                </div>
+
+                <div class="sp-firma-flow__connector"></div>
+
+                <div class="sp-firma-flow__step">
+                    <div class="sp-firma-flow__icon">
+                        <img src="{{ '/assets/images/security-icon.svg' | relative_url }}" alt="Firma y sellado">
+                    </div>
+                    <h4>3. Firma y sellado NOM-151</h4>
+                    <p>El firmante acepta desde cualquier dispositivo. El documento se firma criptográficamente y recibe sello de tiempo.</p>
+                </div>
+
+                <div class="sp-firma-flow__connector"></div>
+
+                <div class="sp-firma-flow__step">
+                    <div class="sp-firma-flow__icon">
+                        <img src="{{ '/assets/images/quick-validation.svg' | relative_url }}" alt="Expediente digital">
+                    </div>
+                    <h4>4. Expediente digital</h4>
+                    <p>Recibes el PDF firmado con su constancia NOM-151 y el log de auditoría completo, listo para uso legal inmediato.</p>
+                </div>
+
+            </div>
         </div>
-        <div class="workflow-arrow">
-            <span>&#8594;</span>
+
+        <!-- Casos de uso de firma -->
+        <div class="sp-firma-usecases">
+            <h3>¿Para qué documentos se usa?</h3>
+            <div class="sp-firma-usecases__grid">
+                <div class="sp-firma-uc">Contratos de crédito y financiamiento</div>
+                <div class="sp-firma-uc">Contratos de arrendamiento</div>
+                <div class="sp-firma-uc">Pólizas de seguro</div>
+                <div class="sp-firma-uc">Contratos laborales</div>
+                <div class="sp-firma-uc">Términos y condiciones</div>
+                <div class="sp-firma-uc">Acuerdos de confidencialidad</div>
+                <div class="sp-firma-uc">Poderes notariales digitales</div>
+                <div class="sp-firma-uc">Pagarés electrónicos</div>
+                <div class="sp-firma-uc">Apertura de cuentas bancarias</div>
+            </div>
         </div>
-        <div class="workflow-step">
-            <img src="{{ '/assets/images/quick-validation.svg' | relative_url }}" alt="Validación Rápida">
-            <h4>3. Validación en menos de un minuto</h4>
-            <p>Resultados inmediatos y fiables para tus usuarios.</p>
+
+        <div class="sp-product__footer-cta">
+            <a href="{{ '/contacto' | relative_url }}" class="lp-btn lp-btn--primary lp-btn--lg">Solicitar demo de Firma Electrónica</a>
         </div>
+
     </div>
 </section>
 
-<section class="dot-cta">
-    <div class="dot-cta-content">
-        <img src="{{ '/assets/images/dot-icon.svg' | relative_url }}" alt="Digital Onboarding Toolkit" class="dot-icon">
-        <h3>Conoce más sobre el Motor Facial 2D</h3>
-        <p>
-            Implementa nuestro Motor Facial 2D en menos de 2 semanas. Nuestra tecnología robusta y líder en el mercado
-            hará que los procesos de tu plataforma sean más sofisticados y confiables.
-        </p>
-        <a href="{{ '/contacto' | relative_url }}" class="button-primary">Solicita una Demo</a>
-    </div>
-</section>
 
-
-<section class="nom-section" id="firma-digital">
-    <div class="nom-intro">
-        <h2>Firma Digital y NOM-151</h2>
-        <p>
-            La <strong>NOM-151</strong> garantiza la autenticidad y seguridad de los documentos electrónicos, asegurando validez jurídica y eficiencia en tus procesos empresariales.
-        </p>
-    </div>
-
-    <div class="nom-benefits">
-        <h3>Beneficios Clave</h3>
-        <div class="benefits-grid">
-            <!-- Tarjeta 1 -->
-            <div class="benefit-card" onclick="openModal('security-modal')">
-                <img src="{{ '/assets/images/security-icon.svg' | relative_url }}" alt="Seguridad Certificada">
-                <h4>Seguridad Certificada</h4>
+<!-- ═══════════════════════════════════════════
+     CTA FINAL
+     ═══════════════════════════════════════════ -->
+<section class="lp-cta-final">
+    <div class="lp-container">
+        <div class="lp-cta-final__inner">
+            <span class="lp-section-tag lp-section-tag--light">Siguiente paso</span>
+            <h2>¿Cuál es el producto<br>que necesitas hoy?</h2>
+            <p>
+                Cuéntanos tu caso de uso. En 30 minutos te mostramos una demo en vivo,
+                analizamos qué combinación de productos encaja con tu stack y te damos
+                un estimado de integración sin compromiso.
+            </p>
+            <div class="lp-cta-final__actions">
+                <a href="{{ '/contacto' | relative_url }}" class="lp-btn lp-btn--white lp-btn--lg">Hablar con un especialista</a>
+                <a href="mailto:info@digibiosolutions.com" class="lp-btn lp-btn--outline-white lp-btn--lg">Escribirnos directamente</a>
             </div>
-            <!-- Modal 1 -->
-            <div id="security-modal" class="modal">
-                <div class="modal-content">
-                    <img src="{{ '/assets/images/security-icon.svg' | relative_url }}" alt="Seguridad">
-                    <h3>Seguridad Certificada</h3>
-                    <p>
-                        Tus documentos están protegidos contra alteraciones no autorizadas, brindando confianza y validez en cada transacción.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Tarjeta 2 -->
-            <div class="benefit-card" onclick="openModal('legal-modal')">
-                <img src="{{ '/assets/images/legal-icon.svg' | relative_url }}" alt="Validez Jurídica">
-                <h4>Validez Jurídica</h4>
-            </div>
-            <!-- Modal 2 -->
-            <div id="legal-modal" class="modal">
-                <div class="modal-content">
-                    <img src="{{ '/assets/images/legal-icon.svg' | relative_url }}" alt="Legalidad">
-                    <h3>Validez Jurídica</h3>
-                    <p>
-                        Cumple con los estándares legales de México para garantizar que tus documentos electrónicos sean plenamente válidos.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Tarjeta 3 -->
-            <div class="benefit-card" onclick="openModal('process-modal')">
-                <img src="{{ '/assets/images/integration-icon.svg' | relative_url }}" alt="Procesos Rápidos">
-                <h4>Procesos Rápidos</h4>
-            </div>
-            <!-- Modal 3 -->
-            <div id="process-modal" class="modal">
-                <div class="modal-content">
-                    <img src="{{ '/assets/images/integration-icon.svg' | relative_url }}" alt="Agilidad">
-                    <h3>Procesos Rápidos</h3>
-                    <p>
-                        Acelera tus flujos de trabajo con soluciones digitales que reducen los tiempos de gestión de semanas a minutos.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Tarjeta 4 -->
-            <div class="benefit-card" onclick="openModal('cost-modal')">
-                <img src="{{ '/assets/images/ecofriendly-icon.svg' | relative_url }}" alt="Reducción de Costos">
-                <h4>Reducción de Costos</h4>
-            </div>
-            <!-- Modal 4 -->
-            <div id="cost-modal" class="modal">
-                <div class="modal-content">
-                    <img src="{{ '/assets/images/ecofriendly-icon.svg' | relative_url }}" alt="Ahorro">
-                    <h3>Reducción de Costos</h3>
-                    <p>
-                        Digitaliza tus procesos para ahorrar en logística y manejo de documentos físicos, reduciendo costos operativos significativamente.
-                    </p>
-                </div>
-            </div>
+            <p class="lp-cta-final__guarantee">Sin compromiso &nbsp;·&nbsp; Respuesta en &lt; 24 h &nbsp;·&nbsp; Demo personalizada para tu industria</p>
         </div>
-    </div>
-    <div class="nom-action">
-        <a href="/contacto" class="button-contact">Solicita más información</a>
-    </div>
-</section>
-
-<section class="kyc-kyb-section" id="kyc-kyb">
-    <div class="container py-5">
-        <h2 class="section-title text-center mb-4">Conoce a tu Cliente (KYC) & Conoce tu Empresa (KYB)</h2>
-        <p class="section-description text-center mb-5">
-            Descubre cómo nuestras soluciones KYC y KYB pueden ayudarte a garantizar la seguridad y la automatización de tus procesos.
-        </p>
-
-        <div class="kyc-kyb-grid">
-            <!-- Tarjeta 1 -->
-            <div class="info-card">
-                <div class="card-content">
-                    <div class="icon">
-                        <img src="{{ '/assets/images/id-verification-icon.svg' | relative_url }}" alt="Verificación de Identidad">
-                    </div>
-                    <h5 class="card-title">Verificación de identidad</h5>
-                    <p class="card-description">Confirma la autenticidad del documento mediante procesos automatizados y seguros.</p>
-                </div>
-            </div>
-            <!-- Tarjeta 2 -->
-            <div class="info-card">
-                <div class="card-content">
-                    <div class="icon">
-                        <img src="{{ '/assets/images/database-icon.svg' | relative_url }}" alt="Verificación por Base de Datos">
-                    </div>
-                    <h5 class="card-title">Verificación por base de datos</h5>
-                    <p class="card-description">Otorga acceso únicamente a usuarios verificados conectando con fuentes oficiales.</p>
-                </div>
-            </div>
-            <!-- Tarjeta 3 -->
-            <div class="info-card">
-                <div class="card-content">
-                    <div class="icon">
-                        <img src="{{ '/assets/images/kyc-icon.svg' | relative_url }}" alt="Conoce a tu cliente">
-                    </div>
-                    <h5 class="card-title">Conoce a tu cliente</h5>
-                    <p class="card-description">Cumple con las normativas locales para la identificación y evaluación de clientes.</p>
-                </div>
-            </div>
-            <!-- Tarjeta 4 -->
-            <div class="info-card">
-                <div class="card-content">
-                    <div class="icon">
-                        <img src="{{ '/assets/images/age-verification-icon.svg' | relative_url }}" alt="Verifica la edad">
-                    </div>
-                    <h5 class="card-title">Verifica la edad</h5>
-                    <p class="card-description">Confirma la mayoría de edad de tus clientes al instante y sin complicaciones.</p>
-                </div>
-            </div>
-            <!-- Tarjeta 5 -->
-            <div class="info-card">
-                <div class="card-content">
-                    <div class="icon">
-                        <img src="{{ '/assets/images/money-laundering-icon.svg' | relative_url }}" alt="Lucha contra el lavado de dinero">
-                    </div>
-                    <h5 class="card-title">Lucha contra el lavado de dinero</h5>
-                    <p class="card-description">Aborda el cumplimiento de normativas contra el lavado de dinero de forma automatizada.</p>
-                </div>
-            </div>
-            <!-- Tarjeta 6 -->
-            <div class="info-card">
-                <div class="card-content">
-                    <div class="icon">
-                        <img src="{{ '/assets/images/kyb-icon.svg' | relative_url }}" alt="Conoce tu empresa">
-                    </div>
-                    <h5 class="card-title">Conoce tu empresa</h5>
-                    <p class="card-description">Cumple con los requisitos legales para la validación de empresas y beneficiarios finales.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center mt-5 extra-margin">
-            <a href="/contacto" class="button-contact">Solicita más información</a>
-        </div>
-    </div>
-</section>
-
-<section class="abis-section" id="abis">
-    <div class="abis-header">
-        <h2>ABIS: Buró de Fraude Digital</h2>
-        <p>Evita el robo de cuentas con algoritmos biométricos avanzados y maximiza la seguridad de tus clientes.</p>
-    </div>
-
-    <!-- Logo y descripción -->
-    <div class="abis-logo-container">
-        <img src="/assets/images/buro-de-credito-icon.png" alt="Buró de Crédito" class="abis-logo">
-        <p>
-            La integración con <strong>Buró de Crédito</strong> permite identificar fraudes y proteger cuentas.
-        </p>
-    </div>
-
-    <!-- Beneficios clave -->
-    <div class="abis-benefits">
-        <div class="abis-benefit">
-            <img src="/assets/images/icon-biometrics.png" alt="Identificación biométrica">
-            <h3>Identificación Biométrica</h3>
-            <p>Comparaciones faciales a gran escala con algoritmos avanzados.</p>
-        </div>
-        <div class="abis-benefit">
-            <img src="/assets/images/icon-scalability.png" alt="Escalabilidad">
-            <h3>Escalabilidad</h3>
-            <p>Optimiza hardware y maneja millones de registros eficientemente.</p>
-        </div>
-        <div class="abis-benefit">
-            <img src="/assets/images/icon-integration.png" alt="Integración">
-            <h3>Integración Sencilla</h3>
-            <p>Conecta rápidamente con soluciones de terceros mediante API REST.</p>
-        </div>
-        <div class="abis-benefit">
-            <img src="/assets/images/icon-security.png" alt="Protección">
-            <h3>Protección Integral</h3>
-            <p>Previene fraudes, robo de identidad y operaciones ilícitas.</p>
-        </div>
-    </div>
-
-    <!-- Cómo funciona -->
-    <div class="abis-how-it-works">
-        <h3>¿Cómo funciona?</h3>
-        <div class="abis-steps">
-            <div class="abis-step">
-                <div class="abis-step-number">1</div>
-                <div class="abis-step-content">
-                    <p>Recopilamos datos biométricos únicos, como vectores faciales y geolocalización.</p>
-                </div>
-            </div>
-            <div class="abis-step">
-                <div class="abis-step-number">2</div>
-                <div class="abis-step-content">
-                    <p>Analizamos señales de riesgo utilizando inteligencia artificial avanzada.</p>
-                </div>
-            </div>
-            <div class="abis-step">
-                <div class="abis-step-number">3</div>
-                <div class="abis-step-content">
-                    <p>Proveemos resultados en tiempo real para maximizar la seguridad.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Botón de acción -->
-    <div class="abis-action">
-        <a href="/contacto" class="abis-button">Solicita más información</a>
     </div>
 </section>

@@ -4,25 +4,65 @@ title: Contacto
 ---
 
 <section class="contact">
-    <h1>Contáctanos</h1>
-    <p>Nos encantaría saber de ti. Llena el formulario a continuación y un miembro de nuestro equipo se pondrá en contacto contigo lo antes posible.</p>
+    <div class="contact-header">
+        <h1>Reserva tu demo gratuita de 30 minutos</h1>
+        <p>Conoce exactamente cómo automatizar tu proceso de ventas y aumentar conversiones. Sin tarjeta de crédito ni compromisos.</p>
+        <div class="trust-badges">
+            <span class="badge">⏱️ 30 min</span>
+            <span class="badge">📞 1-a-1 personalizada</span>
+            <span class="badge">🎯 Solución a tu medida</span>
+        </div>
+    </div>
 
-    <form action="https://formspree.io/f/mnnqzrka" method="POST">
-        <label for="name">Nombre Completo</label>
-        <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre completo" autocomplete="name">
+    <form action="https://formspree.io/f/mnnqzrka" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" required
+                   placeholder="Ej: Carlos López" autocomplete="name">
+        </div>
 
-        <label for="company">Compañía</label>
-        <input type="text" id="company" name="company" required placeholder="Nombre de tu compañía" autocomplete="organization">
+        <div class="form-group">
+            <label for="company">Compañía</label>
+            <input type="text" id="company" name="company" required
+                   placeholder="Ej: Tech Solutions S.A." autocomplete="organization">
+        </div>
 
-        <label for="email">Correo Electrónico</label>
-        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com" autocomplete="email">
+        <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required
+                   placeholder="tu.correo@empresa.com" autocomplete="email">
+        </div>
 
-        <label for="phone">Teléfono (opcional)</label>
-        <input type="tel" id="phone" name="phone" placeholder="+52 55 1234 5678" autocomplete="tel">
+        <div class="form-group">
+            <label for="phone">Teléfono <span class="optional">(para confirmación)</span></label>
+            <input type="tel" id="phone" name="phone" required
+                   placeholder="+52 55 1234 5678" autocomplete="tel">
+        </div>
 
-        <label for="message">Mensaje</label>
-        <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí" autocomplete="off"></textarea>
+        <div class="form-group">
+            <label for="message">¿Cuál es tu principal desafío?</label>
+            <textarea id="message" name="message" rows="3" required
+                      placeholder="Ej: Tenemos muchos leads pero conversión baja, quiero automatizar seguimiento..."
+                      autocomplete="off"></textarea>
+            <small class="form-help">Esto nos ayuda a preparar una demo 100% relevante para ti</small>
+        </div>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" class="cta-button">Confirmar mi demo gratuita →</button>
+        <p class="form-guarantee">
+            <strong>✓ Garantizado:</strong> Te llamaremos en las próximas 24h para confirmar fecha y hora
+        </p>
     </form>
+
+    <div class="contact-footer">
+        <h3>¿Por qué hacer la demo?</h3>
+        <ul class="benefits-list">
+            <li><strong>Diagnóstico:</strong> Análisis de tu proceso actual sin costo</li>
+            <li><strong>Solución personalizada:</strong> Recomendaciones específicas para tu negocio</li>
+            <li><strong>ROI claro:</strong> Te mostraremos el impacto económico estimado</li>
+            <li><strong>Sin presión:</strong> Tomarás la decisión correcta con toda la información</li>
+        </ul>
+        <p class="contact-trust">
+            ✓ Más de 500 empresas han transformado sus ventas · Respuesta en menos de 24h · Sin spam
+        </p>
+    </div>
 </section>

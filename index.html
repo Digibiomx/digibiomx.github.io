@@ -1,168 +1,519 @@
 ---
 layout: default
 title: Inicio
+description: "Plataforma de verificación de identidad biométrica para empresas en México. KYC, KYB, liveness check 3D y firma electrónica NOM-151. Integración en menos de 2 semanas."
 ---
 
-<section class="hero">
-    <h1>Innovación en Seguridad Biométrica y Digital</h1>
-    <p style="margin-bottom: 40px;">Soluciones avanzadas que garantizan la autenticidad, protección y eficiencia en cada transacción.</p>
-    <a href="/contacto" class="button-primary">Agenda una llamada</a>
-</section>
-
-<section class="about-digibio">
-    <div class="about-content">
-        <h2 class="about-title">Misión</h2>
-        <div class="about-text">
-            <h3>Impulsamos la seguridad digital con <span class="highlight">tecnología avanzada</span></h3>
-            <p>
-                En Digibio, desarrollamos soluciones innovadoras para la prevención de fraude y la protección de identidades.
-                A través de inteligencia artificial y procesos automatizados, garantizamos la seguridad digital de empresas y usuarios.
+<!-- ═══════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════ -->
+<section class="lp-hero">
+    <div class="lp-hero__inner">
+        <div class="lp-hero__content">
+            <span class="lp-badge">Certificado iBeta Level 1 &amp; 2 · ISO 30107-3</span>
+            <h1 class="lp-hero__title">
+                Verifica identidades en segundos.<br>
+                <span class="lp-hero__title-accent">Elimina el fraude de raíz.</span>
+            </h1>
+            <p class="lp-hero__subtitle">
+                Plataforma biométrica para bancos, fintechs y retail en México y Latinoamérica.
+                KYC/KYB, liveness check 3D y firma electrónica NOM-151 — todo en una sola integración.
             </p>
+            <div class="lp-hero__actions">
+                <a href="{{ '/contacto' | relative_url }}" class="lp-btn lp-btn--primary lp-btn--lg">Solicitar demo gratuita</a>
+                <a href="{{ '/soluciones' | relative_url }}" class="lp-btn lp-btn--outline lp-btn--lg">Ver soluciones</a>
+            </div>
+            <p class="lp-hero__guarantee">Sin compromiso · Respuesta en menos de 24 h</p>
         </div>
-    </div>
-    <!-- Elementos decorativos -->
-    <div class="decorative-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-    </div>
-</section>
-
-
-<section class="solutions" id="soluciones">
-    <h2>Nuestras Soluciones</h2>
-    <p>Desde liveness checks hasta firma digital, nuestras soluciones se integran en pocos días.</p>
-
-    <div class="solution-cards">
-        <div class="solutions-card">
-            <h3>Liveness Check</h3>
-            <p>Detecta vida en 3D, evita intentos de suplantación y garantiza autenticidad.</p>
-            <a href="/soluciones#liveness-check" class="button-secondary">Explorar Liveness Check</a>
-        </div>
-        <div class="solutions-card">
-            <h3>Onboarding Digital</h3>
-            <p>Verificación en tiempo real, fácil de implementar, y asistencia total.</p>
-            <a href="/soluciones#onboarding-digital" class="button-secondary" style="margin-top: 65px !important; margin-left: 19%;">Ver Onboarding</a>
-        </div>
-        <div class="solutions-card">
-            <h3>Firma Electrónica Avanzada & NOM-151</h3>
-            <p>Emitidos por un PSC certificado para cumplir con los requisitos de "no repudio".</p>
-            <a href="/soluciones#firma-digital" class="button-secondary" style="margin-top: 19px !important;">Más sobre Firma Digital</a>
-        </div>
-        <div class="solutions-card">
-            <h3>KYC & KYB</h3>
-            <p>Verificación segura de personas y empresas, con acceso a bases oficiales.</p>
-            <a href="/soluciones#kyc-kyb" class="button-secondary">Conoce KYC y KYB</a>
-        </div>
-    </div>
-</section>
-
-<section class="experience" id="testimonios">
-    <h2>Nos avala la experiencia</h2>
-    <p>Nuestros logros junto con los de nuestros partners son la mejor prueba de éxito</p>
-
-    <div class="experience-container">
-        <!-- Tarjeta de Certificaciones -->
-        <div class="experience-card certification-card">
-            <div class="experience-content">
-                <h3>Certificaciones</h3>
-                <div class="certification-logos">
-                    <img src="{{ '/assets/images/certification_level1.png' | relative_url }}" alt="Certificación Level 1" class="certification-logo">
-                    <img src="{{ '/assets/images/certification_level2.png' | relative_url }}" alt="Certificación Level 2" class="certification-logo">
+        <div class="lp-hero__visual">
+            <div class="lp-hero__phone-wrap">
+                <img
+                    src="{{ '/assets/images/iphone-liveness-check.png' | relative_url }}"
+                    alt="Demo de liveness check biométrico en móvil"
+                    class="lp-hero__phone"
+                    loading="eager"
+                >
+                <div class="lp-hero__badge-float lp-hero__badge-float--top">
+                    <span class="lp-float-icon">&#10003;</span>
+                    <span>Identidad verificada</span>
+                </div>
+                <div class="lp-hero__badge-float lp-hero__badge-float--bottom">
+                    <span class="lp-float-icon">&#9651;</span>
+                    <span>Fraude bloqueado</span>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <!-- Tarjeta de Transacciones -->
-        <div class="experience-card transaction-card">
-            <div class="experience-content">
-                <div class="transaction-number">60M+</div>
-                <div class="transaction-text">Usuarios Anuales</div>
+
+<!-- ═══════════════════════════════════════════
+     BARRA DE CLIENTES
+     ═══════════════════════════════════════════ -->
+<section class="lp-clients">
+    <p class="lp-clients__label">Empresas líderes que confían en Digibio</p>
+    <div class="lp-clients__track-wrap">
+        <div class="lp-clients__track">
+            <img src="{{ '/assets/images/bbva-icon.png' | relative_url }}"         alt="BBVA"          class="lp-clients__logo">
+            <img src="{{ '/assets/images/hsbc-icon.png' | relative_url }}"         alt="HSBC"          class="lp-clients__logo">
+            <img src="{{ '/assets/images/azteca-icon.png' | relative_url }}"       alt="Banco Azteca"  class="lp-clients__logo">
+            <img src="{{ '/assets/images/intercam-icon.png' | relative_url }}"     alt="Intercam"      class="lp-clients__logo">
+            <img src="{{ '/assets/images/banjercito-icon.png' | relative_url }}"   alt="Banjercito"    class="lp-clients__logo">
+            <img src="{{ '/assets/images/sura-icon.png' | relative_url }}"         alt="SURA"          class="lp-clients__logo">
+            <img src="{{ '/assets/images/telmex-logo.svg' | relative_url }}"       alt="Telmex"        class="lp-clients__logo">
+            <img src="{{ '/assets/images/totalplay-icon.png' | relative_url }}"    alt="Totalplay"     class="lp-clients__logo">
+            <img src="{{ '/assets/images/truper-icon.png' | relative_url }}"       alt="Truper"        class="lp-clients__logo">
+            <img src="{{ '/assets/images/betterware-icon.png' | relative_url }}"   alt="Betterware"    class="lp-clients__logo">
+            <!-- duplicado para scroll infinito -->
+            <img src="{{ '/assets/images/bbva-icon.png' | relative_url }}"         alt="BBVA"          class="lp-clients__logo">
+            <img src="{{ '/assets/images/hsbc-icon.png' | relative_url }}"         alt="HSBC"          class="lp-clients__logo">
+            <img src="{{ '/assets/images/azteca-icon.png' | relative_url }}"       alt="Banco Azteca"  class="lp-clients__logo">
+            <img src="{{ '/assets/images/intercam-icon.png' | relative_url }}"     alt="Intercam"      class="lp-clients__logo">
+            <img src="{{ '/assets/images/banjercito-icon.png' | relative_url }}"   alt="Banjercito"    class="lp-clients__logo">
+            <img src="{{ '/assets/images/sura-icon.png' | relative_url }}"         alt="SURA"          class="lp-clients__logo">
+            <img src="{{ '/assets/images/telmex-logo.svg' | relative_url }}"       alt="Telmex"        class="lp-clients__logo">
+            <img src="{{ '/assets/images/totalplay-icon.png' | relative_url }}"    alt="Totalplay"     class="lp-clients__logo">
+            <img src="{{ '/assets/images/truper-icon.png' | relative_url }}"       alt="Truper"        class="lp-clients__logo">
+            <img src="{{ '/assets/images/betterware-icon.png' | relative_url }}"   alt="Betterware"    class="lp-clients__logo">
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     PROBLEMA / DOLOR
+     ═══════════════════════════════════════════ -->
+<section class="lp-problem">
+    <div class="lp-container">
+        <div class="lp-problem__grid">
+            <div class="lp-problem__stat">
+                <span class="lp-problem__number">$43B</span>
+                <span class="lp-problem__desc">en pérdidas anuales por fraude de identidad en Latinoamérica</span>
+            </div>
+            <div class="lp-problem__stat">
+                <span class="lp-problem__number">1 de 3</span>
+                <span class="lp-problem__desc">onboardings digitales son abandonados por procesos de verificación lentos</span>
+            </div>
+            <div class="lp-problem__stat">
+                <span class="lp-problem__number">72%</span>
+                <span class="lp-problem__desc">de las empresas financieras en México no cumplen con controles KYC actualizados</span>
             </div>
         </div>
+        <div class="lp-problem__cta">
+            <p>El fraude de identidad no espera. Tampoco tus clientes.</p>
+            <a href="{{ '/contacto' | relative_url }}" class="lp-btn lp-btn--primary">Resuelve esto hoy</a>
+        </div>
+    </div>
+</section>
 
-        <!-- Tarjeta de Presencia -->
-        <div class="experience-card presence-card">
-            <div class="experience-content">
-                <div class="presence-stats">3 Países</div>
-                <div class="presence-description">y 2 Continentes</div>
+
+<!-- ═══════════════════════════════════════════
+     SOLUCIONES
+     ═══════════════════════════════════════════ -->
+<section class="lp-solutions" id="soluciones">
+    <div class="lp-container">
+        <div class="lp-section-header">
+            <span class="lp-section-tag">Plataforma</span>
+            <h2>Todo lo que necesitas para verificar identidades<br>en un solo lugar</h2>
+            <p>Desde el primer punto de contacto con tu cliente hasta el cumplimiento regulatorio continuo, Digibio cubre cada etapa del ciclo de vida de la identidad.</p>
+        </div>
+
+        <div class="lp-solutions__grid">
+
+            <article class="lp-sol-card">
+                <div class="lp-sol-card__icon">
+                    <img src="{{ '/assets/images/liveness-check.svg' | relative_url }}" alt="Liveness Check 3D">
+                </div>
+                <h3 class="lp-sol-card__title">Liveness Check 3D</h3>
+                <p class="lp-sol-card__desc">
+                    Detecta que hay una persona real frente a la cámara. Bloquea fotos, videos, máscaras y deepfakes con tecnología certificada <strong>iBeta Level 1 &amp; 2</strong>.
+                </p>
+                <ul class="lp-sol-card__features">
+                    <li>iOS, Android y Web</li>
+                    <li>SDK &lt; 4 MB, integración en días</li>
+                    <li>+30 idiomas</li>
+                </ul>
+                <a href="{{ '/soluciones#liveness-check' | relative_url }}" class="lp-sol-card__link">Ver detalles &rarr;</a>
+            </article>
+
+            <article class="lp-sol-card">
+                <div class="lp-sol-card__icon">
+                    <img src="{{ '/assets/images/face-comparison.svg' | relative_url }}" alt="KYC y Onboarding Digital">
+                </div>
+                <h3 class="lp-sol-card__title">KYC &amp; Onboarding Digital</h3>
+                <p class="lp-sol-card__desc">
+                    Verifica la identidad de tus clientes en menos de 60 segundos. OCR de INE/pasaporte, comparación biométrica 1:1 y consulta a bases oficiales (RENAPO, SAT, IMSS).
+                </p>
+                <ul class="lp-sol-card__features">
+                    <li>Validación contra RENAPO, SAT e IMSS</li>
+                    <li>Captura guiada de documentos</li>
+                    <li>Resultados en tiempo real</li>
+                </ul>
+                <a href="{{ '/soluciones#onboarding-digital' | relative_url }}" class="lp-sol-card__link">Ver detalles &rarr;</a>
+            </article>
+
+            <article class="lp-sol-card">
+                <div class="lp-sol-card__icon">
+                    <img src="{{ '/assets/images/legal-icon.svg' | relative_url }}" alt="Firma Electrónica NOM-151">
+                </div>
+                <h3 class="lp-sol-card__title">Firma Electrónica &amp; NOM-151</h3>
+                <p class="lp-sol-card__desc">
+                    Firma documentos con plena validez jurídica en México. Emitida por un PSC certificado, cumple con los requisitos de no repudio y es admisible ante cualquier tribunal.
+                </p>
+                <ul class="lp-sol-card__features">
+                    <li>Firma Electrónica Avanzada (FEA)</li>
+                    <li>Sellado de tiempo NOM-151</li>
+                    <li>Flujo 100% digital, sin papel</li>
+                </ul>
+                <a href="{{ '/soluciones#firma-digital' | relative_url }}" class="lp-sol-card__link">Ver detalles &rarr;</a>
+            </article>
+
+            <article class="lp-sol-card">
+                <div class="lp-sol-card__icon">
+                    <img src="{{ '/assets/images/kyb-icon.svg' | relative_url }}" alt="KYB Verificación de Empresas">
+                </div>
+                <h3 class="lp-sol-card__title">KYB — Verifica Empresas</h3>
+                <p class="lp-sol-card__desc">
+                    Valida personas morales, identifica a los beneficiarios finales y cumple con las obligaciones contra el lavado de dinero (AML) de forma automatizada.
+                </p>
+                <ul class="lp-sol-card__features">
+                    <li>Consulta al SAT y Buró de Crédito</li>
+                    <li>Detección de PEPs y listas negras</li>
+                    <li>Cumplimiento LFPIORPI</li>
+                </ul>
+                <a href="{{ '/soluciones#kyc-kyb' | relative_url }}" class="lp-sol-card__link">Ver detalles &rarr;</a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CÓMO FUNCIONA
+     ═══════════════════════════════════════════ -->
+<section class="lp-how">
+    <div class="lp-container">
+        <div class="lp-section-header lp-section-header--light">
+            <span class="lp-section-tag lp-section-tag--light">Proceso</span>
+            <h2>De cero a verificación completa<br>en menos de 60 segundos</h2>
+        </div>
+
+        <div class="lp-how__steps">
+            <div class="lp-how__step">
+                <div class="lp-how__step-num">01</div>
+                <div class="lp-how__step-body">
+                    <h3>Captura del documento</h3>
+                    <p>El usuario fotografía su INE, pasaporte o cédula. Nuestro OCR extrae y valida los datos al instante.</p>
+                </div>
+            </div>
+            <div class="lp-how__connector" aria-hidden="true"></div>
+            <div class="lp-how__step">
+                <div class="lp-how__step-num">02</div>
+                <div class="lp-how__step-body">
+                    <h3>Prueba de vida biométrica</h3>
+                    <p>El liveness check 3D confirma que la persona es real y coincide con la foto del documento.</p>
+                </div>
+            </div>
+            <div class="lp-how__connector" aria-hidden="true"></div>
+            <div class="lp-how__step">
+                <div class="lp-how__step-num">03</div>
+                <div class="lp-how__step-body">
+                    <h3>Validación en bases oficiales</h3>
+                    <p>Cruzamos los datos con RENAPO, SAT, IMSS y Buró de Crédito para confirmar la identidad.</p>
+                </div>
+            </div>
+            <div class="lp-how__connector" aria-hidden="true"></div>
+            <div class="lp-how__step">
+                <div class="lp-how__step-num">04</div>
+                <div class="lp-how__step-body">
+                    <h3>Resultado y score de riesgo</h3>
+                    <p>Recibes un veredicto claro (aprobado / revisar / rechazado) con score de confianza y trazabilidad completa.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!--<section class="clients-slider">-->
-<!--    <div class="slider-container">-->
-<!--        <div class="slider-track">-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/bbva-icon.png' | relative_url }}" alt="BBVA" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/truper-icon.png' | relative_url }}" alt="Truper" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/intercam-icon.png' | relative_url }}" alt="Intercam" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/ine-icon.png' | relative_url }}" alt="INE" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/banjercito-icon.png' | relative_url }}" alt="Banjercito" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/betterware-icon.png' | relative_url }}" alt="Betterware" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/totalplay-icon.png' | relative_url }}" alt="Totalplay" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/farmacias-icon.png' | relative_url }}" alt="Farmacias" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/azteca-icon.png' | relative_url }}" alt="Banco Azteca" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/hsbc-icon.png' | relative_url }}" alt="HSBC" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/sura-icon.png' | relative_url }}" alt="SURA" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/movistar-icon.png' | relative_url }}" alt="Movistar" class="client-logo">-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Repite los logos para crear un efecto continuo &ndash;&gt;-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/bbva-icon.png' | relative_url }}" alt="BBVA" class="client-logo">-->
-<!--            </div>-->
-<!--            <div class="client-logo-container">-->
-<!--                <img src="{{ '/assets/images/truper-icon.png' | relative_url }}" alt="Truper" class="client-logo">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 
+<!-- ═══════════════════════════════════════════
+     BENEFICIOS / POR QUÉ DIGIBIO
+     ═══════════════════════════════════════════ -->
+<section class="lp-benefits" id="beneficios">
+    <div class="lp-container">
+        <div class="lp-section-header">
+            <span class="lp-section-tag">Ventajas</span>
+            <h2>Por qué más de 60 millones de usuarios<br>ya se verifican con Digibio</h2>
+        </div>
 
-
-
-
-<section class="faq">
-    <h2>Preguntas Frecuentes</h2>
-    <div class="faq-item">
-        <button class="faq-question">¿Cómo se integra el SDK en mi plataforma?</button>
-        <div class="faq-answer">
-            <p>Nuestro SDK está diseñado para una integración rápida y sencilla. Disponemos de documentación completa y asistencia técnica para guiarte en cada paso.</p>
+        <div class="lp-benefits__grid">
+            <div class="lp-benefit">
+                <div class="lp-benefit__icon lp-benefit__icon--blue">
+                    <img src="{{ '/assets/images/security-icon.svg' | relative_url }}" alt="Seguridad certificada">
+                </div>
+                <h3>Certificación máxima del sector</h3>
+                <p>Única plataforma en México con certificación iBeta Level 1 &amp; 2 (ISO 30107-3), el estándar de oro en detección de ataques de presentación.</p>
+            </div>
+            <div class="lp-benefit">
+                <div class="lp-benefit__icon lp-benefit__icon--green">
+                    <img src="{{ '/assets/images/integration-icon.svg' | relative_url }}" alt="Integración rápida">
+                </div>
+                <h3>Integración en menos de 2 semanas</h3>
+                <p>SDK ligero (&lt;4 MB), API REST documentada y equipo de soporte dedicado. Sin cambiar tu stack tecnológico existente.</p>
+            </div>
+            <div class="lp-benefit">
+                <div class="lp-benefit__icon lp-benefit__icon--purple">
+                    <img src="{{ '/assets/images/legal-icon.svg' | relative_url }}" alt="Cumplimiento legal">
+                </div>
+                <h3>Cumplimiento regulatorio completo</h3>
+                <p>Cubrimos CNBV, Ley Fintech, LFPIORPI y NOM-151 para que tu equipo legal no pierda el sueño.</p>
+            </div>
+            <div class="lp-benefit">
+                <div class="lp-benefit__icon lp-benefit__icon--orange">
+                    <img src="{{ '/assets/images/global-icon.png' | relative_url }}" alt="Cobertura global">
+                </div>
+                <h3>Presencia en 3 países y 2 continentes</h3>
+                <p>Operamos en México, Colombia y España. Si tu negocio escala, nuestra plataforma escala contigo sin fricción.</p>
+            </div>
+            <div class="lp-benefit">
+                <div class="lp-benefit__icon lp-benefit__icon--red">
+                    <img src="{{ '/assets/images/database-icon.svg' | relative_url }}" alt="Bases de datos oficiales">
+                </div>
+                <h3>Acceso a fuentes oficiales en tiempo real</h3>
+                <p>Conectamos directo a RENAPO, INE, SAT, IMSS y Buró de Crédito. Sin intermediarios, sin datos desactualizados.</p>
+            </div>
+            <div class="lp-benefit">
+                <div class="lp-benefit__icon lp-benefit__icon--teal">
+                    <img src="{{ '/assets/images/ecofriendly-icon.svg' | relative_url }}" alt="Ahorro de costos">
+                </div>
+                <h3>Reduce costos operativos hasta un 80%</h3>
+                <p>Elimina la validación manual de documentos y los procesos presenciales. Más eficiencia, menos errores humanos.</p>
+            </div>
         </div>
     </div>
-    <div class="faq-item">
-        <button class="faq-question">¿Qué certificaciones de seguridad tienen?</button>
-        <div class="faq-answer">
-            <p>Contamos con certificaciones de nivel iBeta Level 1 y Level 2 IDO 30107-3, que aseguran la fiabilidad de nuestras soluciones.</p>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CASOS DE USO POR INDUSTRIA
+     ═══════════════════════════════════════════ -->
+<section class="lp-usecases">
+    <div class="lp-container">
+        <div class="lp-section-header">
+            <span class="lp-section-tag">Industrias</span>
+            <h2>Diseñado para los sectores<br>más exigentes de México</h2>
+        </div>
+
+        <div class="lp-usecases__grid">
+
+            <div class="lp-usecase">
+                <div class="lp-usecase__header">
+                    <span class="lp-usecase__emoji" aria-hidden="true">🏦</span>
+                    <h3>Banca y Fintech</h3>
+                </div>
+                <p>Abre cuentas 100% digitales, valida créditos y cumple con la CNBV sin aumentar tu equipo de operaciones.</p>
+                <ul>
+                    <li>Apertura de cuenta sin sucursal</li>
+                    <li>Onboarding en &lt; 3 minutos</li>
+                    <li>Cumplimiento AML/KYC automatizado</li>
+                </ul>
+            </div>
+
+            <div class="lp-usecase">
+                <div class="lp-usecase__header">
+                    <span class="lp-usecase__emoji" aria-hidden="true">&#128722;</span>
+                    <h3>Retail y Comercio</h3>
+                </div>
+                <p>Verifica la edad de tus clientes, previene el fraude en devoluciones y asegura compras de alto valor con biometría.</p>
+                <ul>
+                    <li>Verificación de edad instantánea</li>
+                    <li>Prevención de fraude en e-commerce</li>
+                    <li>Programas de lealtad seguros</li>
+                </ul>
+            </div>
+
+            <div class="lp-usecase">
+                <div class="lp-usecase__header">
+                    <span class="lp-usecase__emoji" aria-hidden="true">&#127968;</span>
+                    <h3>Bienes Raíces y Notarías</h3>
+                </div>
+                <p>Firma contratos de arrendamiento y compraventa con validez jurídica plena, sin que las partes tengan que estar en el mismo lugar.</p>
+                <ul>
+                    <li>Firma electrónica avanzada FEA</li>
+                    <li>Sellado de tiempo NOM-151</li>
+                    <li>Expediente digital auditable</li>
+                </ul>
+            </div>
+
+            <div class="lp-usecase">
+                <div class="lp-usecase__header">
+                    <span class="lp-usecase__emoji" aria-hidden="true">&#128138;</span>
+                    <h3>Seguros</h3>
+                </div>
+                <p>Agiliza la contratación de pólizas, valida reclamaciones y previene el fraude de identidad en siniestros.</p>
+                <ul>
+                    <li>Contratación digital en minutos</li>
+                    <li>Validación de beneficiarios</li>
+                    <li>Auditoría completa por operación</li>
+                </ul>
+            </div>
+
+            <div class="lp-usecase">
+                <div class="lp-usecase__header">
+                    <span class="lp-usecase__emoji" aria-hidden="true">&#128241;</span>
+                    <h3>Telecomunicaciones</h3>
+                </div>
+                <p>Activa líneas, otorga créditos de equipo y previene la portabilidad fraudulenta con verificación en tiempo real.</p>
+                <ul>
+                    <li>Alta de líneas sin tienda física</li>
+                    <li>Prevención de SIM swapping</li>
+                    <li>Verificación para cambios de plan</li>
+                </ul>
+            </div>
+
+            <div class="lp-usecase">
+                <div class="lp-usecase__header">
+                    <span class="lp-usecase__emoji" aria-hidden="true">&#9874;&#65039;</span>
+                    <h3>Gobierno y Sector Público</h3>
+                </div>
+                <p>Digitaliza trámites ciudadanos, reduce filas y garantiza que quien accede a servicios es quien dice ser.</p>
+                <ul>
+                    <li>Verificación contra RENAPO e INE</li>
+                    <li>Autenticación para portales de gobierno</li>
+                    <li>Trámites digitales con valor legal</li>
+                </ul>
+            </div>
+
         </div>
     </div>
-    <div class="faq-item">
-        <button class="faq-question">¿En qué países están disponibles sus servicios?</button>
-        <div class="faq-answer">
-            <p>Tenemos presencia en 3 países y 2 continentes, con la capacidad de expandirnos a otras regiones.</p>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     MÉTRICAS / CONFIANZA
+     ═══════════════════════════════════════════ -->
+<section class="lp-stats" id="nosotros">
+    <div class="lp-container">
+        <div class="lp-stats__grid">
+            <div class="lp-stat">
+                <span class="lp-stat__number">60M+</span>
+                <span class="lp-stat__label">usuarios verificados al año</span>
+            </div>
+            <div class="lp-stat">
+                <span class="lp-stat__number">&lt; 60s</span>
+                <span class="lp-stat__label">tiempo promedio de verificación</span>
+            </div>
+            <div class="lp-stat">
+                <span class="lp-stat__number">99.7%</span>
+                <span class="lp-stat__label">de precisión en detección biométrica</span>
+            </div>
+            <div class="lp-stat">
+                <span class="lp-stat__number">3 países</span>
+                <span class="lp-stat__label">México, Colombia y España</span>
+            </div>
+        </div>
+        <div class="lp-stats__certs">
+            <p class="lp-stats__certs-label">Certificaciones que nos respaldan</p>
+            <div class="lp-stats__certs-logos">
+                <img src="{{ '/assets/images/certification_level1.png' | relative_url }}" alt="iBeta Level 1 ISO 30107-3" class="lp-stats__cert-img">
+                <img src="{{ '/assets/images/certification_level2.png' | relative_url }}" alt="iBeta Level 2 ISO 30107-3" class="lp-stats__cert-img">
+                <img src="{{ '/assets/images/ine-logo.svg' | relative_url }}"             alt="Integración INE oficial"   class="lp-stats__cert-img">
+                <img src="{{ '/assets/images/renapo-logo.png' | relative_url }}"          alt="Integración RENAPO"        class="lp-stats__cert-img">
+                <img src="{{ '/assets/images/sat-logo.png' | relative_url }}"             alt="Integración SAT"           class="lp-stats__cert-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════════ -->
+<section class="lp-faq">
+    <div class="lp-container">
+        <div class="lp-section-header">
+            <span class="lp-section-tag">FAQ</span>
+            <h2>Preguntas frecuentes</h2>
+            <p>Las dudas que nos hacen antes de firmar un contrato.</p>
+        </div>
+
+        <div class="lp-faq__list">
+
+            <div class="lp-faq__item">
+                <button class="lp-faq__question faq-question" aria-expanded="false">
+                    ¿Cuánto tiempo tarda la integración?
+                </button>
+                <div class="lp-faq__answer faq-answer">
+                    <p>La mayoría de nuestros clientes están en producción en <strong>menos de 2 semanas</strong>. Ofrecemos SDK para iOS, Android y Web, una API REST con documentación completa y un equipo de ingenieros dedicado que te acompaña durante todo el proceso.</p>
+                </div>
+            </div>
+
+            <div class="lp-faq__item">
+                <button class="lp-faq__question faq-question" aria-expanded="false">
+                    ¿Cumplen con la regulación de la CNBV y la Ley Fintech?
+                </button>
+                <div class="lp-faq__answer faq-answer">
+                    <p>Sí. Nuestra plataforma está diseñada específicamente para cumplir con los requerimientos de la <strong>CNBV, Ley Fintech (LRITF), LFPIORPI</strong> y las circulares de prevención de lavado de dinero. Nuestro equipo legal actualiza los flujos cada vez que cambia la normativa.</p>
+                </div>
+            </div>
+
+            <div class="lp-faq__item">
+                <button class="lp-faq__question faq-question" aria-expanded="false">
+                    ¿Cómo protegen los datos biométricos de mis usuarios?
+                </button>
+                <div class="lp-faq__answer faq-answer">
+                    <p>Los datos biométricos se procesan en servidores seguros, se almacenan como <strong>vectores matemáticos cifrados</strong> (no como imágenes recuperables) y nunca se comparten con terceros. Cumplimos con la Ley Federal de Protección de Datos Personales (LFPDPPP).</p>
+                </div>
+            </div>
+
+            <div class="lp-faq__item">
+                <button class="lp-faq__question faq-question" aria-expanded="false">
+                    ¿Qué pasa si un usuario falla la verificación?
+                </button>
+                <div class="lp-faq__answer faq-answer">
+                    <p>Puedes configurar flujos de <strong>revisión manual asistida</strong> para casos límite. El sistema devuelve un score de confianza detallado que permite a tu equipo tomar decisiones informadas sin bloquear usuarios legítimos innecesariamente.</p>
+                </div>
+            </div>
+
+            <div class="lp-faq__item">
+                <button class="lp-faq__question faq-question" aria-expanded="false">
+                    ¿Tienen precios por volumen o modelo de suscripción?
+                </button>
+                <div class="lp-faq__answer faq-answer">
+                    <p>Ofrecemos modelos flexibles: <strong>pago por verificación</strong> (ideal para volúmenes variables) y <strong>suscripción mensual</strong> con verificaciones ilimitadas para empresas de alto volumen. Agenda una demo y te preparamos una cotización personalizada.</p>
+                </div>
+            </div>
+
+            <div class="lp-faq__item">
+                <button class="lp-faq__question faq-question" aria-expanded="false">
+                    ¿Funciona sin conexión a internet?
+                </button>
+                <div class="lp-faq__answer faq-answer">
+                    <p>Sí. Nuestro motor facial 2D tiene modo <strong>offline</strong> que permite capturar y pre-validar documentos sin conexión. Los datos se sincronizan con los servidores en cuanto el dispositivo recupera conectividad.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CTA FINAL
+     ═══════════════════════════════════════════ -->
+<section class="lp-cta-final">
+    <div class="lp-container">
+        <div class="lp-cta-final__inner">
+            <span class="lp-section-tag lp-section-tag--light">Próximo paso</span>
+            <h2>¿Listo para eliminar el fraude<br>de tu plataforma?</h2>
+            <p>
+                Habla hoy con un especialista de Digibio. En 30 minutos te mostramos una demo en vivo, analizamos tu caso de uso y te damos una estimación de implementación.
+            </p>
+            <div class="lp-cta-final__actions">
+                <a href="{{ '/contacto' | relative_url }}" class="lp-btn lp-btn--white lp-btn--lg">Solicitar demo gratuita</a>
+                <a href="mailto:info@digibiosolutions.com" class="lp-btn lp-btn--outline-white lp-btn--lg">Escribirnos directamente</a>
+            </div>
+            <p class="lp-cta-final__guarantee">Sin compromiso de contratación &nbsp;·&nbsp; Respuesta en &lt; 24 h &nbsp;·&nbsp; Demo personalizada para tu industria</p>
         </div>
     </div>
 </section>
