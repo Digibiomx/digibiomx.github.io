@@ -249,7 +249,13 @@
     .sdk-plat-title { font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 14px; }
     .sdk-plat-list { display: flex; gap: 10px; }
     .sdk-plat { flex: 1; background: #fff; border: 1px solid var(--border); border-radius: 11px; padding: 14px; text-align: center; font-size: 0.8rem; font-weight: 600; color: var(--text2); }
-    .sdk-plat-ico { font-size: 1.3rem; display: block; margin-bottom: 5px; }
+    .sdk-plat-ico {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 6px;
+    }
     .sdk-extras { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     .sdk-extra { background: var(--bg); border: 1px solid var(--border2); border-radius: 11px; padding: 14px; }
     .sdk-extra-l { font-size: 0.68rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
@@ -632,14 +638,23 @@
           </div>
         </div>
         <div>
-          <div class="sdk-platforms">
+        <div class="sdk-platforms">
             <div class="sdk-plat-title">Plataformas compatibles</div>
-            <div class="sdk-plat-list">
-              <div class="sdk-plat"><span class="sdk-plat-ico">📱</span>iOS nativo</div>
-              <div class="sdk-plat"><span class="sdk-plat-ico">🤖</span>Android nativo</div>
-              <div class="sdk-plat"><span class="sdk-plat-ico">🌐</span>Web SDK</div>
+                <div class="sdk-plat-list">
+                    <div class="sdk-plat">
+                        <img class="sdk-plat-ico" src="img/apple-logo.png" alt="iOS"/>
+                        iOS nativo
+                    </div>
+                    <div class="sdk-plat">
+                        <img class="sdk-plat-ico" src="img/android.png" alt="Android"/>
+                        Android nativo
+                    </div>
+                    <div class="sdk-plat">
+                        <img class="sdk-plat-ico" src="img/web.png" alt="Web"/>
+                        Web SDK
+                    </div>
+                </div>
             </div>
-          </div>
           <div class="sdk-extras">
             <div class="sdk-extra"><div class="sdk-extra-l">Integración</div><div class="sdk-extra-v">Días, no meses</div></div>
             <div class="sdk-extra"><div class="sdk-extra-l">Hardware extra</div><div class="sdk-extra-v">−70% requerido</div></div>
