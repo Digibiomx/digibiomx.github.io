@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aviso de Privacidad – Digibio Solutions</title>
+  <meta name="robots" content="index, follow"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    :root {
+      --red: #E63329;
+      --red-light: #fff1f0;
+      --red-mid: #fde0de;
+      --teal: #00897b;
+      --bg: #f5f5f7;
+      --bg2: #ffffff;
+      --border: rgba(0,0,0,0.08);
+      --border2: rgba(0,0,0,0.05);
+      --text: #1d1d1f;
+      --text2: #424245;
+      --muted: #6e6e73;
+      --font-display: 'Instrument Serif', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --max: 1160px;
+      --radius: 18px;
+      --shadow: 0 2px 20px rgba(0,0,0,0.07);
+      --shadow-lg: 0 8px 48px rgba(0,0,0,0.11);
+    }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: #c7c7cc; border-radius: 3px; }
+
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-body); font-weight: 600; font-size: 0.9rem;
+      border-radius: 980px; padding: 13px 26px;
+      cursor: pointer; transition: all 0.22s ease;
+      border: none; text-decoration: none; letter-spacing: -0.01em;
+    }
+    .btn-outline { background: rgba(0,0,0,0.06); color: var(--text); }
+    .btn-outline:hover { background: rgba(0,0,0,0.1); }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 0 28px;
+      background: rgba(245,245,247,0.88);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; height: 68px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+    .nav-logo-img { height: 64px; width: auto; object-fit: contain; }
+    .nav-back { font-size: 0.88rem; font-weight: 500; color: var(--text2); text-decoration: none; padding: 7px 14px; border-radius: 8px; transition: all 0.18s; }
+    .nav-back:hover { color: var(--text); background: rgba(0,0,0,0.05); }
+
+    /* LEGAL CONTENT */
+    main { padding: 140px 0 90px; }
+    .legal-head { text-align: center; margin-bottom: 50px; }
+    .legal-tag {
+      display: inline-block;
+      font-size: 0.67rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--red); background: var(--red-light);
+      padding: 5px 13px; border-radius: 100px; margin-bottom: 18px;
+    }
+    .legal-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 4vw, 3.1rem);
+      font-weight: 400; line-height: 1.12;
+      color: var(--text); margin-bottom: 14px; letter-spacing: -0.02em;
+    }
+    .legal-title em { font-style: italic; color: var(--red); }
+    .legal-updated { font-size: 0.92rem; color: var(--muted); }
+
+    .legal-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 56px;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+    .legal-card h2 {
+      font-family: var(--font-display);
+      font-size: 1.55rem;
+      font-weight: 400;
+      color: var(--text);
+      margin: 38px 0 14px;
+      letter-spacing: -0.01em;
+    }
+    .legal-card h2:first-child { margin-top: 0; }
+    .legal-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 22px 0 8px;
+    }
+    .legal-card p {
+      font-size: 0.96rem;
+      color: var(--text2);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .legal-card ul {
+      margin: 0 0 14px 0;
+      padding-left: 22px;
+      color: var(--text2);
+      font-size: 0.96rem;
+      line-height: 1.75;
+    }
+    .legal-card li { margin-bottom: 6px; }
+    .legal-card a { color: var(--red); text-decoration: none; font-weight: 600; }
+    .legal-card a:hover { text-decoration: underline; }
+    .legal-divider { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+    .legal-note {
+      background: var(--red-light);
+      border: 1px solid var(--red-mid);
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-size: 0.88rem;
+      color: var(--text2);
+      margin-top: 30px;
+    }
+    .legal-note strong { color: var(--red); }
+
+    /* FOOTER */
+    footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40px 0; margin-top: 30px; }
+    .footer-bot { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px; }
+    .footer-copy { font-size: 0.8rem; color: var(--muted); }
+    .footer-legal { display: flex; gap: 18px; }
+    .footer-legal a { font-size: 0.8rem; color: var(--muted); text-decoration: none; }
+    .footer-legal a:hover { color: var(--text); }
+
+    @media (max-width: 640px) {
+      .legal-card { padding: 32px 24px; }
+      main { padding: 110px 0 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="img/Digibio_Logo_Expanded.png" alt="Digibio Solutions" class="nav-logo-img"/>
+    </a>
+    <a href="/" class="nav-back">← Volver al sitio</a>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="legal-head">
+      <div class="legal-tag">Privacidad</div>
+      <h1 class="legal-title">Aviso de <em>Privacidad</em></h1>
+      <p class="legal-updated">Última actualización: 23 de junio de 2026</p>
+    </div>
+
+    <div class="legal-card">
+
+      <h2>Responsable del tratamiento de datos</h2>
+      <p>
+        <strong>Digibio Solutions, S.A. de C.V.</strong> ("Digibio Solutions", "nosotros"), con domicilio en México,
+        es responsable del uso y protección de los datos personales que se recaben a través de su sitio web
+        <a href="https://digibiosolutions.com">digibiosolutions.com</a>, de sus formularios de contacto y solicitud de
+        demostración, así como de los servicios de identidad digital, verificación biométrica, KYC/KYB y firma
+        electrónica que ofrece a sus clientes (en conjunto, los "Servicios").
+      </p>
+      <p>
+        Este aviso se emite en cumplimiento de la Ley Federal de Protección de Datos Personales en Posesión de los
+        Particulares (LFPDPPP) y su Reglamento.
+      </p>
+
+      <h2>Alcance de este aviso</h2>
+      <p>Este aviso de privacidad aplica para todos los servicios y productos ofrecidos por Digibio Solutions, incluyendo, de forma no limitativa:</p>
+      <ul>
+        <li>SDK biométrico de verificación de identidad (liveness 3D, FaceMatch, age check)</li>
+        <li>Captura y OCR de documentos de identidad (INE/IFE, pasaporte)</li>
+        <li>APIs de KYC / KYB (validación de CURP, RFC, NSS, cédula profesional, comprobante de domicilio)</li>
+        <li>Motor y buró antifraude, incluyendo consulta de listas restrictivas (OFAC, SAT, listas negras)</li>
+        <li>Firma electrónica</li>
+        <li>Sitio web corporativo, formularios de contacto y solicitud de demo</li>
+      </ul>
+
+      <h2>Finalidades del tratamiento de datos personales</h2>
+      <p>Los datos personales que Digibio Solutions recaba se utilizan exclusivamente para las siguientes finalidades:</p>
+      <h3>Finalidades primarias (necesarias para el Servicio)</h3>
+      <ul>
+        <li>Prestar los servicios de verificación de identidad, biometría, KYC/KYB y firma electrónica contratados por nuestros clientes (empresas, instituciones financieras y fintechs);</li>
+        <li>Validar la identidad de la persona usuaria final dentro del flujo de onboarding o autenticación de nuestro cliente;</li>
+        <li>Dar respuesta a solicitudes de contacto, demostraciones del producto e información comercial realizadas a través del sitio web;</li>
+        <li>Cumplir con obligaciones legales y regulatorias aplicables, incluyendo disposiciones en materia de Prevención de Lavado de Dinero (PLD) y requerimientos de autoridades competentes.</li>
+      </ul>
+      <h3>Finalidades secundarias (no obligatorias)</h3>
+      <p>
+        En caso de proporcionarnos su correo electrónico y nombre a través del formulario de contacto, podremos
+        utilizarlo para enviarle información sobre nuestros productos y novedades comerciales. Usted puede oponerse
+        a esta finalidad secundaria en cualquier momento sin que ello afecte la relación con Digibio Solutions,
+        escribiendo a <a href="mailto:info@digibiosolutions.com">info@digibiosolutions.com</a>.
+      </p>
+
+      <h2>Datos personales recabados</h2>
+      <p>Dependiendo del Servicio utilizado, Digibio Solutions puede recabar los siguientes tipos de datos:</p>
+      <ul>
+        <li><strong>Datos de identificación y contacto:</strong> nombre, apellido, correo electrónico, teléfono, empresa, cargo, sector;</li>
+        <li><strong>Datos biométricos:</strong> imagen facial (selfie), video de verificación de vida (liveness), patrones faciales derivados para fines de comparación (FaceMatch);</li>
+        <li><strong>Datos de identificación oficial:</strong> información contenida en documentos como INE/IFE o pasaporte (CURP, nombre, fecha de nacimiento, domicilio, fotografía, entre otros), capturados mediante OCR;</li>
+        <li><strong>Datos derivados de consultas a fuentes oficiales:</strong> resultado de validaciones contra bases de datos de RENAPO, SAT, IMSS/ISSSTE, listas restrictivas (OFAC) y similares, exclusivamente para emitir un resultado de validación (válido/no válido, coincide/no coincide).</li>
+      </ul>
+      <p>
+        Digibio Solutions no solicita, como parte de sus Servicios, datos personales sensibles distintos a los datos
+        biométricos estrictamente necesarios para la verificación de identidad, los cuales se tratan conforme a las
+        medidas de seguridad descritas en este aviso.
+      </p>
+
+      <h2>Tratamiento y almacenamiento de los datos</h2>
+      <p>
+        Los datos personales que el usuario final proporciona durante un proceso de verificación se procesan por
+        cuenta y bajo instrucción de la empresa cliente de Digibio Solutions que integró nuestros Servicios (por
+        ejemplo, un banco, fintech o aseguradora). Digibio Solutions actúa, según el caso, como encargado del
+        tratamiento de dichos datos, y se limita a utilizarlos para generar el resultado de la verificación
+        solicitada por su cliente, absteniéndose en todo momento de usarlos para fines comerciales, estadísticos,
+        de investigación o de cualquier otra índole distinta a la solicitada.
+      </p>
+      <p>
+        Los plazos de retención de los datos de verificación (imágenes, videos y resultados) se rigen por el
+        contrato de prestación de servicios celebrado con cada cliente y por las obligaciones regulatorias
+        aplicables al sector (por ejemplo, disposiciones de la CNBV o de PLD), después de lo cual los datos se
+        eliminan o anonimizan de forma segura.
+      </p>
+
+      <h2>Transferencia de datos personales</h2>
+      <p>
+        Digibio Solutions no vende, renta ni comparte sus datos personales con terceros para fines distintos a la
+        prestación del Servicio. Podremos compartir datos personales con:
+      </p>
+      <ul>
+        <li>Las empresas clientes de Digibio Solutions que solicitaron la verificación correspondiente;</li>
+        <li>Proveedores de infraestructura tecnológica (por ejemplo, servicios de cómputo en la nube) que tratan los datos en nuestro nombre bajo obligaciones contractuales de confidencialidad y seguridad;</li>
+        <li>Autoridades competentes, cuando exista un requerimiento legal válido.</li>
+      </ul>
+
+      <h2>Medidas de seguridad</h2>
+      <p>
+        Digibio Solutions implementa medidas de seguridad administrativas, técnicas y físicas para proteger los
+        datos personales contra daño, pérdida, alteración, destrucción o uso, acceso o tratamiento no autorizado,
+        incluyendo cifrado en tránsito y en reposo, control de accesos y prácticas alineadas con estándares como
+        ISO 30107-3, NIST FRVT y OWASP.
+      </p>
+
+      <h2>Derechos ARCO</h2>
+      <p>
+        Usted tiene derecho a Acceder, Rectificar y Cancelar sus datos personales, así como a Oponerse al
+        tratamiento de los mismos para fines específicos (derechos ARCO), y a revocar el consentimiento que, en su
+        caso, nos haya otorgado.
+      </p>
+      <p>
+        Para ejercer estos derechos, puede enviar una solicitud al correo
+        <a href="mailto:info@digibiosolutions.com">info@digibiosolutions.com</a>, indicando su nombre completo,
+        el dato o servicio respecto del cual ejerce su derecho, y documentación que acredite su identidad. Si su
+        solicitud se relaciona con una verificación realizada a través de uno de nuestros clientes, le
+        recomendamos también dirigir su solicitud directamente a dicha empresa, ya que es quien determina las
+        finalidades del tratamiento.
+      </p>
+
+      <h2>Uso de cookies y tecnologías similares</h2>
+      <p>
+        El sitio web digibiosolutions.com puede utilizar cookies y tecnologías similares para fines de
+        funcionamiento básico, análisis de tráfico y mejora de la experiencia de navegación. Usted puede
+        deshabilitar el uso de cookies desde la configuración de su navegador, aunque esto podría afectar
+        algunas funcionalidades del sitio.
+      </p>
+
+      <h2>Cambios al aviso de privacidad</h2>
+      <p>
+        Digibio Solutions se reserva el derecho de actualizar este aviso de privacidad en cualquier momento, para
+        cumplir con actualizaciones legislativas, políticas internas o nuevos requerimientos de los Servicios.
+        Cualquier modificación será publicada en
+        <a href="https://digibiosolutions.com/privacidad">digibiosolutions.com/privacidad</a>.
+      </p>
+
+      <hr class="legal-divider"/>
+
+      <h2>Contacto</h2>
+      <p>
+        Si tiene dudas o comentarios sobre este aviso de privacidad, puede contactarnos en
+        <a href="mailto:info@digibiosolutions.com">info@digibiosolutions.com</a>.
+      </p>
+
+      <div class="legal-note">
+        <strong>Nota:</strong> este documento es un modelo de aviso de privacidad redactado con fines orientativos.
+        Te recomendamos hacerlo revisar por un abogado especializado en protección de datos en México antes de
+        publicarlo, sobre todo en los puntos sobre almacenamiento/retención de datos biométricos y el rol de
+        Digibio Solutions como encargado vs. responsable del tratamiento, ya que esto depende del contrato real
+        con cada cliente.
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bot">
+      <p class="footer-copy">© 2026 Digibio Solutions, S.A. de C.V. Todos los derechos reservados.</p>
+      <div class="footer-legal">
+        <a href="/privacidad">Aviso de Privacidad</a>
+        <a href="mailto:info@digibiosolutions.com">Contacto</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
