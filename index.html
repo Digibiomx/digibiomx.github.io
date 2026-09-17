@@ -6,7 +6,41 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Digibio Solutions – Identidad Digital Integral</title>
+  <title>Digibio Solutions – Identidad Digital Integral para México</title>
+  <meta name="description" content="Digibio Solutions ofrece verificación de identidad, biometría 3D, KYC/KYB y firma electrónica avanzada para bancos, fintechs y empresas en México. Integración por SDK y API REST, cumplimiento CNBV, PLD y NOM-151."/>
+  <meta name="keywords" content="verificación de identidad, KYC México, KYB, biometría facial, firma electrónica NOM-151, prevención de fraude, onboarding digital, INE CURP RFC API"/>
+  <meta name="author" content="Digibio Solutions"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.digibiosolutions.com/"/>
+  <meta name="theme-color" content="#1d1d1f"/>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="es_MX"/>
+  <meta property="og:site_name" content="Digibio Solutions"/>
+  <meta property="og:title" content="Digibio Solutions – Identidad Digital Integral para México"/>
+  <meta property="og:description" content="Verificación de identidad, biometría 3D, KYC/KYB y firma electrónica avanzada en una sola plataforma. Diseñada para el mercado mexicano."/>
+  <meta property="og:url" content="https://www.digibiosolutions.com/"/>
+  <meta property="og:image" content="https://www.digibiosolutions.com/img/Digibio_Logo_Expanded.png"/>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Digibio Solutions – Identidad Digital Integral para México"/>
+  <meta name="twitter:description" content="Verificación de identidad, biometría 3D, KYC/KYB y firma electrónica avanzada en una sola plataforma."/>
+  <meta name="twitter:image" content="https://www.digibiosolutions.com/img/Digibio_Logo_Expanded.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Digibio Solutions",
+    "legalName": "Digibio Solutions S.A. de C.V.",
+    "url": "https://www.digibiosolutions.com/",
+    "logo": "https://www.digibiosolutions.com/img/Digibio_Logo_Expanded.png",
+    "email": "info@digibiosolutions.com",
+    "telephone": "+52-55-3986-8037",
+    "sameAs": ["https://www.linkedin.com/company/digibiosolutions/"],
+    "address": {"@type": "PostalAddress", "addressCountry": "MX"},
+    "description": "Plataforma de identidad digital integral: biometría 3D, KYC/KYB y firma electrónica avanzada para instituciones financieras y empresas en México."
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -44,6 +78,7 @@
     ::-webkit-scrollbar-thumb { background: #c7c7cc; border-radius: 3px; }
 
     .container { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+    .icon { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; stroke: currentColor; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
     .tag {
       display: inline-block;
       font-size: 0.67rem; font-weight: 700;
@@ -146,6 +181,17 @@
 
     /* HERO VISUALS */
     .hero-visuals { display: flex; flex-direction: column; gap: 14px; }
+    .phone-mock {
+      background: linear-gradient(155deg, #2a2a2d, #1d1d1f); border-radius: 34px;
+      padding: 12px 10px 22px; box-shadow: var(--shadow-lg); position: relative;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .phone-notch {
+      position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+      width: 76px; height: 16px; background: #1d1d1f; border-radius: 0 0 10px 10px; z-index: 2;
+    }
+    .phone-screen { background: #fff; border-radius: 24px; padding: 26px 20px 18px; overflow: hidden; }
+    .phone-home-bar { width: 90px; height: 4px; background: rgba(255,255,255,0.28); border-radius: 3px; margin: 14px auto 0; }
     .anim-card {
       background: #fff; border: 1px solid var(--border);
       border-radius: var(--radius); padding: 24px;
@@ -178,7 +224,7 @@
     .sc-bl { bottom:0;left:0; border-width:0 0 2px 2px; border-radius:0 0 0 3px; }
     .bio-results { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
     .bio-item { background: var(--bg); border-radius: 10px; padding: 10px 12px; display: flex; align-items: center; gap: 8px; }
-    .bio-item-icon { font-size: 0.9rem; }
+    .bio-item-icon { font-size: 0.9rem; color: var(--muted); }
     .bio-item-label { font-size: 0.67rem; color: var(--muted); font-weight: 500; }
     .bio-item-val { font-size: 0.79rem; font-weight: 700; color: #34c759; }
 
@@ -216,7 +262,7 @@
       padding: 30px; transition: all 0.25s; box-shadow: var(--shadow);
     }
     .prob-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-    .prob-icon { width: 42px; height: 42px; background: var(--red-light); border-radius: 11px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 16px; }
+    .prob-icon { width: 42px; height: 42px; background: var(--red-light); border-radius: 11px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 16px; color: var(--red); }
     .prob-title { font-size: 0.97rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
     .prob-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
     .dilema-box {
@@ -249,7 +295,7 @@
       display: flex; align-items: flex-start; gap: 12px;
       padding: 15px 18px; background: var(--bg); border-radius: 12px; border: 1px solid var(--border2);
     }
-    .sdk-feat-ico { width: 34px; height: 34px; flex-shrink: 0; background: #fff; border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; }
+    .sdk-feat-ico { width: 34px; height: 34px; flex-shrink: 0; background: #fff; border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; color: var(--red); }
     .sdk-feat-t { font-size: 0.86rem; font-weight: 700; color: var(--text); margin-bottom: 2px; }
     .sdk-feat-d { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
     .sdk-platforms { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 14px; }
@@ -274,7 +320,7 @@
     .apis-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
     .api-cat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; transition: all 0.22s; }
     .api-cat:hover { background: #fff; box-shadow: var(--shadow); transform: translateY(-2px); }
-    .api-cat-ico { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 14px; background: var(--red-light); }
+    .api-cat-ico { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 14px; background: var(--red-light); color: var(--red); }
     .api-cat-t { font-size: 0.97rem; font-weight: 700; color: var(--text); margin-bottom: 11px; }
     .api-items { display: flex; flex-direction: column; gap: 6px; }
     .api-it { display: flex; align-items: center; gap: 8px; font-size: 0.83rem; color: var(--text2); }
@@ -290,7 +336,7 @@
     .motor-stat-l { font-size: 0.82rem; color: var(--muted); margin-top: 5px; }
     .motor-caps { display: grid; grid-template-columns: repeat(2,1fr); gap: 13px; }
     .motor-cap { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 22px; display: flex; align-items: flex-start; gap: 13px; }
-    .motor-cap-ico { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+    .motor-cap-ico { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; color: var(--red); }
     .motor-cap-t { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
     .motor-cap-d { font-size: 0.8rem; color: var(--muted); line-height: 1.55; }
 
@@ -309,7 +355,7 @@
     .firma-cases-t { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 18px; }
     .firma-case-list { display: flex; flex-direction: column; gap: 13px; }
     .firma-case { display: flex; align-items: center; gap: 11px; font-size: 0.86rem; color: rgba(255,255,255,0.82); font-weight: 500; }
-    .firma-case-ico { font-size: 1rem; }
+    .firma-case-ico { font-size: 1rem; color: #ff8a82; }
 
     /* FLUJO */
     #flujo { padding: 120px 0; background: var(--bg); }
@@ -323,7 +369,7 @@
       width: 58px; height: 58px; background: #fff; border: 1.5px solid var(--border);
       border-radius: 50%; display: flex; align-items: center; justify-content: center;
       font-size: 1.3rem; margin: 0 auto 14px; position: relative; z-index: 1;
-      box-shadow: var(--shadow); transition: all 0.3s;
+      box-shadow: var(--shadow); transition: all 0.3s; color: var(--red);
     }
     .flujo-step:hover .flujo-bub { border-color: rgba(230,51,41,0.4); box-shadow: 0 0 0 6px var(--red-light); transform: scale(1.08); }
     .flujo-step-t { font-size: 0.87rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
@@ -334,10 +380,17 @@
     /* CASOS */
     #casos { padding: 120px 0; }
     .casos-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+    .casos-grid.cols-2 { grid-template-columns: repeat(2,1fr); max-width: 780px; margin: 0 auto; }
+    .ctabs { display: flex; gap: 8px; justify-content: center; margin: 44px 0 32px; flex-wrap: wrap; }
+    .ctab { font-size: 0.85rem; font-weight: 600; padding: 10px 20px; border-radius: 100px; cursor: pointer; border: 1px solid var(--border); background: var(--bg); color: var(--text2); transition: all 0.2s; }
+    .ctab.active { background: var(--text); color: #fff; border-color: var(--text); }
+    .ctab:hover:not(.active) { background: rgba(0,0,0,0.06); }
+    .ctab-panel { display: none; }
+    .ctab-panel.active { display: block; }
     .caso-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all 0.25s; box-shadow: var(--shadow); }
     .caso-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
     .caso-hd { padding: 22px 22px 14px; border-bottom: 1px solid var(--border2); }
-    .caso-emoji { font-size: 1.7rem; margin-bottom: 9px; display: block; }
+    .caso-emoji { font-size: 1.7rem; margin-bottom: 9px; display: block; color: var(--red); }
     .caso-hd-t { font-size: 0.93rem; font-weight: 700; color: var(--text); }
     .caso-body { padding: 18px 22px 22px; }
     .caso-pl { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--red); margin-bottom: 4px; }
@@ -359,12 +412,17 @@
     .caso-metric { font-family: var(--font-display); font-size: 6rem; font-weight: 400; color: var(--red); line-height: 1; letter-spacing: -0.04em; }
     .caso-metric-l { font-size: 0.92rem; color: rgba(255,255,255,0.6); margin-top: 8px; line-height: 1.5; }
 
-    /* CERTS */
-    #certs { padding: 72px 0; background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .certs-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; justify-content: center; }
-    .certs-lbl { font-size: 0.78rem; font-weight: 700; color: var(--muted); letter-spacing: 0.07em; text-transform: uppercase; margin-right: 6px; }
-    .cert-badge { display: flex; align-items: center; gap: 8px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 10px 18px; transition: all 0.2s; }
+    /* CERTS / TRUST BAR */
+    #certs { padding: 40px 0 52px; background: #fff; border-bottom: 1px solid var(--border); }
+    .certs-head { text-align: center; margin-bottom: 22px; }
+    .certs-lbl { font-size: 0.74rem; font-weight: 700; color: var(--muted); letter-spacing: 0.09em; text-transform: uppercase; }
+    .certs-marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+    .certs-track { display: flex; gap: 14px; width: max-content; animation: certScroll 32s linear infinite; }
+    .certs-marquee:hover .certs-track { animation-play-state: paused; }
+    @keyframes certScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .cert-badge { display: flex; align-items: center; gap: 11px; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px 20px; white-space: nowrap; transition: all 0.2s; }
     .cert-badge:hover { background: #fff; box-shadow: var(--shadow); }
+    .cert-badge-ico { color: var(--red); font-size: 1.3rem; }
     .cert-n { font-size: 0.88rem; font-weight: 800; color: var(--text); letter-spacing: -0.01em; }
     .cert-s { font-size: 0.7rem; color: var(--muted); }
 
@@ -373,7 +431,7 @@
     .vent-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
     .vent-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 30px; transition: all 0.22s; box-shadow: var(--shadow); }
     .vent-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-    .vent-ico { width: 46px; height: 46px; background: var(--red-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 16px; }
+    .vent-ico { width: 46px; height: 46px; background: var(--red-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 16px; color: var(--red); }
     .vent-t { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
     .vent-d { font-size: 0.86rem; color: var(--muted); line-height: 1.65; }
 
@@ -383,7 +441,7 @@
     .impl-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 34px 30px; transition: all 0.22s; }
     .impl-card:hover { background: #fff; box-shadow: var(--shadow-lg); transform: translateY(-3px); }
     .impl-n { font-family: var(--font-display); font-size: 2.8rem; font-weight: 400; color: rgba(0,0,0,0.07); line-height: 1; margin-bottom: 14px; letter-spacing: -0.04em; }
-    .impl-ico { font-size: 1.7rem; margin-bottom: 12px; display: block; }
+    .impl-ico { font-size: 1.7rem; margin-bottom: 12px; display: block; color: var(--red); }
     .impl-t { font-size: 1.02rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
     .impl-d { font-size: 0.86rem; color: var(--muted); line-height: 1.65; }
 
@@ -406,7 +464,7 @@
 
     /* FOOTER */
     footer { background: var(--bg); border-top: 1px solid var(--border); padding: 60px 0 40px; }
-    .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 44px; }
+    .footer-inner { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 44px; }
     .footer-logo { display: flex; align-items: center; gap: 8px; margin-bottom: 13px; text-decoration: none; }
     .footer-logo-img {
         height: 100px;
@@ -420,9 +478,11 @@
     .footer-badge { font-size: 0.67rem; font-weight: 700; color: var(--muted); border: 1px solid var(--border); padding: 4px 9px; border-radius: 6px; background: #fff; letter-spacing: 0.04em; }
     .footer-col-t { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); margin-bottom: 13px; }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .footer-links-contact a { display: flex; align-items: center; gap: 8px; }
+    .footer-links-contact .icon { color: var(--muted); font-size: 0.9rem; }
     .footer-links a { font-size: 0.87rem; color: var(--text2); text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--text); }
-    .footer-bot { justify-content: center; padding-top: 26px; border-top: 1px solid var(--border); display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-bot { padding-top: 26px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
     .footer-copy { font-size: 0.8rem; color: var(--muted); }
     .footer-legal { justify-content: center; display: flex; align-items: center; flex-wrap: wrap; gap: 18px; }
     .footer-legal a { font-size: 0.8rem; color: var(--muted); text-decoration: none; }
@@ -436,7 +496,7 @@
     @media (max-width: 1024px) {
       .hero-inner { grid-template-columns: 1fr; gap: 52px; }
       .hero-visuals { flex-direction: row; }
-      .hero-visuals .anim-card { flex: 1; }
+      .hero-visuals .anim-card, .hero-visuals .phone-mock { flex: 1; }
       .sdk-grid, .firma-grid { grid-template-columns: 1fr; }
       .motor-stats { gap: 36px; }
       .vent-grid, .impl-grid { grid-template-columns: repeat(2,1fr); }
@@ -451,7 +511,7 @@
       .motor-stats { flex-direction: column; gap: 24px; }
       .flujo-steps { flex-direction: column; gap: 18px; }
       .flujo-step:not(:last-child)::after { display: none; }
-      .casos-grid { grid-template-columns: 1fr; }
+      .casos-grid, .casos-grid.cols-2 { grid-template-columns: 1fr; }
       .caso-feat { grid-column: span 1; grid-template-columns: 1fr; text-align: center; padding: 30px 22px; }
       .vent-grid, .impl-grid { grid-template-columns: 1fr; }
       .cta-box { padding: 48px 22px; }
@@ -633,6 +693,7 @@
     justify-content: center;
     font-size: 1.8rem;
     margin: 0 auto 20px;
+    color: var(--teal);
     }
     .success-title {
     font-family: var(--font-display);
@@ -652,6 +713,44 @@
   </style>
 </head>
 <body>
+
+<!-- ICON SPRITE (línea profesional, sin emojis) -->
+<svg style="display:none" aria-hidden="true">
+  <defs>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.2 3.6-6.5 8-6.5s8 2.3 8 6.5"/></symbol>
+    <symbol id="i-id-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="12" r="2"/><path d="M14 10h6M14 14h4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5l7.5 3.5v5.5c0 5-3.2 8.5-7.5 10-4.3-1.5-7.5-5-7.5-10V6l7.5-3.5z"/></symbol>
+    <symbol id="i-shield-alert" viewBox="0 0 24 24"><path d="M12 2.5l7.5 3.5v5.5c0 5-3.2 8.5-7.5 10-4.3-1.5-7.5-5-7.5-10V6l7.5-3.5z"/><path d="M12 8v4.2M12 15.3h.01"/></symbol>
+    <symbol id="i-trending-up" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-9"/><path d="M14 6h7v7"/></symbol>
+    <symbol id="i-alert-triangle" viewBox="0 0 24 24"><path d="M12 3.2L22 20H2L12 3.2z"/><path d="M12 10v4.2M12 17.2h.01"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M4 21h16M6.5 7L3.5 13a3 3 0 006 0L6.5 7zM17.5 7l-3 6a3 3 0 006 0l-3-6z"/><path d="M6.5 7h11"/></symbol>
+    <symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M17 6.5c0-1.9-2.4-3.5-5-3.5s-5 1.4-5 3.2c0 4 10 1.8 10 5.9 0 1.9-2.4 3.4-5 3.4s-5-1.5-5-3.4"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 8V5a2 2 0 012-2h3M21 8V5a2 2 0 00-2-2h-3M3 16v3a2 2 0 002 2h3M21 16v3a2 2 0 01-2 2h-3"/><path d="M12 8.5a3.2 3.2 0 100 6.4 3.2 3.2 0 000-6.4z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.8-2.6h6.4L17 8h3a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V9a1 1 0 011-1z"/><circle cx="12" cy="14" r="3.4"/></symbol>
+    <symbol id="i-file-text" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9.2 12h5.6M9.2 16h5.6"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M2 12.5h20"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5.5" y="4" width="13" height="17" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="M8.5 11h7M8.5 15h7"/></symbol>
+    <symbol id="i-repeat" viewBox="0 0 24 24"><path d="M17 2.5l4 4-4 4M3 11V9a4 4 0 014-4h14M7 21.5l-4-4 4-4M21 13v2a4 4 0 01-4 4H3"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7.2 10-7.2S22 12 22 12s-4 7.2-10 7.2S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4"/><path d="M2.3 20c0-3.5 3-6.2 6.7-6.2S15.7 16.5 15.7 20"/><circle cx="17.3" cy="8.6" r="2.6"/><path d="M15.8 14.4c2.7.3 4.9 2.5 4.9 5.4"/></symbol>
+    <symbol id="i-credit-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></symbol>
+    <symbol id="i-ban" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></symbol>
+    <symbol id="i-smartphone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 4 6 4 9s-1.4 6.4-4 9c-2.6-2.6-4-6-4-9s1.4-6.4 4-9z"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5.6"/><path d="M8.3 13l-1.3 8.5 5-3 5 3L15.7 13"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 3v18"/><path d="M5 4.5h13l-3 4.5 3 4.5H5z"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.6 2.6 5.4-6"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6.2a2 2 0 012-2h4l2 2h8a2 2 0 012 2V17a2 2 0 01-2 2H5a2 2 0 01-2-2V6.2z"/></symbol>
+    <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 21h18M4 21V10.5M20 21V10.5M2 10.5l10-6.2 10 6.2M6 10.5V21M10 10.5V21M14 10.5V21M18 10.5V21"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2.5l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></symbol>
+  </defs>
+</svg>
 
 <!-- NAV -->
 <nav id="navbar">
@@ -701,48 +800,52 @@
 
       <!-- Two animated cards -->
       <div class="hero-visuals">
-        <!-- Card 1: Face biometric scan -->
-        <div class="anim-card">
-          <div class="anim-label"><div class="anim-dot"></div>Verificación biométrica · En vivo</div>
-          <div class="bio-wrap">
-            <svg class="bio-svg" viewBox="0 0 110 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <ellipse cx="55" cy="58" rx="38" ry="46" stroke="#d1d1d6" stroke-width="1.5"/>
-              <ellipse cx="40" cy="50" rx="5.5" ry="3.8" stroke="#a8a8af" stroke-width="1.4" fill="#f5f5f7"/>
-              <circle cx="40" cy="50" r="2.2" fill="#1d1d1f"/>
-              <ellipse cx="70" cy="50" rx="5.5" ry="3.8" stroke="#a8a8af" stroke-width="1.4" fill="#f5f5f7"/>
-              <circle cx="70" cy="50" r="2.2" fill="#1d1d1f"/>
-              <path d="M55 58 L51 69 Q55 72 59 69 Z" stroke="#c7c7cc" stroke-width="1" fill="none"/>
-              <path d="M44 80 Q55 88 66 80" stroke="#c7c7cc" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-              <!-- mesh dots -->
-              <circle cx="55" cy="34" r="1.4" fill="#E63329" opacity="0.45"/>
-              <circle cx="40" cy="40" r="1.4" fill="#E63329" opacity="0.35"/>
-              <circle cx="70" cy="40" r="1.4" fill="#E63329" opacity="0.35"/>
-              <circle cx="31" cy="58" r="1.4" fill="#E63329" opacity="0.28"/>
-              <circle cx="79" cy="58" r="1.4" fill="#E63329" opacity="0.28"/>
-              <circle cx="40" cy="73" r="1.4" fill="#E63329" opacity="0.22"/>
-              <circle cx="70" cy="73" r="1.4" fill="#E63329" opacity="0.22"/>
-              <circle cx="55" cy="90" r="1.4" fill="#E63329" opacity="0.2"/>
-              <!-- mesh lines -->
-              <line x1="55" y1="34" x2="40" y2="40" stroke="#E63329" stroke-width="0.5" opacity="0.2"/>
-              <line x1="55" y1="34" x2="70" y2="40" stroke="#E63329" stroke-width="0.5" opacity="0.2"/>
-              <line x1="40" y1="40" x2="31" y2="58" stroke="#E63329" stroke-width="0.5" opacity="0.15"/>
-              <line x1="70" y1="40" x2="79" y2="58" stroke="#E63329" stroke-width="0.5" opacity="0.15"/>
-              <line x1="31" y1="58" x2="40" y2="73" stroke="#E63329" stroke-width="0.5" opacity="0.15"/>
-              <line x1="79" y1="58" x2="70" y2="73" stroke="#E63329" stroke-width="0.5" opacity="0.15"/>
-              <line x1="40" y1="73" x2="55" y2="90" stroke="#E63329" stroke-width="0.5" opacity="0.12"/>
-              <line x1="70" y1="73" x2="55" y2="90" stroke="#E63329" stroke-width="0.5" opacity="0.12"/>
-              <!-- shoulders -->
-              <path d="M37 106 Q55 102 73 106 L78 122 Q55 128 32 122 Z" stroke="#d1d1d6" stroke-width="1.4" fill="none"/>
-            </svg>
-            <div class="scan-line"></div>
-            <div class="scan-corners"><div class="sc-br"></div><div class="sc-bl"></div></div>
+        <!-- Card 1: Face biometric scan, in a device mockup -->
+        <div class="phone-mock">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="anim-label"><div class="anim-dot"></div>Verificación biométrica · En vivo</div>
+            <div class="bio-wrap">
+              <svg class="bio-svg" viewBox="0 0 110 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="55" cy="58" rx="38" ry="46" stroke="#d1d1d6" stroke-width="1.5"/>
+                <ellipse cx="40" cy="50" rx="5.5" ry="3.8" stroke="#a8a8af" stroke-width="1.4" fill="#f5f5f7"/>
+                <circle cx="40" cy="50" r="2.2" fill="#1d1d1f"/>
+                <ellipse cx="70" cy="50" rx="5.5" ry="3.8" stroke="#a8a8af" stroke-width="1.4" fill="#f5f5f7"/>
+                <circle cx="70" cy="50" r="2.2" fill="#1d1d1f"/>
+                <path d="M55 58 L51 69 Q55 72 59 69 Z" stroke="#c7c7cc" stroke-width="1" fill="none"/>
+                <path d="M44 80 Q55 88 66 80" stroke="#c7c7cc" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+                <!-- mesh dots -->
+                <circle cx="55" cy="34" r="1.4" fill="#E63329" opacity="0.45"/>
+                <circle cx="40" cy="40" r="1.4" fill="#E63329" opacity="0.35"/>
+                <circle cx="70" cy="40" r="1.4" fill="#E63329" opacity="0.35"/>
+                <circle cx="31" cy="58" r="1.4" fill="#E63329" opacity="0.28"/>
+                <circle cx="79" cy="58" r="1.4" fill="#E63329" opacity="0.28"/>
+                <circle cx="40" cy="73" r="1.4" fill="#E63329" opacity="0.22"/>
+                <circle cx="70" cy="73" r="1.4" fill="#E63329" opacity="0.22"/>
+                <circle cx="55" cy="90" r="1.4" fill="#E63329" opacity="0.2"/>
+                <!-- mesh lines -->
+                <line x1="55" y1="34" x2="40" y2="40" stroke="#E63329" stroke-width="0.5" opacity="0.2"/>
+                <line x1="55" y1="34" x2="70" y2="40" stroke="#E63329" stroke-width="0.5" opacity="0.2"/>
+                <line x1="40" y1="40" x2="31" y2="58" stroke="#E63329" stroke-width="0.5" opacity="0.15"/>
+                <line x1="70" y1="40" x2="79" y2="58" stroke="#E63329" stroke-width="0.5" opacity="0.15"/>
+                <line x1="31" y1="58" x2="40" y2="73" stroke="#E63329" stroke-width="0.5" opacity="0.15"/>
+                <line x1="79" y1="58" x2="70" y2="73" stroke="#E63329" stroke-width="0.5" opacity="0.15"/>
+                <line x1="40" y1="73" x2="55" y2="90" stroke="#E63329" stroke-width="0.5" opacity="0.12"/>
+                <line x1="70" y1="73" x2="55" y2="90" stroke="#E63329" stroke-width="0.5" opacity="0.12"/>
+                <!-- shoulders -->
+                <path d="M37 106 Q55 102 73 106 L78 122 Q55 128 32 122 Z" stroke="#d1d1d6" stroke-width="1.4" fill="none"/>
+              </svg>
+              <div class="scan-line"></div>
+              <div class="scan-corners"><div class="sc-br"></div><div class="sc-bl"></div></div>
+            </div>
+            <div class="bio-results">
+              <div class="bio-item"><span class="bio-item-icon"><svg class="icon"><use href="#i-user"/></svg></span><div><div class="bio-item-label">Liveness 3D</div><div class="bio-item-val">✓ Persona real</div></div></div>
+              <div class="bio-item"><span class="bio-item-icon"><svg class="icon"><use href="#i-id-card"/></svg></span><div><div class="bio-item-label">FaceMatch</div><div class="bio-item-val">✓ 99.2%</div></div></div>
+              <div class="bio-item"><span class="bio-item-icon"><svg class="icon"><use href="#i-search"/></svg></span><div><div class="bio-item-label">CURP / INE</div><div class="bio-item-val">✓ Validado</div></div></div>
+              <div class="bio-item"><span class="bio-item-icon"><svg class="icon"><use href="#i-shield"/></svg></span><div><div class="bio-item-label">Listas negras</div><div class="bio-item-val">✓ Sin alertas</div></div></div>
+            </div>
           </div>
-          <div class="bio-results">
-            <div class="bio-item"><span class="bio-item-icon">👤</span><div><div class="bio-item-label">Liveness 3D</div><div class="bio-item-val">✓ Persona real</div></div></div>
-            <div class="bio-item"><span class="bio-item-icon">🪪</span><div><div class="bio-item-label">FaceMatch</div><div class="bio-item-val">✓ 99.2%</div></div></div>
-            <div class="bio-item"><span class="bio-item-icon">🔍</span><div><div class="bio-item-label">CURP / INE</div><div class="bio-item-val">✓ Validado</div></div></div>
-            <div class="bio-item"><span class="bio-item-icon">🛡️</span><div><div class="bio-item-label">Listas negras</div><div class="bio-item-val">✓ Sin alertas</div></div></div>
-          </div>
+          <div class="phone-home-bar"></div>
         </div>
 
         <!-- Card 2: API call animation -->
@@ -776,6 +879,30 @@
   </div>
 </section>
 
+<!-- TRUST BAR -->
+<section id="certs">
+  <div class="container">
+    <div class="certs-head fade-up"><span class="certs-lbl">Tecnología con certificación internacional</span></div>
+  </div>
+  <div class="certs-marquee fade-up">
+    <div class="certs-track">
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-scan"/></svg><div><div class="cert-n">ISO 30107-3</div><div class="cert-s">Nivel 1 y 2 · Liveness Detection</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-eye"/></svg><div><div class="cert-n">NIST FRVT</div><div class="cert-s">Top Performer · Reconocimiento facial</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-shield"/></svg><div><div class="cert-n">EPCS DEA</div><div class="cert-s">Biometric FAR · Entornos regulados</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-lock"/></svg><div><div class="cert-n">OWASP</div><div class="cert-s">Black &amp; White Box Pen Testing</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-file-text"/></svg><div><div class="cert-n">NOM-151</div><div class="cert-s">Conservación de expedientes · México</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-scale"/></svg><div><div class="cert-n">CNBV · PLD</div><div class="cert-s">Diseñado para cumplimiento regulatorio MX</div></div></div>
+      <!-- duplicado para loop continuo -->
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-scan"/></svg><div><div class="cert-n">ISO 30107-3</div><div class="cert-s">Nivel 1 y 2 · Liveness Detection</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-eye"/></svg><div><div class="cert-n">NIST FRVT</div><div class="cert-s">Top Performer · Reconocimiento facial</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-shield"/></svg><div><div class="cert-n">EPCS DEA</div><div class="cert-s">Biometric FAR · Entornos regulados</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-lock"/></svg><div><div class="cert-n">OWASP</div><div class="cert-s">Black &amp; White Box Pen Testing</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-file-text"/></svg><div><div class="cert-n">NOM-151</div><div class="cert-s">Conservación de expedientes · México</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-scale"/></svg><div><div class="cert-n">CNBV · PLD</div><div class="cert-s">Diseñado para cumplimiento regulatorio MX</div></div></div>
+    </div>
+  </div>
+</section>
+
 <!-- PROBLEMA -->
 <section id="problema">
   <div class="container">
@@ -785,10 +912,10 @@
       <p class="section-sub">El crecimiento acelerado de la banca digital trajo nuevos riesgos que las soluciones tradicionales no pueden resolver.</p>
     </div>
     <div class="prob-grid">
-      <div class="prob-card fade-up"><div class="prob-icon">📈</div><div class="prob-title">Crecimiento digital imparable</div><p class="prob-desc">+90M usuarios de banca digital y fintech en México. El onboarding remoto creció de forma acelerada e irreversible, abriendo nuevas superficies de ataque.</p></div>
-      <div class="prob-card fade-up"><div class="prob-icon">⚠️</div><div class="prob-title">Fraude en escalada</div><p class="prob-desc">El fraude de identidad aumenta año con año. Las pérdidas impactan directamente la rentabilidad y la reputación de las instituciones financieras.</p></div>
-      <div class="prob-card fade-up"><div class="prob-icon">⚖️</div><div class="prob-title">Presión regulatoria</div><p class="prob-desc">Banxico, CNBV y prácticas de PLD exigen controles más estrictos. Incumplir implica sanciones, auditorías y riesgo reputacional severo.</p></div>
-      <div class="prob-card fade-up"><div class="prob-icon">💸</div><div class="prob-title">Costos operativos altos</div><p class="prob-desc">Validaciones manuales y call centers elevan el costo por cliente. La fricción también genera abandono masivo durante el onboarding.</p></div>
+      <div class="prob-card fade-up"><div class="prob-icon"><svg class="icon"><use href="#i-trending-up"/></svg></div><div class="prob-title">Crecimiento digital imparable</div><p class="prob-desc">+90M usuarios de banca digital y fintech en México. El onboarding remoto creció de forma acelerada e irreversible, abriendo nuevas superficies de ataque.</p></div>
+      <div class="prob-card fade-up"><div class="prob-icon"><svg class="icon"><use href="#i-alert-triangle"/></svg></div><div class="prob-title">Fraude en escalada</div><p class="prob-desc">El fraude de identidad aumenta año con año. Las pérdidas impactan directamente la rentabilidad y la reputación de las instituciones financieras.</p></div>
+      <div class="prob-card fade-up"><div class="prob-icon"><svg class="icon"><use href="#i-scale"/></svg></div><div class="prob-title">Presión regulatoria</div><p class="prob-desc">Banxico, CNBV y prácticas de PLD exigen controles más estrictos. Incumplir implica sanciones, auditorías y riesgo reputacional severo.</p></div>
+      <div class="prob-card fade-up"><div class="prob-icon"><svg class="icon"><use href="#i-dollar"/></svg></div><div class="prob-title">Costos operativos altos</div><p class="prob-desc">Validaciones manuales y call centers elevan el costo por cliente. La fricción también genera abandono masivo durante el onboarding.</p></div>
     </div>
     <div class="dilema-box fade-up">
       <p>A mayor seguridad, mayor <em>fricción.</em><br/>A menor fricción, mayor <em>riesgo.</em><br/>Digibio resuelve ambos al mismo tiempo.</p>
@@ -817,10 +944,10 @@
           <h3 class="sdk-h">SDK Biométrico</h3>
           <p class="sdk-p">Se integra directamente en la app del cliente y maneja toda la capa de captura y antifraude en el dispositivo. Sin dependencia de hardware especializado.</p>
           <div class="sdk-feats">
-            <div class="sdk-feat"><div class="sdk-feat-ico">🔬</div><div><div class="sdk-feat-t">3D Liveness Detection (Nivel 1 y 2)</div><div class="sdk-feat-d">Detecta ataques de presentación: fotos, videos, máscaras y deepfakes. Certificado ISO 30107-3.</div></div></div>
-            <div class="sdk-feat"><div class="sdk-feat-ico">🤳</div><div><div class="sdk-feat-t">FaceMatch 3D:3D y 3D:2D</div><div class="sdk-feat-d">Comparación selfie vs. documento. Funciona con selfie biométrico 3D o foto 2D del documento de identidad.</div></div></div>
-            <div class="sdk-feat"><div class="sdk-feat-ico">📄</div><div><div class="sdk-feat-t">Captura y OCR de documentos</div><div class="sdk-feat-d">Extracción automática de datos de INE, pasaporte y más. Captura guiada con validación en tiempo real.</div></div></div>
-            <div class="sdk-feat"><div class="sdk-feat-ico">🎂</div><div><div class="sdk-feat-t">Age Check y Age Estimation</div><div class="sdk-feat-d">Verificación y estimación de edad desde selfie 3D o 2D, sin requerir documento adicional.</div></div></div>
+            <div class="sdk-feat"><div class="sdk-feat-ico"><svg class="icon"><use href="#i-scan"/></svg></div><div><div class="sdk-feat-t">3D Liveness Detection (Nivel 1 y 2)</div><div class="sdk-feat-d">Detecta ataques de presentación: fotos, videos, máscaras y deepfakes. Certificado ISO 30107-3.</div></div></div>
+            <div class="sdk-feat"><div class="sdk-feat-ico"><svg class="icon"><use href="#i-camera"/></svg></div><div><div class="sdk-feat-t">FaceMatch 3D:3D y 3D:2D</div><div class="sdk-feat-d">Comparación selfie vs. documento. Funciona con selfie biométrico 3D o foto 2D del documento de identidad.</div></div></div>
+            <div class="sdk-feat"><div class="sdk-feat-ico"><svg class="icon"><use href="#i-file-text"/></svg></div><div><div class="sdk-feat-t">Captura y OCR de documentos</div><div class="sdk-feat-d">Extracción automática de datos de INE, pasaporte y más. Captura guiada con validación en tiempo real.</div></div></div>
+            <div class="sdk-feat"><div class="sdk-feat-ico"><svg class="icon"><use href="#i-calendar"/></svg></div><div><div class="sdk-feat-t">Age Check y Age Estimation</div><div class="sdk-feat-d">Verificación y estimación de edad desde selfie 3D o 2D, sin requerir documento adicional.</div></div></div>
           </div>
         </div>
         <div>
@@ -855,10 +982,10 @@
       <h3 class="apis-h">APIs de Verificación y KYC/KYB</h3>
       <p class="apis-p">APIs REST documentadas que se integran en el backend del cliente para consultar fuentes gubernamentales y validar usuarios en tiempo real.</p>
       <div class="apis-grid">
-        <div class="api-cat"><div class="api-cat-ico">🪪</div><div class="api-cat-t">Identidad Personal (KYC)</div><div class="api-items"><div class="api-it">Validación INE en tiempo real</div><div class="api-it">CURP · RFC por CURP · NSS</div><div class="api-it">Historial laboral IMSS</div></div></div>
-        <div class="api-cat"><div class="api-cat-ico">🚨</div><div class="api-cat-t">Antifraude y Riesgo</div><div class="api-items"><div class="api-it">Antecedentes legales</div><div class="api-it">Listas negras PLD</div><div class="api-it">Verificación de email, celular e IP</div></div></div>
-        <div class="api-cat"><div class="api-cat-ico">🏢</div><div class="api-cat-t">Empresarial (KYB)</div><div class="api-items"><div class="api-it">CSF · CIF · Validación de empresas</div><div class="api-it">Dictamen legal</div><div class="api-it">Poderes notariales y representación</div></div></div>
-        <div class="api-cat"><div class="api-cat-ico">📋</div><div class="api-cat-t">Complementarios</div><div class="api-items"><div class="api-it">Comprobante de domicilio (Telmex/CFE)</div><div class="api-it">Validación CLABE bancaria</div><div class="api-it">Código postal · Geolocalización</div></div></div>
+        <div class="api-cat"><div class="api-cat-ico"><svg class="icon"><use href="#i-id-card"/></svg></div><div class="api-cat-t">Identidad Personal (KYC)</div><div class="api-items"><div class="api-it">Validación INE en tiempo real</div><div class="api-it">CURP · RFC por CURP · NSS</div><div class="api-it">Historial laboral IMSS</div></div></div>
+        <div class="api-cat"><div class="api-cat-ico"><svg class="icon"><use href="#i-shield-alert"/></svg></div><div class="api-cat-t">Antifraude y Riesgo</div><div class="api-items"><div class="api-it">Antecedentes legales</div><div class="api-it">Listas negras PLD</div><div class="api-it">Verificación de email, celular e IP</div></div></div>
+        <div class="api-cat"><div class="api-cat-ico"><svg class="icon"><use href="#i-building"/></svg></div><div class="api-cat-t">Empresarial (KYB)</div><div class="api-items"><div class="api-it">CSF · CIF · Validación de empresas</div><div class="api-it">Dictamen legal</div><div class="api-it">Poderes notariales y representación</div></div></div>
+        <div class="api-cat"><div class="api-cat-ico"><svg class="icon"><use href="#i-clipboard"/></svg></div><div class="api-cat-t">Complementarios</div><div class="api-items"><div class="api-it">Comprobante de domicilio (Telmex/CFE)</div><div class="api-it">Validación CLABE bancaria</div><div class="api-it">Código postal · Geolocalización</div></div></div>
       </div>
     </div>
 
@@ -874,10 +1001,10 @@
         </div>
       </div>
       <div class="motor-caps">
-        <div class="motor-cap"><span class="motor-cap-ico">🔁</span><div><div class="motor-cap-t">Comparación 1:1 FaceMatch</div><div class="motor-cap-d">Verifica en tiempo real que la persona frente a la cámara coincide con el registro biométrico almacenado en el expediente original.</div></div></div>
-        <div class="motor-cap"><span class="motor-cap-ico">🔎</span><div><div class="motor-cap-t">Búsqueda 1:N en base biométrica</div><div class="motor-cap-d">Compara el rostro contra toda la base de datos biométrica propia para detectar identidades duplicadas antes de aprobar.</div></div></div>
-        <div class="motor-cap"><span class="motor-cap-ico">👥</span><div><div class="motor-cap-t">Detección de identidades duplicadas</div><div class="motor-cap-d">Identifica cuando una misma persona usa documentos distintos para crear múltiples cuentas o solicitar créditos fraudulentos.</div></div></div>
-        <div class="motor-cap"><span class="motor-cap-ico">🕵️</span><div><div class="motor-cap-t">Fraude recurrente entre plataformas</div><div class="motor-cap-d">El buró biométrico detecta reincidentes incluso cuando cambian de institución financiera o modifican sus documentos.</div></div></div>
+        <div class="motor-cap"><span class="motor-cap-ico"><svg class="icon"><use href="#i-repeat"/></svg></span><div><div class="motor-cap-t">Comparación 1:1 FaceMatch</div><div class="motor-cap-d">Verifica en tiempo real que la persona frente a la cámara coincide con el registro biométrico almacenado en el expediente original.</div></div></div>
+        <div class="motor-cap"><span class="motor-cap-ico"><svg class="icon"><use href="#i-search"/></svg></span><div><div class="motor-cap-t">Búsqueda 1:N en base biométrica</div><div class="motor-cap-d">Compara el rostro contra toda la base de datos biométrica propia para detectar identidades duplicadas antes de aprobar.</div></div></div>
+        <div class="motor-cap"><span class="motor-cap-ico"><svg class="icon"><use href="#i-users"/></svg></span><div><div class="motor-cap-t">Detección de identidades duplicadas</div><div class="motor-cap-d">Identifica cuando una misma persona usa documentos distintos para crear múltiples cuentas o solicitar créditos fraudulentos.</div></div></div>
+        <div class="motor-cap"><span class="motor-cap-ico"><svg class="icon"><use href="#i-eye"/></svg></span><div><div class="motor-cap-t">Fraude recurrente entre plataformas</div><div class="motor-cap-d">El buró biométrico detecta reincidentes incluso cuando cambian de institución financiera o modifican sus documentos.</div></div></div>
       </div>
     </div>
 
@@ -896,12 +1023,12 @@
         <div class="firma-cases">
           <div class="firma-cases-t">Casos de uso</div>
           <div class="firma-case-list">
-            <div class="firma-case"><span class="firma-case-ico">🏦</span> Apertura de cuentas bancarias</div>
-            <div class="firma-case"><span class="firma-case-ico">💳</span> Contratos de crédito y productos financieros</div>
-            <div class="firma-case"><span class="firma-case-ico">📋</span> Aceptación de términos y condiciones</div>
-            <div class="firma-case"><span class="firma-case-ico">📁</span> Expedientes digitales regulatorios</div>
-            <div class="firma-case"><span class="firma-case-ico">🏢</span> Alta de personas morales (KYB)</div>
-            <div class="firma-case"><span class="firma-case-ico">👤</span> Alta de representantes legales</div>
+            <div class="firma-case"><span class="firma-case-ico"><svg class="icon"><use href="#i-bank"/></svg></span> Apertura de cuentas bancarias</div>
+            <div class="firma-case"><span class="firma-case-ico"><svg class="icon"><use href="#i-credit-card"/></svg></span> Contratos de crédito y productos financieros</div>
+            <div class="firma-case"><span class="firma-case-ico"><svg class="icon"><use href="#i-clipboard"/></svg></span> Aceptación de términos y condiciones</div>
+            <div class="firma-case"><span class="firma-case-ico"><svg class="icon"><use href="#i-folder"/></svg></span> Expedientes digitales regulatorios</div>
+            <div class="firma-case"><span class="firma-case-ico"><svg class="icon"><use href="#i-building"/></svg></span> Alta de personas morales (KYB)</div>
+            <div class="firma-case"><span class="firma-case-ico"><svg class="icon"><use href="#i-user"/></svg></span> Alta de representantes legales</div>
           </div>
         </div>
       </div>
@@ -918,11 +1045,11 @@
       <p class="section-sub">Flujo técnico completo desde que el usuario inicia el registro hasta que el cliente recibe la decisión.</p>
     </div>
     <div class="flujo-steps fade-up">
-      <div class="flujo-step"><div class="flujo-bub">👤</div><div class="flujo-step-t">Inicio</div><div class="flujo-step-s">El usuario abre la sesión en tu app o portal web</div></div>
-      <div class="flujo-step"><div class="flujo-bub">📷</div><div class="flujo-step-t">Captura</div><div class="flujo-step-s">SDK captura selfie biométrico y documento</div></div>
-      <div class="flujo-step"><div class="flujo-bub">🔒</div><div class="flujo-step-t">Envío cifrado</div><div class="flujo-step-s">Datos enviados al backend de Digibio de forma segura</div></div>
-      <div class="flujo-step"><div class="flujo-bub">🖥️</div><div class="flujo-step-t">Validación</div><div class="flujo-step-s">Consulta a fuentes oficiales: INE, CURP, SAT, listas</div></div>
-      <div class="flujo-step"><div class="flujo-bub">✅</div><div class="flujo-step-t">Decisión</div><div class="flujo-step-s">Tu backend recibe respuesta JSON con la decisión</div></div>
+      <div class="flujo-step"><div class="flujo-bub"><svg class="icon"><use href="#i-user"/></svg></div><div class="flujo-step-t">Inicio</div><div class="flujo-step-s">El usuario abre la sesión en tu app o portal web</div></div>
+      <div class="flujo-step"><div class="flujo-bub"><svg class="icon"><use href="#i-camera"/></svg></div><div class="flujo-step-t">Captura</div><div class="flujo-step-s">SDK captura selfie biométrico y documento</div></div>
+      <div class="flujo-step"><div class="flujo-bub"><svg class="icon"><use href="#i-lock"/></svg></div><div class="flujo-step-t">Envío cifrado</div><div class="flujo-step-s">Datos enviados al backend de Digibio de forma segura</div></div>
+      <div class="flujo-step"><div class="flujo-bub"><svg class="icon"><use href="#i-server"/></svg></div><div class="flujo-step-t">Validación</div><div class="flujo-step-s">Consulta a fuentes oficiales: INE, CURP, SAT, listas</div></div>
+      <div class="flujo-step"><div class="flujo-bub"><svg class="icon"><use href="#i-check-circle"/></svg></div><div class="flujo-step-t">Decisión</div><div class="flujo-step-s">Tu backend recibe respuesta JSON con la decisión</div></div>
     </div>
     <div class="flujo-note fade-up"><strong>El cliente mantiene el control total de la decisión final.</strong> Digibio opera como motor de verificación en el backend, completamente invisible para el usuario final.</div>
   </div>
@@ -953,25 +1080,23 @@
           <div class="caso-metric-l">Reducción en costos operativos de atención al cliente al eliminar validaciones telefónicas manuales</div>
         </div>
       </div>
-      <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji">🏦</span><div class="caso-hd-t">Onboarding bancario 100% remoto</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Abrir una cuenta requiere presencia física o procesos digitales fragmentados y vulnerables al fraude documental.</p><div class="caso-il">Impacto</div><p class="caso-it">Apertura en minutos. Cumplimiento CNBV y expediente digital con validez jurídica plena.</p></div></div>
-      <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji">🚫</span><div class="caso-hd-t">Prevención de multi-cuentas en créditos</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Un mismo individuo abre múltiples cuentas con documentos alterados para obtener créditos que nunca pagará.</p><div class="caso-il">Impacto</div><p class="caso-it">Detección temprana de fraude serial. Mejora del scoring de riesgo y reducción de cartera vencida.</p></div></div>
-      <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji">🔐</span><div class="caso-hd-t">Recuperación segura de cuenta</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Los flujos de recuperación por SMS/email son el principal vector de Account Takeover Fraud.</p><div class="caso-il">Impacto</div><p class="caso-it">Re-autenticación biométrica elimina el riesgo de ingeniería social. El usuario real siempre mantiene el control.</p></div></div>
-      <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji">🏢</span><div class="caso-hd-t">Onboarding de personas morales (KYB)</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Alta de empresas implica validar representantes legales, poderes notariales y cumplimiento PLD en procesos manuales.</p><div class="caso-il">Impacto</div><p class="caso-it">Alta 100% remota: acta constitutiva, RFC, CSF, representante legal con biometría y firma avanzada.</p></div></div>
-      <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji">🚗</span><div class="caso-hd-t">Onboarding de personal y colaboradores</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Registro sin verificación real permite suplantación de identidad y riesgo para los usuarios finales de la plataforma.</p><div class="caso-il">Impacto</div><p class="caso-it">Validación de identidad + antecedentes legales + listas negras. Cumplimiento normativo desde el alta.</p></div></div>
     </div>
-  </div>
-</section>
-
-<!-- CERTIFICACIONES -->
-<section id="certs">
-  <div class="container">
-    <div class="certs-row">
-      <span class="certs-lbl">Certificaciones</span>
-      <div class="cert-badge"><div><div class="cert-n">ISO 30107-3</div><div class="cert-s">Nivel 1 y 2 · Liveness Detection</div></div></div>
-      <div class="cert-badge"><div><div class="cert-n">NIST FRVT</div><div class="cert-s">Top Performer · Reconocimiento facial</div></div></div>
-      <div class="cert-badge"><div><div class="cert-n">EPCS DEA</div><div class="cert-s">Biometric FAR · Entornos regulados</div></div></div>
-      <div class="cert-badge"><div><div class="cert-n">OWASP</div><div class="cert-s">Black & White Box Pen Testing</div></div></div>
-      <div class="cert-badge"><div><div class="cert-n">NOM-151</div><div class="cert-s">Conservación de expedientes · México</div></div></div>
+    <div class="ctabs fade-up">
+      <button class="ctab active" onclick="showCTab('fin',this)">Instituciones Financieras</button>
+      <button class="ctab" onclick="showCTab('biz',this)">Empresas y Plataformas</button>
+    </div>
+    <div class="ctab-panel active" id="ctab-fin">
+      <div class="casos-grid">
+        <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji"><svg class="icon"><use href="#i-bank"/></svg></span><div class="caso-hd-t">Onboarding bancario 100% remoto</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Abrir una cuenta requiere presencia física o procesos digitales fragmentados y vulnerables al fraude documental.</p><div class="caso-il">Impacto</div><p class="caso-it">Apertura en minutos. Cumplimiento CNBV y expediente digital con validez jurídica plena.</p></div></div>
+        <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji"><svg class="icon"><use href="#i-ban"/></svg></span><div class="caso-hd-t">Prevención de multi-cuentas en créditos</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Un mismo individuo abre múltiples cuentas con documentos alterados para obtener créditos que nunca pagará.</p><div class="caso-il">Impacto</div><p class="caso-it">Detección temprana de fraude serial. Mejora del scoring de riesgo y reducción de cartera vencida.</p></div></div>
+        <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji"><svg class="icon"><use href="#i-lock"/></svg></span><div class="caso-hd-t">Recuperación segura de cuenta</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Los flujos de recuperación por SMS/email son el principal vector de Account Takeover Fraud.</p><div class="caso-il">Impacto</div><p class="caso-it">Re-autenticación biométrica elimina el riesgo de ingeniería social. El usuario real siempre mantiene el control.</p></div></div>
+      </div>
+    </div>
+    <div class="ctab-panel" id="ctab-biz">
+      <div class="casos-grid cols-2">
+        <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji"><svg class="icon"><use href="#i-building"/></svg></span><div class="caso-hd-t">Onboarding de personas morales (KYB)</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Alta de empresas implica validar representantes legales, poderes notariales y cumplimiento PLD en procesos manuales.</p><div class="caso-il">Impacto</div><p class="caso-it">Alta 100% remota: acta constitutiva, RFC, CSF, representante legal con biometría y firma avanzada.</p></div></div>
+        <div class="caso-card fade-up"><div class="caso-hd"><span class="caso-emoji"><svg class="icon"><use href="#i-users"/></svg></span><div class="caso-hd-t">Onboarding de personal y colaboradores</div></div><div class="caso-body"><div class="caso-pl">El Problema</div><p class="caso-pt">Registro sin verificación real permite suplantación de identidad y riesgo para los usuarios finales de la plataforma.</p><div class="caso-il">Impacto</div><p class="caso-it">Validación de identidad + antecedentes legales + listas negras. Cumplimiento normativo desde el alta.</p></div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -984,12 +1109,12 @@
       <h2 class="section-title">Tecnología de clase mundial<br/><em>para el mercado mexicano</em></h2>
     </div>
     <div class="vent-grid">
-      <div class="vent-card fade-up"><div class="vent-ico">⚡</div><div class="vent-t">Integración en días</div><p class="vent-d">SDK y APIs documentadas. Go-live en días, no meses. Reduce los requerimientos de hardware hasta un 70% con arquitectura AWS escalable.</p></div>
-      <div class="vent-card fade-up"><div class="vent-ico">🏅</div><div class="vent-t">Certificaciones globales</div><p class="vent-d">ISO 30107-3 Nivel 1 y 2, NIST FRVT Top Performer, EPCS DEA y OWASP. Tecnología validada internacionalmente con los estándares más exigentes.</p></div>
-      <div class="vent-card fade-up"><div class="vent-ico">🇲🇽</div><div class="vent-t">Cumplimiento normativo MX</div><p class="vent-d">Diseñado para cumplir con PLD, CNBV y NOM-151. Expedientes con validez jurídica plena. Tu equipo legal dormirá tranquilo.</p></div>
-      <div class="vent-card fade-up"><div class="vent-ico">🚀</div><div class="vent-t">Escalabilidad masiva</div><p class="vent-d">Hasta 100M de registros biométricos y 300 peticiones/minuto por instancia. Infraestructura elástica sin preocupaciones operativas.</p></div>
-      <div class="vent-card fade-up"><div class="vent-ico">💰</div><div class="vent-t">ROI desde el primer mes</div><p class="vent-d">Elimina validaciones manuales, reduce call center y minimiza fraude operativo. No construyas biometría desde cero — enfócate en tu producto.</p></div>
-      <div class="vent-card fade-up"><div class="vent-ico">✨</div><div class="vent-t">UX que convierte</div><p class="vent-d">Mayor seguridad sin mayor fricción. Onboarding fluido que convierte mejor y retiene más clientes. El fraude se bloquea, no el usuario legítimo.</p></div>
+      <div class="vent-card fade-up"><div class="vent-ico"><svg class="icon"><use href="#i-zap"/></svg></div><div class="vent-t">Integración en días</div><p class="vent-d">SDK y APIs documentadas. Go-live en días, no meses. Reduce los requerimientos de hardware hasta un 70% con arquitectura AWS escalable.</p></div>
+      <div class="vent-card fade-up"><div class="vent-ico"><svg class="icon"><use href="#i-award"/></svg></div><div class="vent-t">Certificaciones globales</div><p class="vent-d">ISO 30107-3 Nivel 1 y 2, NIST FRVT Top Performer, EPCS DEA y OWASP. Tecnología validada internacionalmente con los estándares más exigentes.</p></div>
+      <div class="vent-card fade-up"><div class="vent-ico"><svg class="icon"><use href="#i-flag"/></svg></div><div class="vent-t">Cumplimiento normativo MX</div><p class="vent-d">Diseñado para cumplir con PLD, CNBV y NOM-151. Expedientes con validez jurídica plena. Tu equipo legal dormirá tranquilo.</p></div>
+      <div class="vent-card fade-up"><div class="vent-ico"><svg class="icon"><use href="#i-server"/></svg></div><div class="vent-t">Escalabilidad masiva</div><p class="vent-d">Hasta 100M de registros biométricos y 300 peticiones/minuto por instancia. Infraestructura elástica sin preocupaciones operativas.</p></div>
+      <div class="vent-card fade-up"><div class="vent-ico"><svg class="icon"><use href="#i-dollar"/></svg></div><div class="vent-t">ROI desde el primer mes</div><p class="vent-d">Elimina validaciones manuales, reduce call center y minimiza fraude operativo. No construyas biometría desde cero — enfócate en tu producto.</p></div>
+      <div class="vent-card fade-up"><div class="vent-ico"><svg class="icon"><use href="#i-check-circle"/></svg></div><div class="vent-t">UX que convierte</div><p class="vent-d">Mayor seguridad sin mayor fricción. Onboarding fluido que convierte mejor y retiene más clientes. El fraude se bloquea, no el usuario legítimo.</p></div>
     </div>
   </div>
 </section>
@@ -1003,9 +1128,9 @@
       <p class="section-sub">Digibio se integra en cualquier punto de la arquitectura técnica del cliente.</p>
     </div>
     <div class="impl-grid">
-      <div class="impl-card fade-up"><div class="impl-n">01</div><span class="impl-ico">📱</span><div class="impl-t">Apps Móviles</div><p class="impl-d">Banca digital, fintech, delivery y movilidad. SDK nativo para iOS y Android. Integración en días con documentación detallada y soporte técnico dedicado.</p></div>
-      <div class="impl-card fade-up"><div class="impl-n">02</div><span class="impl-ico">🌐</span><div class="impl-t">Web Apps</div><p class="impl-d">Onboarding web y portales de verificación. SDK Web compatible con los principales frameworks: React, Vue, Angular y vanilla JS.</p></div>
-      <div class="impl-card fade-up"><div class="impl-n">03</div><span class="impl-ico">🖥️</span><div class="impl-t">Backend Empresarial</div><p class="impl-d">Sistemas antifraude, compliance y motores de decisión. Integración pura por API REST. Sin SDK requerido — solo llamadas HTTP a nuestros endpoints.</p></div>
+      <div class="impl-card fade-up"><div class="impl-n">01</div><span class="impl-ico"><svg class="icon"><use href="#i-smartphone"/></svg></span><div class="impl-t">Apps Móviles</div><p class="impl-d">Banca digital, fintech, delivery y movilidad. SDK nativo para iOS y Android. Integración en días con documentación detallada y soporte técnico dedicado.</p></div>
+      <div class="impl-card fade-up"><div class="impl-n">02</div><span class="impl-ico"><svg class="icon"><use href="#i-globe"/></svg></span><div class="impl-t">Web Apps</div><p class="impl-d">Onboarding web y portales de verificación. SDK Web compatible con los principales frameworks: React, Vue, Angular y vanilla JS.</p></div>
+      <div class="impl-card fade-up"><div class="impl-n">03</div><span class="impl-ico"><svg class="icon"><use href="#i-server"/></svg></span><div class="impl-t">Backend Empresarial</div><p class="impl-d">Sistemas antifraude, compliance y motores de decisión. Integración pura por API REST. Sin SDK requerido — solo llamadas HTTP a nuestros endpoints.</p></div>
     </div>
   </div>
 </section>
@@ -1050,15 +1175,23 @@
       </div>
       <div>
         <div class="footer-col-t">Empresa</div>
-        <ul class="footer-links"><li><a href="#casos">Casos de Uso</a></li><li><a href="#ventajas">Por Qué Digibio</a></li><li><a href="#flujo">Integración</a></li><li><a href="mailto:info@digibiosolutions.com">info@digibiosolutions.com</a></li></ul>
+        <ul class="footer-links"><li><a href="#casos">Casos de Uso</a></li><li><a href="#ventajas">Por Qué Digibio</a></li><li><a href="#flujo">Integración</a></li></ul>
+      </div>
+      <div>
+        <div class="footer-col-t">Contacto</div>
+        <ul class="footer-links footer-links-contact">
+          <li><a href="mailto:info@digibiosolutions.com"><svg class="icon"><use href="#i-file-text"/></svg>info@digibiosolutions.com</a></li>
+          <li><a href="tel:+525539868037"><svg class="icon"><use href="#i-smartphone"/></svg>+52 55 3986 8037</a></li>
+          <li><a href="https://www.linkedin.com/company/digibiosolutions/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-globe"/></svg>LinkedIn</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bot">
-      <p class="footer-copy">© 2026 Digibio Solutions. Todos los derechos reservados.</p>
-    </div>
-    <div class="footer-legal">
+      <p class="footer-copy">© 2026 Digibio Solutions S.A. de C.V. Todos los derechos reservados.</p>
+      <div class="footer-legal">
         <a href="/privacidad">Aviso de Privacidad</a>
       </div>
+    </div>
   </div>
 </footer>
 
@@ -1123,11 +1256,11 @@
           <span class="btn-text">Solicitar mi demo →</span>
           <div class="spinner"></div>
         </button>
-        <p class="form-privacy">🔒 Tus datos están seguros. No compartimos tu información con terceros.</p>
+        <p class="form-privacy"><svg class="icon" style="margin-right:4px"><use href="#i-lock"/></svg>Tus datos están seguros. No compartimos tu información con terceros.</p>
       </form>
   
       <div class="modal-success" id="modalSuccess">
-        <div class="success-icon">✅</div>
+        <div class="success-icon"><svg class="icon"><use href="#i-check-circle"/></svg></div>
         <div class="success-title">¡Solicitud enviada!</div>
         <p class="success-sub">Nos pondremos en contacto contigo en menos de 24 horas para confirmar tu demo. Revisa tu bandeja de entrada.</p>
       </div>
@@ -1164,6 +1297,14 @@
       document.querySelectorAll('.ptab-panel').forEach(el => el.classList.remove('active'));
       document.querySelectorAll('.ptab').forEach(el => el.classList.remove('active'));
       document.getElementById('tab-' + name).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    // ── Casos de uso tabs ────────────────────────────────────────
+    function showCTab(name, btn) {
+      document.querySelectorAll('.ctab-panel').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.ctab').forEach(el => el.classList.remove('active'));
+      document.getElementById('ctab-' + name).classList.add('active');
       btn.classList.add('active');
     }
   
