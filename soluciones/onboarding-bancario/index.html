@@ -35,6 +35,29 @@
     "serviceType": "Verificación de identidad y KYC"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.digibiosolutions.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Soluciones", "item": "https://www.digibiosolutions.com/#casos"},
+      {"@type": "ListItem", "position": 3, "name": "Instituciones Financieras", "item": "https://www.digibiosolutions.com/soluciones/onboarding-bancario/"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "¿Funciona para financieras de auto y moto, no solo para bancos?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. El mismo flujo se usa en punto de venta para originación de crédito automotriz y de motocicletas, no solo para apertura de cuentas bancarias."}},
+      {"@type": "Question", "name": "¿Necesito hardware especial en las agencias o sucursales?", "acceptedAnswer": {"@type": "Answer", "text": "No. El SDK captura selfie y documento de identidad desde cualquier smartphone o tablet, tanto del asesor como del cliente."}},
+      {"@type": "Question", "name": "¿Qué pasa si el solicitante ya tiene una cuenta con otro documento?", "acceptedAnswer": {"@type": "Answer", "text": "El motor antifraude hace una búsqueda 1:N en el buró biométrico propio para detectar reincidentes, incluso si cambian de documento de identidad."}},
+      {"@type": "Question", "name": "¿Quién toma la decisión final de aprobar el crédito?", "acceptedAnswer": {"@type": "Answer", "text": "Digibio entrega la verificación de identidad y las señales de riesgo; la decisión de crédito la toma siempre tu institución."}}
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -459,6 +482,19 @@
     .impl-ico { font-size: 1.7rem; margin-bottom: 12px; display: block; color: var(--red); }
     .impl-t { font-size: 1.02rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
     .impl-d { font-size: 0.86rem; color: var(--muted); line-height: 1.65; }
+
+    /* FAQ */
+    #faq { padding: 100px 0; background: #fff; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 780px; margin: 0 auto; }
+    .faq-item { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; transition: all 0.2s; }
+    .faq-item:hover { background: #fff; box-shadow: var(--shadow); }
+    .faq-item summary { font-weight: 700; font-size: 0.94rem; color: var(--text); cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 1.3rem; font-weight: 400; color: var(--red); transition: transform 0.2s; flex-shrink: 0; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p { margin-top: 14px; font-size: 0.87rem; color: var(--muted); line-height: 1.7; }
+    .faq-item p a { color: var(--red); font-weight: 600; text-decoration: none; }
+    .faq-item p a:hover { text-decoration: underline; }
 
     /* CTA */
     #cta { padding: 120px 0; }
@@ -1061,6 +1097,34 @@
         <div class="related-t">Recuperación segura de cuenta</div>
         <div class="related-d">Re-autenticación biométrica que elimina el riesgo de ingeniería social en desbloqueos y recuperaciones.</div>
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="tag">Preguntas Frecuentes</div>
+      <h2 class="section-title">Sobre esta<br/><em>solución</em></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item fade-up">
+        <summary>¿Funciona para financieras de auto y moto, no solo para bancos?</summary>
+        <p>Sí. El mismo flujo se usa en punto de venta para originación de crédito automotriz y de motocicletas, no solo para apertura de cuentas bancarias.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿Necesito hardware especial en las agencias o sucursales?</summary>
+        <p>No. El SDK captura selfie y documento de identidad desde cualquier smartphone o tablet, tanto del asesor como del cliente.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿Qué pasa si el solicitante ya tiene una cuenta con otro documento?</summary>
+        <p>El motor antifraude hace una búsqueda 1:N en el buró biométrico propio para detectar reincidentes, incluso si cambian de documento de identidad.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿Quién toma la decisión final de aprobar el crédito?</summary>
+        <p>Digibio entrega la verificación de identidad y las señales de riesgo; la decisión de crédito la toma siempre tu institución.</p>
+      </details>
     </div>
   </div>
 </section>

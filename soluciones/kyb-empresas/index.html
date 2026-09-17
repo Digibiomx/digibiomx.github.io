@@ -35,6 +35,29 @@
     "serviceType": "Verificación de identidad y KYB"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.digibiosolutions.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Soluciones", "item": "https://www.digibiosolutions.com/#casos"},
+      {"@type": "ListItem", "position": 3, "name": "Empresas y Plataformas", "item": "https://www.digibiosolutions.com/soluciones/kyb-empresas/"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "¿Qué documentos se validan para dar de alta una empresa?", "acceptedAnswer": {"@type": "Answer", "text": "Acta constitutiva, RFC, CSF y el poder notarial del representante legal, además de su identidad biométrica."}},
+      {"@type": "Question", "name": "¿Sirve para verificar repartidores o colaboradores, no solo empresas?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. El mismo flujo cubre tanto el alta de una persona moral como el onboarding individual de un colaborador o repartidor en una plataforma."}},
+      {"@type": "Question", "name": "¿Qué pasa si el representante legal de una empresa cambia?", "acceptedAnswer": {"@type": "Answer", "text": "Se puede volver a verificar en cualquier momento con el mismo flujo biométrico, sin rehacer todo el expediente de la empresa."}},
+      {"@type": "Question", "name": "¿Esta solución también sirve para bancos y financieras?", "acceptedAnswer": {"@type": "Answer", "text": "El KYB de empresas es transversal a cualquier industria; para el flujo específico de originación de crédito y apertura de cuentas de personas físicas, la solución dedicada es Onboarding Bancario."}}
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -459,6 +482,19 @@
     .impl-ico { font-size: 1.7rem; margin-bottom: 12px; display: block; color: var(--red); }
     .impl-t { font-size: 1.02rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
     .impl-d { font-size: 0.86rem; color: var(--muted); line-height: 1.65; }
+
+    /* FAQ */
+    #faq { padding: 100px 0; background: #fff; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 780px; margin: 0 auto; }
+    .faq-item { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; transition: all 0.2s; }
+    .faq-item:hover { background: #fff; box-shadow: var(--shadow); }
+    .faq-item summary { font-weight: 700; font-size: 0.94rem; color: var(--text); cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 1.3rem; font-weight: 400; color: var(--red); transition: transform 0.2s; flex-shrink: 0; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p { margin-top: 14px; font-size: 0.87rem; color: var(--muted); line-height: 1.7; }
+    .faq-item p a { color: var(--red); font-weight: 600; text-decoration: none; }
+    .faq-item p a:hover { text-decoration: underline; }
 
     /* CTA */
     #cta { padding: 120px 0; }
@@ -1061,6 +1097,34 @@
         <div class="related-t">Onboarding bancario 100% remoto</div>
         <div class="related-d">La misma tecnología, aplicada a la apertura de cuentas y originación de crédito para personas físicas.</div>
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="tag">Preguntas Frecuentes</div>
+      <h2 class="section-title">Sobre esta<br/><em>solución</em></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item fade-up">
+        <summary>¿Qué documentos se validan para dar de alta una empresa?</summary>
+        <p>Acta constitutiva, RFC, CSF y el poder notarial del representante legal, además de su identidad biométrica.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿Sirve para verificar repartidores o colaboradores, no solo empresas?</summary>
+        <p>Sí. El mismo flujo cubre tanto el alta de una persona moral como el onboarding individual de un colaborador o repartidor en una plataforma.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿Qué pasa si el representante legal de una empresa cambia?</summary>
+        <p>Se puede volver a verificar en cualquier momento con el mismo flujo biométrico, sin rehacer todo el expediente de la empresa.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿Esta solución también sirve para bancos y financieras?</summary>
+        <p>El KYB de empresas es transversal a cualquier industria; para el flujo específico de originación de crédito y apertura de cuentas de personas físicas, la solución dedicada es <a href="/soluciones/onboarding-bancario/">Onboarding Bancario</a>.</p>
+      </details>
     </div>
   </div>
 </section>

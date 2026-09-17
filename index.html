@@ -41,6 +41,20 @@
     "description": "Plataforma de identidad digital integral: biometría 3D, KYC/KYB y firma electrónica avanzada para instituciones financieras y empresas en México."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "¿Qué es Digibio Solutions?", "acceptedAnswer": {"@type": "Answer", "text": "Una plataforma mexicana de identidad digital: biometría 3D, verificación KYC/KYB contra fuentes oficiales y firma electrónica avanzada, integrable en tu app o backend vía SDK y API REST."}},
+      {"@type": "Question", "name": "¿Cuánto tarda la integración?", "acceptedAnswer": {"@type": "Answer", "text": "El SDK y las APIs están documentados y pensados para go-live en días, no meses. El tiempo exacto depende de tu stack y de cuántos módulos integres."}},
+      {"@type": "Question", "name": "¿La firma electrónica tiene validez legal en México?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Usamos firma electrónica avanzada con constancia NOM-151, con la misma validez jurídica que una firma autógrafa."}},
+      {"@type": "Question", "name": "¿Con qué documentos de identidad funciona?", "acceptedAnswer": {"@type": "Answer", "text": "El SDK captura y hace OCR de INE y pasaporte, entre otros documentos oficiales, además de la selfie biométrica para la comparación facial."}},
+      {"@type": "Question", "name": "¿En qué industrias tiene aplicación?", "acceptedAnswer": {"@type": "Answer", "text": "Banca, fintech, seguros, retail y marketplaces, movilidad y salud son los sectores donde más aporta hoy Digibio Solutions."}},
+      {"@type": "Question", "name": "¿Cómo solicito una demo?", "acceptedAnswer": {"@type": "Answer", "text": "Desde el botón Solicitar Demo en cualquier página del sitio, o directamente en la página de contacto. Se responde en menos de 24 horas hábiles."}}
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -468,6 +482,19 @@
     .impl-ico { font-size: 1.7rem; margin-bottom: 12px; display: block; color: var(--red); }
     .impl-t { font-size: 1.02rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
     .impl-d { font-size: 0.86rem; color: var(--muted); line-height: 1.65; }
+
+    /* FAQ */
+    #faq { padding: 100px 0; background: #fff; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 780px; margin: 0 auto; }
+    .faq-item { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; transition: all 0.2s; }
+    .faq-item:hover { background: #fff; box-shadow: var(--shadow); }
+    .faq-item summary { font-weight: 700; font-size: 0.94rem; color: var(--text); cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 1.3rem; font-weight: 400; color: var(--red); transition: transform 0.2s; flex-shrink: 0; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p { margin-top: 14px; font-size: 0.87rem; color: var(--muted); line-height: 1.7; }
+    .faq-item p a { color: var(--red); font-weight: 600; text-decoration: none; }
+    .faq-item p a:hover { text-decoration: underline; }
 
     /* CTA */
     #cta { padding: 120px 0; }
@@ -1190,6 +1217,42 @@
       <div class="impl-card fade-up"><div class="impl-n">01</div><span class="impl-ico"><svg class="icon"><use href="#i-smartphone"/></svg></span><div class="impl-t">Apps Móviles</div><p class="impl-d">Banca digital, fintech, delivery y movilidad. SDK nativo para iOS y Android. Integración en días con documentación detallada y soporte técnico dedicado.</p></div>
       <div class="impl-card fade-up"><div class="impl-n">02</div><span class="impl-ico"><svg class="icon"><use href="#i-globe"/></svg></span><div class="impl-t">Web Apps</div><p class="impl-d">Onboarding web y portales de verificación. SDK Web compatible con los principales frameworks: React, Vue, Angular y vanilla JS.</p></div>
       <div class="impl-card fade-up"><div class="impl-n">03</div><span class="impl-ico"><svg class="icon"><use href="#i-server"/></svg></span><div class="impl-t">Backend Empresarial</div><p class="impl-d">Sistemas antifraude, compliance y motores de decisión. Integración pura por API REST. Sin SDK requerido — solo llamadas HTTP a nuestros endpoints.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="tag">Preguntas Frecuentes</div>
+      <h2 class="section-title">Antes de<br/><em>empezar</em></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item fade-up">
+        <summary>¿Qué es Digibio Solutions?</summary>
+        <p>Una plataforma mexicana de identidad digital: biometría 3D, verificación KYC/KYB contra fuentes oficiales y firma electrónica avanzada, integrable en tu app o backend vía SDK y API REST.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿Cuánto tarda la integración?</summary>
+        <p>El SDK y las APIs están documentados y pensados para go-live en días, no meses. El tiempo exacto depende de tu stack y de cuántos módulos integres (biometría, KYC, firma).</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿La firma electrónica tiene validez legal en México?</summary>
+        <p>Sí. Usamos firma electrónica avanzada con constancia NOM-151, con la misma validez jurídica que una firma autógrafa.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿Con qué documentos de identidad funciona?</summary>
+        <p>El SDK captura y hace OCR de INE y pasaporte, entre otros documentos oficiales, además de la selfie biométrica para la comparación facial.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿En qué industrias tiene aplicación?</summary>
+        <p>Banca, fintech, seguros, retail y marketplaces, movilidad y salud son los sectores donde más aportamos hoy. Puedes ver el detalle por industria en <a href="/industrias/">Industrias</a>.</p>
+      </details>
+      <details class="faq-item fade-up">
+        <summary>¿Cómo solicito una demo?</summary>
+        <p>Desde el botón "Solicitar Demo" en cualquier página, o directamente en <a href="/contacto/">Contacto</a>. Respondemos en menos de 24 horas hábiles.</p>
+      </details>
     </div>
   </div>
 </section>
