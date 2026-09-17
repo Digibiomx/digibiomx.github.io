@@ -36,7 +36,7 @@
     "logo": "https://www.digibiosolutions.com/img/Digibio_Logo_Expanded.png",
     "email": "info@digibiosolutions.com",
     "telephone": "+52-55-3986-8037",
-    "sameAs": ["https://www.linkedin.com/company/digibiosolutions/"],
+    "sameAs": ["https://www.linkedin.com/company/digibio-solutions/"],
     "address": {"@type": "PostalAddress", "addressCountry": "MX"},
     "description": "Plataforma de identidad digital integral: biometría 3D, KYC/KYB y firma electrónica avanzada para instituciones financieras y empresas en México."
   }
@@ -69,7 +69,7 @@
       --font-display: 'Instrument Serif', Georgia, serif;
       --font-body: 'Plus Jakarta Sans', sans-serif;
       --max: 1160px;
-      --radius: 18px;
+      --radius: 12px;
       --shadow: 0 2px 20px rgba(0,0,0,0.07);
       --shadow-lg: 0 8px 48px rgba(0,0,0,0.11);
     }
@@ -89,14 +89,15 @@
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
       font-family: var(--font-body); font-weight: 600; font-size: 0.9rem;
-      border-radius: 980px; padding: 13px 26px;
+      border-radius: 10px; padding: 13px 26px;
       cursor: pointer; transition: all 0.22s ease;
       border: none; text-decoration: none; letter-spacing: -0.01em;
     }
     .btn-primary { background: var(--red); color: #fff; }
-    .btn-primary:hover { background: #c8271f; transform: scale(1.02); }
+    .btn-primary:hover { background: #c8271f; transform: translateY(-1px); box-shadow: 0 6px 18px rgba(230,51,41,0.3); }
+    .btn-primary:active { transform: translateY(0); }
     .btn-outline { background: rgba(0,0,0,0.06); color: var(--text); }
-    .btn-outline:hover { background: rgba(0,0,0,0.1); }
+    .btn-outline:hover { background: rgba(0,0,0,0.1); transform: translateY(-1px); }
     .section-header { text-align: center; margin-bottom: 60px; }
     .section-title {
       font-family: var(--font-display);
@@ -135,6 +136,22 @@
     .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
     .nav-links a { font-size: 0.88rem; font-weight: 500; color: var(--text2); text-decoration: none; padding: 7px 14px; border-radius: 8px; transition: all 0.18s; }
     .nav-links a:hover { color: var(--text); background: rgba(0,0,0,0.05); }
+    .nav-links li.has-dropdown { position: relative; }
+    .nav-links li.has-dropdown > a { display: inline-flex; align-items: center; gap: 5px; }
+    .nav-caret { width: 12px; height: 12px; transition: transform 0.2s ease; color: var(--muted); }
+    .nav-links li.has-dropdown:hover .nav-caret { transform: rotate(180deg); }
+    .dropdown {
+      position: absolute; top: calc(100% + 6px); left: 0;
+      background: #fff; border: 1px solid var(--border); border-radius: 12px;
+      box-shadow: var(--shadow-lg); padding: 8px; min-width: 234px;
+      opacity: 0; visibility: hidden; transform: translateY(6px);
+      transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+    }
+    .nav-links li.has-dropdown:hover .dropdown,
+    .nav-links li.has-dropdown:focus-within .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+    .dropdown a { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; font-size: 0.86rem; font-weight: 500; color: var(--text2); }
+    .dropdown a .icon { color: var(--red); font-size: 1rem; flex-shrink: 0; }
+    .dropdown a:hover { background: var(--bg); color: var(--text); }
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
     .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--text); border-radius: 2px; }
     .mobile-menu {
@@ -146,6 +163,7 @@
     .mobile-menu.open { display: flex; }
     .mobile-menu a { font-size: 1rem; font-weight: 500; color: var(--text2); text-decoration: none; padding: 13px 0; border-bottom: 1px solid var(--border2); }
     .mobile-menu a:hover { color: var(--text); }
+    .mobile-menu-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding-top: 14px; display: block; }
     .mobile-menu .btn { margin-top: 16px; justify-content: center; }
 
     /* HERO */
@@ -262,7 +280,8 @@
       padding: 30px; transition: all 0.25s; box-shadow: var(--shadow);
     }
     .prob-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-    .prob-icon { width: 42px; height: 42px; background: var(--red-light); border-radius: 11px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 16px; color: var(--red); }
+    .prob-card:hover .prob-icon { background: var(--red); color: #fff; transform: scale(1.08); }
+    .prob-icon { width: 42px; height: 42px; background: var(--red-light); border-radius: 11px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 16px; color: var(--red); transition: all 0.25s; }
     .prob-title { font-size: 0.97rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
     .prob-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
     .dilema-box {
@@ -278,7 +297,7 @@
     .ptabs { display: flex; gap: 8px; justify-content: center; margin-bottom: 52px; flex-wrap: wrap; }
     .ptab {
       font-size: 0.85rem; font-weight: 600; padding: 10px 20px;
-      border-radius: 100px; cursor: pointer; border: 1px solid var(--border);
+      border-radius: 9px; cursor: pointer; border: 1px solid var(--border);
       background: var(--bg); color: var(--text2); transition: all 0.2s;
     }
     .ptab.active { background: var(--text); color: #fff; border-color: var(--text); }
@@ -320,7 +339,8 @@
     .apis-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
     .api-cat { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; transition: all 0.22s; }
     .api-cat:hover { background: #fff; box-shadow: var(--shadow); transform: translateY(-2px); }
-    .api-cat-ico { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 14px; background: var(--red-light); color: var(--red); }
+    .api-cat:hover .api-cat-ico { background: var(--red); color: #fff; }
+    .api-cat-ico { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; margin-bottom: 14px; background: var(--red-light); color: var(--red); transition: all 0.25s; }
     .api-cat-t { font-size: 0.97rem; font-weight: 700; color: var(--text); margin-bottom: 11px; }
     .api-items { display: flex; flex-direction: column; gap: 6px; }
     .api-it { display: flex; align-items: center; gap: 8px; font-size: 0.83rem; color: var(--text2); }
@@ -382,7 +402,7 @@
     .casos-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
     .casos-grid.cols-2 { grid-template-columns: repeat(2,1fr); max-width: 780px; margin: 0 auto; }
     .ctabs { display: flex; gap: 8px; justify-content: center; margin: 44px 0 32px; flex-wrap: wrap; }
-    .ctab { font-size: 0.85rem; font-weight: 600; padding: 10px 20px; border-radius: 100px; cursor: pointer; border: 1px solid var(--border); background: var(--bg); color: var(--text2); transition: all 0.2s; }
+    .ctab { font-size: 0.85rem; font-weight: 600; padding: 10px 20px; border-radius: 9px; cursor: pointer; border: 1px solid var(--border); background: var(--bg); color: var(--text2); transition: all 0.2s; }
     .ctab.active { background: var(--text); color: #fff; border-color: var(--text); }
     .ctab:hover:not(.active) { background: rgba(0,0,0,0.06); }
     .ctab-panel { display: none; }
@@ -431,7 +451,8 @@
     .vent-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
     .vent-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 30px; transition: all 0.22s; box-shadow: var(--shadow); }
     .vent-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-    .vent-ico { width: 46px; height: 46px; background: var(--red-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 16px; color: var(--red); }
+    .vent-card:hover .vent-ico { background: var(--red); color: #fff; transform: scale(1.08); }
+    .vent-ico { width: 46px; height: 46px; background: var(--red-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 16px; color: var(--red); transition: all 0.25s; }
     .vent-t { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
     .vent-d { font-size: 0.86rem; color: var(--muted); line-height: 1.65; }
 
@@ -447,7 +468,7 @@
 
     /* CTA */
     #cta { padding: 120px 0; }
-    .cta-box { background: var(--text); border-radius: 28px; padding: 80px 64px; text-align: center; position: relative; overflow: hidden; }
+    .cta-box { background: var(--text); border-radius: 18px; padding: 80px 64px; text-align: center; position: relative; overflow: hidden; }
     .cta-box::before { content: ''; position: absolute; top: -100px; right: -100px; width: 380px; height: 380px; background: radial-gradient(circle, rgba(230,51,41,0.18), transparent 70%); border-radius: 50%; }
     .cta-inner { position: relative; z-index: 1; }
     .cta-t { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 400; color: #fff; line-height: 1.1; margin-bottom: 14px; letter-spacing: -0.03em; }
@@ -544,7 +565,7 @@
     }
     .modal {
     background: #fff;
-    border-radius: 24px;
+    border-radius: 18px;
     padding: 48px;
     width: 100%;
     max-width: 520px;
@@ -642,19 +663,20 @@
     background: var(--red);
     color: #fff;
     border: none;
-    border-radius: 980px;
+    border-radius: 10px;
     padding: 15px 32px;
     font-family: var(--font-body);
     font-size: 0.95rem; font-weight: 700;
     cursor: pointer;
-    transition: all 0.22s;
+    transition: all 0.18s;
     display: flex; align-items: center;
     justify-content: center; gap: 8px;
     width: 100%;
     }
     .form-submit:hover:not(:disabled) {
     background: #c8271f;
-    transform: scale(1.01);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(230,51,41,0.28);
     }
     .form-submit:disabled {
     opacity: 0.6; cursor: not-allowed;
@@ -749,6 +771,7 @@
     <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 21h18M4 21V10.5M20 21V10.5M2 10.5l10-6.2 10 6.2M6 10.5V21M10 10.5V21M14 10.5V21M18 10.5V21"/></symbol>
     <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></symbol>
     <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2.5l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
   </defs>
 </svg>
 
@@ -759,8 +782,22 @@
         <img src="img/Digibio_Logo_Expanded.png" alt="Digibio Solutions" class="nav-logo-img"/>
       </a>
     <ul class="nav-links">
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#casos">Casos de Uso</a></li>
+      <li class="has-dropdown">
+        <a href="#productos">Producto <svg class="icon nav-caret"><use href="#i-chevron-down"/></svg></a>
+        <div class="dropdown">
+          <a href="#productos" onclick="gotoProductTab('sdk')"><svg class="icon"><use href="#i-scan"/></svg>SDK Biométrico</a>
+          <a href="#productos" onclick="gotoProductTab('apis')"><svg class="icon"><use href="#i-id-card"/></svg>APIs KYC / KYB</a>
+          <a href="#productos" onclick="gotoProductTab('motor')"><svg class="icon"><use href="#i-repeat"/></svg>Motor &amp; Buró de Fraude</a>
+          <a href="#productos" onclick="gotoProductTab('firma')"><svg class="icon"><use href="#i-file-text"/></svg>Firma Electrónica</a>
+        </div>
+      </li>
+      <li class="has-dropdown">
+        <a href="#casos">Soluciones <svg class="icon nav-caret"><use href="#i-chevron-down"/></svg></a>
+        <div class="dropdown">
+          <a href="#casos" onclick="gotoCasoTab('fin')"><svg class="icon"><use href="#i-bank"/></svg>Instituciones Financieras</a>
+          <a href="#casos" onclick="gotoCasoTab('biz')"><svg class="icon"><use href="#i-building"/></svg>Empresas y Plataformas</a>
+        </div>
+      </li>
       <li><a href="#flujo">Integración</a></li>
       <li><a href="#ventajas">Ventajas</a></li>
     </ul>
@@ -770,8 +807,14 @@
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#productos" onclick="closeMobile()">Productos</a>
-  <a href="#casos" onclick="closeMobile()">Casos de Uso</a>
+  <span class="mobile-menu-label">Producto</span>
+  <a href="#productos" onclick="gotoProductTab('sdk');closeMobile()">SDK Biométrico</a>
+  <a href="#productos" onclick="gotoProductTab('apis');closeMobile()">APIs KYC / KYB</a>
+  <a href="#productos" onclick="gotoProductTab('motor');closeMobile()">Motor &amp; Buró de Fraude</a>
+  <a href="#productos" onclick="gotoProductTab('firma');closeMobile()">Firma Electrónica</a>
+  <span class="mobile-menu-label">Soluciones</span>
+  <a href="#casos" onclick="gotoCasoTab('fin');closeMobile()">Instituciones Financieras</a>
+  <a href="#casos" onclick="gotoCasoTab('biz');closeMobile()">Empresas y Plataformas</a>
   <a href="#flujo" onclick="closeMobile()">Integración</a>
   <a href="#ventajas" onclick="closeMobile()">Ventajas</a>
   <a href="#cta" class="btn btn-primary" data-modal>Solicitar Demo</a>
@@ -932,10 +975,10 @@
       <p class="section-sub">Módulos que se integran en cualquier stack: SDK biométrico, APIs de KYC/KYB, motor antifraude y firma electrónica.</p>
     </div>
     <div class="ptabs fade-up">
-      <button class="ptab active" onclick="showTab('sdk',this)">SDK Biométrico</button>
-      <button class="ptab" onclick="showTab('apis',this)">APIs KYC / KYB</button>
-      <button class="ptab" onclick="showTab('motor',this)">Motor & Buró de Fraude</button>
-      <button class="ptab" onclick="showTab('firma',this)">Firma Electrónica</button>
+      <button class="ptab active" id="ptab-sdk" onclick="showTab('sdk',this)">SDK Biométrico</button>
+      <button class="ptab" id="ptab-apis" onclick="showTab('apis',this)">APIs KYC / KYB</button>
+      <button class="ptab" id="ptab-motor" onclick="showTab('motor',this)">Motor &amp; Buró de Fraude</button>
+      <button class="ptab" id="ptab-firma" onclick="showTab('firma',this)">Firma Electrónica</button>
     </div>
 
     <div class="ptab-panel active" id="tab-sdk">
@@ -1082,8 +1125,8 @@
       </div>
     </div>
     <div class="ctabs fade-up">
-      <button class="ctab active" onclick="showCTab('fin',this)">Instituciones Financieras</button>
-      <button class="ctab" onclick="showCTab('biz',this)">Empresas y Plataformas</button>
+      <button class="ctab active" id="ctabbtn-fin" onclick="showCTab('fin',this)">Instituciones Financieras</button>
+      <button class="ctab" id="ctabbtn-biz" onclick="showCTab('biz',this)">Empresas y Plataformas</button>
     </div>
     <div class="ctab-panel active" id="ctab-fin">
       <div class="casos-grid">
@@ -1182,7 +1225,7 @@
         <ul class="footer-links footer-links-contact">
           <li><a href="mailto:info@digibiosolutions.com"><svg class="icon"><use href="#i-file-text"/></svg>info@digibiosolutions.com</a></li>
           <li><a href="tel:+525539868037"><svg class="icon"><use href="#i-smartphone"/></svg>+52 55 3986 8037</a></li>
-          <li><a href="https://www.linkedin.com/company/digibiosolutions/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-globe"/></svg>LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/company/digibio-solutions/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-globe"/></svg>LinkedIn</a></li>
         </ul>
       </div>
     </div>
@@ -1306,6 +1349,16 @@
       document.querySelectorAll('.ctab').forEach(el => el.classList.remove('active'));
       document.getElementById('ctab-' + name).classList.add('active');
       btn.classList.add('active');
+    }
+
+    // ── Nav dropdown shortcuts (Producto / Soluciones) ────────────
+    function gotoProductTab(name) {
+      const btn = document.getElementById('ptab-' + name);
+      if (btn) showTab(name, btn);
+    }
+    function gotoCasoTab(name) {
+      const btn = document.getElementById('ctabbtn-' + name);
+      if (btn) showCTab(name, btn);
     }
   
     // ── Fade-up observer ─────────────────────────────────────────
