@@ -6,21 +6,23 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contacto | Digibio Solutions</title>
-  <meta name="description" content="Contacta a Digibio Solutions para una demo técnica de verificación de identidad, biometría y KYC/KYB en México. Respuesta en menos de 24 horas."/>
+  <title>Industrias | Verificación de Identidad por Sector | Digibio Solutions</title>
+  <meta name="description" content="Digibio Solutions aplica biometría 3D, KYC/KYB y firma electrónica avanzada a los retos de identidad de banca, fintech, seguros, retail, movilidad y salud en México."/>
+  <meta name="keywords" content="verificación de identidad por industria, KYC banca, KYB retail, identidad fintech México, biometría seguros, onboarding movilidad y delivery"/>
+  <meta name="author" content="Digibio Solutions"/>
   <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://www.digibiosolutions.com/contacto/"/>
+  <link rel="canonical" href="https://www.digibiosolutions.com/industrias/"/>
   <meta name="theme-color" content="#1d1d1f"/>
   <meta property="og:type" content="website"/>
   <meta property="og:locale" content="es_MX"/>
   <meta property="og:site_name" content="Digibio Solutions"/>
-  <meta property="og:title" content="Contacto | Digibio Solutions"/>
-  <meta property="og:description" content="Contacta a Digibio Solutions para una demo técnica de verificación de identidad, biometría y KYC/KYB en México."/>
-  <meta property="og:url" content="https://www.digibiosolutions.com/contacto/"/>
+  <meta property="og:title" content="Industrias | Verificación de Identidad por Sector"/>
+  <meta property="og:description" content="Biometría 3D, KYC/KYB y firma electrónica avanzada aplicados a banca, fintech, seguros, retail, movilidad y salud en México."/>
+  <meta property="og:url" content="https://www.digibiosolutions.com/industrias/"/>
   <meta property="og:image" content="https://www.digibiosolutions.com/img/Digibio_Logo_Expanded.png"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Contacto | Digibio Solutions"/>
-  <meta name="twitter:description" content="Contacta a Digibio Solutions para una demo técnica de verificación de identidad, biometría y KYC/KYB en México."/>
+  <meta name="twitter:title" content="Industrias | Verificación de Identidad por Sector"/>
+  <meta name="twitter:description" content="Biometría 3D, KYC/KYB y firma electrónica avanzada aplicados a banca, fintech, seguros, retail, movilidad y salud en México."/>
   <meta name="twitter:image" content="https://www.digibiosolutions.com/img/Digibio_Logo_Expanded.png"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -714,23 +716,21 @@
     .modal-title { font-size: 1.5rem; }
     }
   
-    /* CONTACTO PAGE */
-    .contact-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 40px; align-items: start; }
-    .contact-info-card { background: var(--text); border-radius: var(--radius); padding: 36px 32px; color: #fff; }
-    .contact-info-t { font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; margin-bottom: 10px; }
-    .contact-info-d { font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 28px; }
-    .contact-channel { display: flex; align-items: center; gap: 13px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.1); }
-    .contact-channel:first-of-type { border-top: none; }
-    .contact-channel-ico { width: 38px; height: 38px; flex-shrink: 0; background: rgba(255,255,255,0.08); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #ff8a82; font-size: 1.05rem; }
-    .contact-channel a, .contact-channel span.val { color: #fff; text-decoration: none; font-weight: 600; font-size: 0.92rem; }
-    .contact-channel a:hover { color: var(--red); }
-    .contact-channel-l { font-size: 0.7rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
-    .contact-response { margin-top: 24px; display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border-radius: 10px; padding: 10px 14px; }
-    .contact-response .icon { color: #34c759; }
-    .contact-form-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; box-shadow: var(--shadow); }
-    .contact-form-t { font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; margin-bottom: 6px; }
-    .contact-form-d { font-size: 0.88rem; color: var(--muted); margin-bottom: 24px; }
-    @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+    /* INDUSTRIAS PAGE */
+    .ind-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .ind-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 30px 26px; box-shadow: var(--shadow); transition: all 0.22s; display: flex; flex-direction: column; }
+    .ind-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .ind-card:hover .ind-ico { background: var(--red); color: #fff; }
+    .ind-ico { width: 44px; height: 44px; background: var(--red-light); color: var(--red); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 18px; transition: all 0.25s; }
+    .ind-t { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .ind-d { font-size: 0.85rem; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+    .ind-caps { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; flex: 1; }
+    .ind-cap { display: flex; align-items: flex-start; gap: 8px; font-size: 0.8rem; color: var(--text2); line-height: 1.5; }
+    .ind-cap::before { content: ''; width: 5px; height: 5px; background: var(--red); border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+    .ind-link { font-size: 0.8rem; font-weight: 700; color: var(--red); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+    .ind-link:hover { text-decoration: underline; }
+    @media (max-width: 1024px) { .ind-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 768px) { .ind-grid { grid-template-columns: 1fr; } }
 
   </style>
 </head>
@@ -770,6 +770,8 @@
     <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></symbol>
     <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2.5l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></symbol>
     <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5S3.5 15.2 3.5 9.2C3.5 6.3 5.8 4 8.6 4c1.6 0 3 .7 3.9 1.9C13.4 4.7 14.8 4 16.4 4c2.8 0 5.1 2.3 5.1 5.2 0 6-8.5 11.3-8.5 11.3z"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 7h11v9H2z"/><path d="M13 10h4l4 3.5V16h-8z"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></symbol>
   </defs>
 </svg>
 
@@ -799,11 +801,10 @@
         </div>
       </li>
       <li><a href="/industrias/">Industrias</a></li>
-      <li><a href="/#flujo">Integración</a></li>
       <li><a href="/#ventajas">Ventajas</a></li>
       <li><a href="/contacto/">Contacto</a></li>
     </ul>
-    <a href="#formulario" class="btn btn-primary">Solicitar Demo</a>
+    <a href="/contacto/" class="btn btn-primary">Solicitar Demo</a>
     <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -818,10 +819,9 @@
   <a href="/soluciones/onboarding-bancario/" onclick="closeMobile()">Instituciones Financieras</a>
   <a href="/soluciones/kyb-empresas/" onclick="closeMobile()">Empresas y Plataformas</a>
   <a href="/industrias/" onclick="closeMobile()">Industrias</a>
-  <a href="/#flujo" onclick="closeMobile()">Integración</a>
   <a href="/#ventajas" onclick="closeMobile()">Ventajas</a>
   <a href="/contacto/" onclick="closeMobile()">Contacto</a>
-  <a href="#formulario" class="btn btn-primary" onclick="closeMobile()">Solicitar Demo</a>
+  <a href="/contacto/" class="btn btn-primary" onclick="closeMobile()">Solicitar Demo</a>
 </div>
 
 <!-- HERO -->
@@ -829,105 +829,135 @@
   <div class="hero-blob blob1"></div>
   <div class="hero-blob blob2"></div>
   <div class="container">
-    <div class="section-header fade-up" style="max-width:640px; margin-left:0; text-align:left;">
-      <div class="tag">Contacto</div>
-      <h1 class="hero-title" style="font-size:clamp(2.4rem,4.5vw,3.6rem);">Hablemos de tu<br/><em>reto de identidad.</em></h1>
-      <p class="hero-desc" style="max-width:560px;">Cuéntanos qué problema quieres resolver — onboarding, KYC/KYB, prevención de fraude o firma electrónica — y te contactamos en menos de 24 horas hábiles.</p>
+    <div class="section-header fade-up" style="max-width:680px; margin-left:0; text-align:left;">
+      <div class="tag">Industrias</div>
+      <h1 class="hero-title" style="font-size:clamp(2.4rem,4.5vw,3.6rem);">Identidad digital<br/>para cada <em>sector</em> que necesita confiar.</h1>
+      <p class="hero-desc" style="max-width:600px;">La misma plataforma — biometría 3D, KYC/KYB y firma electrónica avanzada — se adapta a retos de identidad distintos según la industria. Estos son los sectores donde más aportamos hoy en México.</p>
     </div>
   </div>
 </section>
 
-<!-- CONTACTO -->
-<section style="padding: 0 0 120px;">
+<!-- TRUST BAR -->
+<section id="certs">
   <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info-card fade-up">
-        <div class="contact-info-t">Contacto directo</div>
-        <p class="contact-info-d">Si prefieres saltarte el formulario, puedes escribirnos o llamarnos directamente.</p>
+    <div class="certs-head fade-up"><span class="certs-lbl">Tecnología con certificación internacional</span></div>
+  </div>
+  <div class="certs-marquee fade-up">
+    <div class="certs-track">
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-scan"/></svg><div><div class="cert-n">ISO 30107-3</div><div class="cert-s">Nivel 1 y 2 · Liveness Detection</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-eye"/></svg><div><div class="cert-n">NIST FRVT</div><div class="cert-s">Top Performer · Reconocimiento facial</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-shield"/></svg><div><div class="cert-n">EPCS DEA</div><div class="cert-s">Biometric FAR · Entornos regulados</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-lock"/></svg><div><div class="cert-n">OWASP</div><div class="cert-s">Black &amp; White Box Pen Testing</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-file-text"/></svg><div><div class="cert-n">NOM-151</div><div class="cert-s">Conservación de expedientes · México</div></div></div>
+      <div class="cert-badge"><svg class="icon cert-badge-ico"><use href="#i-scale"/></svg><div><div class="cert-n">CNBV · PLD</div><div class="cert-s">Diseñado para cumplimiento regulatorio MX</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-scan"/></svg><div><div class="cert-n">ISO 30107-3</div><div class="cert-s">Nivel 1 y 2 · Liveness Detection</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-eye"/></svg><div><div class="cert-n">NIST FRVT</div><div class="cert-s">Top Performer · Reconocimiento facial</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-shield"/></svg><div><div class="cert-n">EPCS DEA</div><div class="cert-s">Biometric FAR · Entornos regulados</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-lock"/></svg><div><div class="cert-n">OWASP</div><div class="cert-s">Black &amp; White Box Pen Testing</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-file-text"/></svg><div><div class="cert-n">NOM-151</div><div class="cert-s">Conservación de expedientes · México</div></div></div>
+      <div class="cert-badge" aria-hidden="true"><svg class="icon cert-badge-ico"><use href="#i-scale"/></svg><div><div class="cert-n">CNBV · PLD</div><div class="cert-s">Diseñado para cumplimiento regulatorio MX</div></div></div>
+    </div>
+  </div>
+</section>
 
-        <div class="contact-channel">
-          <div class="contact-channel-ico"><svg class="icon"><use href="#i-file-text"/></svg></div>
-          <div><div class="contact-channel-l">Correo</div><a href="mailto:info@digibiosolutions.com">info@digibiosolutions.com</a></div>
-        </div>
-        <div class="contact-channel">
-          <div class="contact-channel-ico"><svg class="icon"><use href="#i-smartphone"/></svg></div>
-          <div><div class="contact-channel-l">Teléfono</div><a href="tel:+525539868037">+52 55 3986 8037</a></div>
-        </div>
-        <div class="contact-channel">
-          <div class="contact-channel-ico"><svg class="icon"><use href="#i-globe"/></svg></div>
-          <div><div class="contact-channel-l">LinkedIn</div><a href="https://www.linkedin.com/company/digibio-solutions/" target="_blank" rel="noopener">Digibio Solutions</a></div>
-        </div>
-        <div class="contact-channel">
-          <div class="contact-channel-ico"><svg class="icon"><use href="#i-globe"/></svg></div>
-          <div><div class="contact-channel-l">Cobertura</div><span class="val">México</span></div>
-        </div>
+<!-- INDUSTRIAS -->
+<section style="padding: 100px 0 120px;">
+  <div class="container">
+    <div class="ind-grid">
 
-        <div class="contact-response"><svg class="icon"><use href="#i-check-circle"/></svg>Respuesta en menos de 24 horas hábiles</div>
+      <div class="ind-card fade-up">
+        <div class="ind-ico"><svg class="icon"><use href="#i-bank"/></svg></div>
+        <div class="ind-t">Banca y Servicios Financieros</div>
+        <p class="ind-d">Apertura de cuentas 100% remota, originación de crédito y desbloqueo de cuentas por alertas PLD, con expediente digital audit-ready para CNBV.</p>
+        <div class="ind-caps">
+          <div class="ind-cap">Onboarding sin presencia física</div>
+          <div class="ind-cap">Prevención de fraude documental</div>
+          <div class="ind-cap">Cumplimiento CNBV y PLD</div>
+        </div>
+        <a href="/soluciones/onboarding-bancario/" class="ind-link">Ver solución →</a>
       </div>
 
-      <div class="contact-form-card fade-up" id="formulario">
-        <div class="contact-form-t">Solicita tu demo técnica</div>
-        <p class="contact-form-d">Una llamada de 30 minutos para mostrarte cómo Digibio se integra a tu operación. Sin compromiso.</p>
+      <div class="ind-card fade-up">
+        <div class="ind-ico"><svg class="icon"><use href="#i-zap"/></svg></div>
+        <div class="ind-t">Fintech y Financieras Especializadas</div>
+        <p class="ind-d">Financieras de auto, moto y crédito al consumo que necesitan aprobar solicitudes en segundos, en punto de venta o en línea, sin ceder control de riesgo.</p>
+        <div class="ind-caps">
+          <div class="ind-cap">Verificación en punto de venta</div>
+          <div class="ind-cap">Detección de solicitantes duplicados</div>
+          <div class="ind-cap">Firma de contrato con validez jurídica</div>
+        </div>
+        <a href="/soluciones/onboarding-bancario/" class="ind-link">Ver solución →</a>
+      </div>
 
-        <form id="contactForm" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="c-nombre">Nombre *</label>
-              <input type="text" id="c-nombre" name="nombre" placeholder="Juan García" autocomplete="given-name"/>
-            </div>
-            <div class="form-group">
-              <label for="c-apellido">Apellido *</label>
-              <input type="text" id="c-apellido" name="apellido" placeholder="López" autocomplete="family-name"/>
-            </div>
-          </div>
-          <div class="form-group" style="margin-top:14px;">
-            <label for="c-email">Email corporativo *</label>
-            <input type="email" id="c-email" name="email" placeholder="juan@empresa.com" autocomplete="email"/>
-          </div>
-          <div class="form-row" style="margin-top:14px;">
-            <div class="form-group">
-              <label for="c-telefono">Teléfono *</label>
-              <input type="tel" id="c-telefono" name="telefono" placeholder="+52 55 1234 5678" autocomplete="tel"/>
-            </div>
-            <div class="form-group">
-              <label for="c-empresa">Empresa *</label>
-              <input type="text" id="c-empresa" name="empresa" placeholder="Nombre de tu empresa" autocomplete="organization"/>
-            </div>
-          </div>
-          <div class="form-row" style="margin-top:14px;">
-            <div class="form-group">
-              <label for="c-cargo">Cargo</label>
-              <input type="text" id="c-cargo" name="cargo" placeholder="CTO, Head of Product..."/>
-            </div>
-            <div class="form-group">
-              <label for="c-sector">Sector</label>
-              <select id="c-sector" name="sector">
-                <option value="" disabled selected>Selecciona...</option>
-                <option>Banca / Financiero</option>
-                <option>Fintech</option>
-                <option>Seguros</option>
-                <option>Retail / E-commerce</option>
-                <option>Movilidad / Delivery</option>
-                <option>Salud</option>
-                <option>Otro</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group" style="margin-top:14px;">
-            <label for="c-mensaje">¿Qué problema quieres resolver? (opcional)</label>
-            <textarea id="c-mensaje" name="mensaje" placeholder="Cuéntanos brevemente tu caso de uso o el reto que enfrentas..."></textarea>
-          </div>
-          <button type="submit" class="form-submit" id="cFormSubmit" style="margin-top:18px;">
-            <span class="btn-text">Solicitar mi demo →</span>
-            <div class="spinner"></div>
-          </button>
-          <p class="form-privacy"><svg class="icon" style="margin-right:4px"><use href="#i-lock"/></svg>Tus datos están seguros. No compartimos tu información con terceros.</p>
-        </form>
+      <div class="ind-card fade-up">
+        <div class="ind-ico"><svg class="icon"><use href="#i-heart"/></svg></div>
+        <div class="ind-t">Seguros</div>
+        <p class="ind-d">Verificación de asegurados y beneficiarios al contratar una póliza, y prevención de fraude documental en la gestión de siniestros y reclamaciones.</p>
+        <div class="ind-caps">
+          <div class="ind-cap">Alta de asegurados con biometría</div>
+          <div class="ind-cap">Firma electrónica de pólizas</div>
+          <div class="ind-cap">Validación de identidad en siniestros</div>
+        </div>
+        <a href="/#productos" class="ind-link">Ver plataforma →</a>
+      </div>
 
-        <div class="modal-success" id="cFormSuccess">
-          <div class="success-icon"><svg class="icon"><use href="#i-check-circle"/></svg></div>
-          <div class="success-title">¡Solicitud enviada!</div>
-          <p class="success-sub">Nos pondremos en contacto contigo en menos de 24 horas para confirmar tu demo. Revisa tu bandeja de entrada.</p>
+      <div class="ind-card fade-up">
+        <div class="ind-ico"><svg class="icon"><use href="#i-credit-card"/></svg></div>
+        <div class="ind-t">Retail, E-commerce y Marketplaces</div>
+        <p class="ind-d">Verificación de vendedores y proveedores (KYB) antes de darlos de alta en el marketplace, y control de identidad para reducir cuentas falsas y fraude.</p>
+        <div class="ind-caps">
+          <div class="ind-cap">KYB de vendedores y proveedores</div>
+          <div class="ind-cap">Prevención de cuentas duplicadas</div>
+          <div class="ind-cap">Alta 100% remota</div>
+        </div>
+        <a href="/soluciones/kyb-empresas/" class="ind-link">Ver solución →</a>
+      </div>
+
+      <div class="ind-card fade-up">
+        <div class="ind-ico"><svg class="icon"><use href="#i-truck"/></svg></div>
+        <div class="ind-t">Movilidad y Delivery</div>
+        <p class="ind-d">Onboarding de conductores y repartidores a escala, con verificación biométrica que evita la suplantación de cuenta entre colaboradores de la plataforma.</p>
+        <div class="ind-caps">
+          <div class="ind-cap">Onboarding masivo de colaboradores</div>
+          <div class="ind-cap">Re-autenticación biométrica periódica</div>
+          <div class="ind-cap">Validación de antecedentes y listas negras</div>
+        </div>
+        <a href="/soluciones/kyb-empresas/" class="ind-link">Ver solución →</a>
+      </div>
+
+      <div class="ind-card fade-up">
+        <div class="ind-ico"><svg class="icon"><use href="#i-shield"/></svg></div>
+        <div class="ind-t">Salud</div>
+        <p class="ind-d">Verificación de identidad de pacientes en telemedicina y de profesionales de la salud, con expedientes digitales firmados y trazables.</p>
+        <div class="ind-caps">
+          <div class="ind-cap">Verificación de pacientes remota</div>
+          <div class="ind-cap">Firma electrónica de consentimientos</div>
+          <div class="ind-cap">Expediente digital audit-ready</div>
+        </div>
+        <a href="/#productos" class="ind-link">Ver plataforma →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" style="padding: 0 0 120px;">
+  <div class="container">
+    <div class="cta-box fade-up">
+      <div class="cta-inner">
+        <div class="tag" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.75);">Siguiente paso</div>
+        <h2 class="cta-t">¿No ves tu industria<br/>en la lista? <em>Hablemos igual.</em></h2>
+        <p class="cta-s">La plataforma se adapta a cualquier flujo que necesite confirmar quién está del otro lado. Cuéntanos tu caso de uso.</p>
+        <div class="cta-btns">
+            <a href="/contacto/" class="btn btn-w">Agendar Demo Técnica</a>
+            <a href="/contacto/" class="btn btn-gh">Contactar ventas</a>
+        </div>
+        <div class="cta-chips">
+          <span class="cta-chip">Sin costo de integración inicial</span>
+          <span class="cta-chip">PoC en 2 semanas</span>
+          <span class="cta-chip">Soporte técnico dedicado</span>
+          <span class="cta-chip">Cumplimiento CNBV garantizado</span>
         </div>
       </div>
     </div>
@@ -951,7 +981,7 @@
       </div>
       <div>
         <div class="footer-col-t">Empresa</div>
-        <ul class="footer-links"><li><a href="/#casos">Casos de Uso</a></li><li><a href="/industrias/">Industrias</a></li><li><a href="/#ventajas">Por Qué Digibio</a></li><li><a href="/#flujo">Integración</a></li><li><a href="/contacto/">Contacto</a></li></ul>
+        <ul class="footer-links"><li><a href="/#casos">Casos de Uso</a></li><li><a href="/#ventajas">Por Qué Digibio</a></li><li><a href="/#flujo">Integración</a></li><li><a href="/contacto/">Contacto</a></li></ul>
       </div>
       <div>
         <div class="footer-col-t">Contacto</div>
@@ -972,14 +1002,7 @@
 </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
-    // ── EmailJS init (mismas credenciales que el resto del sitio) ──
-    const EMAILJS_PUBLIC_KEY  = 'CD4Od0DXHvZAisn7t';
-    const EMAILJS_SERVICE_ID  = 'service_j7g7632';
-    const EMAILJS_TEMPLATE_ID = 'template_plb6ian';
-    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-
     // ── Nav scroll ───────────────────────────────────────────────
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
@@ -1001,57 +1024,6 @@
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
     fadeEls.forEach(el => observer.observe(el));
-
-    // ── Formulario de contacto ───────────────────────────────────
-    const contactForm  = document.getElementById('contactForm');
-    const cFormSubmit  = document.getElementById('cFormSubmit');
-    const cFormSuccess = document.getElementById('cFormSuccess');
-
-    function validateContact() {
-      const required = ['c-nombre','c-apellido','c-email','c-telefono','c-empresa'];
-      let ok = true;
-      required.forEach(id => {
-        const el = document.getElementById(id);
-        el.classList.remove('error');
-        if (!el.value.trim()) { el.classList.add('error'); ok = false; }
-      });
-      const email = document.getElementById('c-email');
-      if (email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-        email.classList.add('error'); ok = false;
-      }
-      return ok;
-    }
-
-    contactForm.addEventListener('submit', async e => {
-      e.preventDefault();
-      if (!validateContact()) return;
-
-      cFormSubmit.classList.add('loading');
-      cFormSubmit.disabled = true;
-
-      const params = {
-        nombre:   document.getElementById('c-nombre').value.trim(),
-        apellido: document.getElementById('c-apellido').value.trim(),
-        email:    document.getElementById('c-email').value.trim(),
-        telefono: document.getElementById('c-telefono').value.trim(),
-        empresa:  document.getElementById('c-empresa').value.trim(),
-        cargo:    document.getElementById('c-cargo').value.trim(),
-        sector:   document.getElementById('c-sector').value,
-        mensaje:  document.getElementById('c-mensaje').value.trim(),
-      };
-
-      try {
-        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params);
-        contactForm.style.display = 'none';
-        cFormSuccess.classList.add('show');
-      } catch (err) {
-        console.error(err);
-        alert('Hubo un error al enviar. Por favor escríbenos directamente a info@digibiosolutions.com');
-      } finally {
-        cFormSubmit.classList.remove('loading');
-        cFormSubmit.disabled = false;
-      }
-    });
   </script>
 </body>
 
